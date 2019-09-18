@@ -1,4 +1,4 @@
-# Description of the course work is likely to be upatded!#
+# Description of the course work is likely to be upatded! #
 
 Please note that the description of the course work might be updated from time to time to clarify things or fix mistakes.
 
@@ -14,8 +14,9 @@ Note that specific instructions for each part can be found above by clicking on 
 # Scoreboard #
 
 We automatically run a series of hidden test programs using your compiler about twice a day.
-You can keep track of your progress and see how many tests pass/fail using the scoreboard by following this link:
+You can keep track of your progress and see how many tests pass/fail using the scoreboard by following this link once the automarking will start:
 [http://www.inf.ed.ac.uk/teaching/courses/ct/19-20/scoreboard/scoreboard.html](http://www.inf.ed.ac.uk/teaching/courses/ct/19-20/scoreboard/scoreboard.html)
+The scorboard is provided as a best effort service, do not rely on it as it may come down unexpectedly: no guarantees is offered.
 
 # Marking #
 
