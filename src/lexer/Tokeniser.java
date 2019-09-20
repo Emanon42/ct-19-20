@@ -23,7 +23,7 @@ public class Tokeniser {
 
     private void error(char c, int line, int col) {
         System.out.println("Lexing error: unrecognised character ("+c+") at "+line+":"+col);
-	error++;
+	    error++;
     }
 
 
@@ -44,7 +44,7 @@ public class Tokeniser {
     }
 
     /*
-     * To be completed
+     * //TODO: To be completed
      */
     private Token next() throws IOException {
 
@@ -63,7 +63,35 @@ public class Tokeniser {
             return new Token(TokenClass.PLUS, line, column);
 
         // ... to be completed
-
+        // TODO: refactor to single exit point for better debug experience
+        switch(c){
+            case '-':
+                return new Token(TokenClass.MINUS, line, column);
+            case '/':
+                return new Token(TokenClass.DIV, line, column);
+            case '%':
+                return new Token(TokenClass.REM, line, column);
+            case '{':
+                return new Token(TokenClass.LBRA, line, column);
+            case '}':
+                return new Token(TokenClass.RBRA, line, column);
+            case '(':
+                return new Token(TokenClass.LPAR, line, column);
+            case ')':
+                return new Token(TokenClass.RPAR, line, column);
+            case '[':
+                return new Token(TokenClass.LSBR, line, column);
+            case ']':
+                return new Token(TokenClass.RSBR, line, column);
+            case ';':
+                return new Token(TokenClass.SC, line, column);
+            case ',':
+                return new Token(TokenClass.COMMA, line, column);
+            case '=':
+                return new Token(TokenClass.ASSIGN, line, column);
+            case '.':
+                return new Token(TokenClass.DOT, line, column);
+        }
 
         // if we reach this point, it means we did not recognise a valid token
         error(c, line, column);
