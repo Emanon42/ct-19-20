@@ -33,6 +33,7 @@ public class Tokeniser {
     private static final Map<Character, TokenClass> singleSymbolMap;
     private static final Map<String, TokenClass> multiSymbolMap;
     private static final HashSet<Character> legalInitSymbols;
+    private static final Map<Character, Character> escapeChar;
 
     static {
         // initialize keyword hashmap and put value statically
@@ -48,7 +49,6 @@ public class Tokeniser {
         keywordMap.put("return", TokenClass.RETURN);
         keywordMap.put("struct", TokenClass.STRUCT);
         keywordMap.put("sizeof", TokenClass.SIZEOF);
-        keywordMap.put("#include", TokenClass.INCLUDE);
 
         // initialize single symbol hashmap and put value statically
         singleSymbolMap = new HashMap<Character, TokenClass>();
@@ -84,8 +84,28 @@ public class Tokeniser {
         multiSymbolMap.put("&&", TokenClass.AND);
         multiSymbolMap.put("||", TokenClass.OR);
 
-        // initialize init symbol set from symbol map
-        legalInitSymbols = new HashSet<Character>(singleSymbolMap.keySet());
+        // initialize init symbol set and load
+        legalInitSymbols = new HashSet<Character>();
+
+        legalInitSymbols.add('=');
+        legalInitSymbols.add('!');
+        legalInitSymbols.add('<');
+        legalInitSymbols.add('>');
+        legalInitSymbols.add('&');
+        legalInitSymbols.add('|');
+
+        // initialize escape char table
+        escapeChar = new HashMap<Character, Character>();
+
+        escapeChar.put('t', '\t');
+        escapeChar.put('b', '\b');
+        escapeChar.put('n', '\n');
+        escapeChar.put('r', '\r');
+        escapeChar.put('f', '\f');
+        escapeChar.put('\'', '\'');
+        escapeChar.put('\"', '\"');
+        escapeChar.put('\\', '\\');
+        escapeChar.put('0', (char)0);
     }
 
 
@@ -120,39 +140,303 @@ public class Tokeniser {
         if (Character.isWhitespace(c))
             return next();
 
-        // string mode, build a string then check if it is a keyword. Otherwise, identifier.
-        if (c == '#' || c == '_' || Character.isLetter(c)){
-            //TODO: identifier/keyword mode
+        // skip the comment
+        if (c == '/' && scanner.hasNext() && scanner.peek() == '/'){
+            //TODO: test single line comment mode
+            while (scanner.hasNext()){
+                if (scanner.next() == '\n'){
+                    // PIAZZA: is new line just \n? or \n\r?
+                    return next();
+                }
+            }
         }
 
-        // single/multi symbol mode
+        if (c == '/' && scanner.hasNext() && scanner.peek() == '*'){
+            //TODO: test multi-line comment mode
+            while (scanner.hasNext()){
+                if (scanner.next() == '*' && scanner.hasNext() && scanner.peek() == '/'){
+                    return next();
+                }
+            }
+        }
+
+
+        // identifier/keyword mode, build a string then check if it is a keyword. Otherwise, identifier.
+        if (c == '_' || Character.isLetter(c)){
+            //TODO: test and debug identifier/keyword mode
+            StringBuilder data = new StringBuilder();
+            data.append(c);
+            if (!scanner.hasNext()){
+                return new Token(TokenClass.IDENTIFIER, data.toString(), line, column);
+            }
+
+            // bug fix for scanner "eat up" next char
+            if (scanner.peek() != '_' && !Character.isLetter(scanner.peek()) && !Character.isDigit(scanner.peek())){
+                String result = data.toString();
+                if (keywordMap.containsKey(result)){
+                    return new Token(keywordMap.get(result), line, column);
+                }else {
+                    return new Token(TokenClass.IDENTIFIER, result, line, column);
+                }
+            }else {
+                c = scanner.next();
+            }
+
+            while ((c == '_' || Character.isLetter(c) || Character.isDigit(c))){
+                data.append(c);
+                if (!scanner.hasNext()){
+                    return new Token(TokenClass.IDENTIFIER, data.toString(), line, column);
+                }
+                // bug fix for scanner "eat up" next char
+                if (scanner.peek() != '_' && !Character.isLetter(scanner.peek()) && !Character.isDigit(scanner.peek())){
+                    break;
+                }else {
+                    c = scanner.next();
+                }
+
+            }
+
+            String result = data.toString();
+            if (keywordMap.containsKey(result)){
+                return new Token(keywordMap.get(result), line, column);
+            }else {
+                return new Token(TokenClass.IDENTIFIER, result, line, column);
+            }
+        }
+
+        // only for #include token
+        if (c == '#'){
+            //TODO: test the #include check
+            char[] include = "include".toCharArray();
+            for (char inc : include){
+                if (!scanner.hasNext()){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+                c = scanner.next();
+                if (c != inc){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+            }
+            return new Token(TokenClass.INCLUDE, line, column);
+        }
+
+        // multi symbol mode
         if (legalInitSymbols.contains(c)){
-            //TODO: single/multi symbol mode
+            //TODO: test multi symbol mode
+            StringBuilder data = new StringBuilder();
+            data.append(c);
+            if (!scanner.hasNext()){
+                // back to single symbol mode
+                if (data.length() == 1){
+                    if (singleSymbolMap.containsKey(data.toString().charAt(0))){
+                        return new Token(singleSymbolMap.get(data.toString().charAt(0)), line, column);
+                    }else {
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                }else {
+                    if (multiSymbolMap.containsKey(data.toString())){
+                        return new Token(multiSymbolMap.get(data.toString()), line, column);
+                    }else {
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                }
+            }
+
+            // bug fix for scanner "eat up" next char
+            if (!legalInitSymbols.contains(scanner.peek())){
+                if (data.length() == 1){
+                    if (singleSymbolMap.containsKey(data.toString().charAt(0))){
+                        return new Token(singleSymbolMap.get(data.toString().charAt(0)), line, column);
+                    }else {
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                }else {
+                    if (multiSymbolMap.containsKey(data.toString())){
+                        return new Token(multiSymbolMap.get(data.toString()), line, column);
+                    }else {
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                }
+            }else {
+                c = scanner.next();
+            }
+
+
+            while (legalInitSymbols.contains(c)){
+                data.append(c);
+                if (!scanner.hasNext()){
+                    if (data.length() == 1){
+                        if (singleSymbolMap.containsKey(data.toString().charAt(0))){
+                            return new Token(singleSymbolMap.get(data.toString().charAt(0)), line, column);
+                        }else {
+                            error++;
+                            return new Token(TokenClass.INVALID, line, column);
+                        }
+                    }else {
+                        if (multiSymbolMap.containsKey(data.toString())){
+                            return new Token(multiSymbolMap.get(data.toString()), line, column);
+                        }else {
+                            error++;
+                            return new Token(TokenClass.INVALID, line, column);
+                        }
+                    }
+                }
+
+                // bug fix for scanner "eat up" next char
+                if (!legalInitSymbols.contains(scanner.peek())){
+                    break;
+                }else {
+                    c = scanner.next();
+                }
+            }
+
+            // decide single or multi symbol
+            if (data.length() == 1){
+                if (singleSymbolMap.containsKey(data.toString().charAt(0))){
+                    return new Token(singleSymbolMap.get(data.toString().charAt(0)), line, column);
+                }else {
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+            }else {
+                if (multiSymbolMap.containsKey(data.toString())){
+                    return new Token(multiSymbolMap.get(data.toString()), line, column);
+                }else {
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+            }
+
+        }
+
+        // single symbol mode
+        if (singleSymbolMap.containsKey(c)){
+            //TODO: test single symbol mode
+            return new Token(singleSymbolMap.get(c), line, column);
         }
 
         // string literal mode
         if (c == '\"'){
             //TODO: string literal mode
+            if (!scanner.hasNext()){
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+            StringBuilder data = new StringBuilder();
+            c = scanner.next();
+
+            while (c != '\"'){
+                // error for illegal newline char in string
+                if (c == '\n' || c == '\r'){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+
+                if (c == '\\'){
+                    // process escape sequence
+                    if (!scanner.hasNext()){
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                    c = scanner.next();
+                    if (escapeChar.containsKey(c)){
+                        data.append(escapeChar.get(c));
+                        c = scanner.next();
+                    }else {
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                }else {
+                    data.append(c);
+                    if (!scanner.hasNext()){
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
+                    c = scanner.next();
+                }
+            }
+            return new Token(TokenClass.STRING_LITERAL, data.toString(), line, column);
         }
 
         // char literal mode (only allow single char)
         if (c == '\''){
-            //TODO: char literal mode
+            //TODO: test char literal mode
+            if (!scanner.hasNext()){
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+            StringBuilder data = new StringBuilder();
+            c = scanner.next();
+
+            // error for illegal newline char in string
+            if (c == '\n' || c == '\r'){
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+
+            if (c == '\\'){
+                // process escape sequence
+                if (!scanner.hasNext()){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+                c = scanner.next();
+                if (escapeChar.containsKey(c)){
+                    data.append(escapeChar.get(c));
+                    c = scanner.next();
+                }else {
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+            }else {
+                data.append(c);
+                if (!scanner.hasNext()){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+                c = scanner.next();
+            }
+            
+            if (c == '\''){
+                return new Token(TokenClass.CHAR_LITERAL, data.toString(), line, column);
+            }else {
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+            
         }
 
         // integer literal mode
         if (Character.isDigit(c)){
             //TODO: integer literal mode
-        }
-
-        // comment mode
-        if (c == '/'){
-            //TODO: comment mode
+            StringBuilder data = new StringBuilder();
+            data.append(c);
+            if (!scanner.hasNext()){
+                return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
+            }
+            c = scanner.next();
+            
+            while (Character.isDigit(c)){
+                data.append(c);
+                if (!scanner.hasNext()){
+                    return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
+                }
+                c = scanner.next();
+            }
+            
+            return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
         }
 
 
         // if we reach this point, it means we did not recognise a valid token
         error(c, line, column);
+        error++;
         return new Token(TokenClass.INVALID, line, column);
     }
 
