@@ -140,24 +140,28 @@ public class Tokeniser {
         if (Character.isWhitespace(c))
             return next();
 
-        // skip the comment
+        // skip the single line comment
         if (c == '/' && scanner.hasNext() && scanner.peek() == '/'){
             //TODO: test single line comment mode
             while (scanner.hasNext()){
                 if (scanner.next() == '\n'){
-                    // PIAZZA: is new line just \n? or \n\r?
                     return next();
                 }
             }
+            return next(); // fix: single comment get recognized as DIV
         }
 
+        // multi line comment
         if (c == '/' && scanner.hasNext() && scanner.peek() == '*'){
             //TODO: test multi-line comment mode
+            scanner.next(); // fix: consume the '*'
             while (scanner.hasNext()){
                 if (scanner.next() == '*' && scanner.hasNext() && scanner.peek() == '/'){
+                    scanner.next(); // fix: consume the last '/'
                     return next();
                 }
             }
+            return next();
         }
 
 
