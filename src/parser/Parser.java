@@ -4,6 +4,7 @@ import lexer.Token;
 import lexer.Tokeniser;
 import lexer.Token.TokenClass;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -19,6 +20,14 @@ public class Parser {
     private Queue<Token> buffer = new LinkedList<>();
 
     private final Tokeniser tokeniser;
+
+    private static final TokenClass[] typeList = {
+            TokenClass.INT,
+            TokenClass.CHAR,
+            TokenClass.VOID,
+            TokenClass.STRUCT
+    };
+
 
 
 
@@ -115,7 +124,7 @@ public class Parser {
     private boolean accept(TokenClass... expected) {
         boolean result = false;
         for (TokenClass e : expected)
-            result |= (e == token.tokenClass);
+            result |= (e == token.tokenClass); // result = result | (e == token.tokenClass)
         return result;
     }
 
@@ -138,11 +147,45 @@ public class Parser {
     }
 
     private void parseStructDecls() {
-        // to be completed ...
+        if (accept(TokenClass.STRUCT)){
+            nextToken(); // consume the struct token
+            expect(TokenClass.IDENTIFIER);
+            expect(TokenClass.LBRA);
+            parseVarDecls();
+            expect(TokenClass.RBRA);
+            expect(TokenClass.SC);
+            parseStructDecls();
+        }
     }
 
     private void parseVarDecls() {
-        // to be completed ...
+        if (accept(typeList)){
+            if (accept(TokenClass.STRUCT)){
+                nextToken();
+                // match the name of struct type
+                if (!accept(TokenClass.IDENTIFIER)){
+                    error(TokenClass.IDENTIFIER);
+                }
+            }
+            nextToken();
+
+            if (accept(TokenClass.ASTERIX)){
+                nextToken();
+            }
+
+            expect(TokenClass.IDENTIFIER);
+
+            if (accept(TokenClass.SC)){
+                nextToken();
+                parseVarDecls();
+            }else if (accept(TokenClass.LSBR)){
+                nextToken();
+                expect(TokenClass.INT_LITERAL);
+                expect(TokenClass.RSBR);
+                expect(TokenClass.SC);
+                parseVarDecls();
+            }
+        }
     }
 
     private void parseFunDecls() {

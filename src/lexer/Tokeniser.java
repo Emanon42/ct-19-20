@@ -129,6 +129,7 @@ public class Tokeniser {
      * //TODO: To be completed
      */
     private Token next() throws IOException {
+        // TODO: check "eat up the char following the token" problem
 
         int line = scanner.getLine();
         int column = scanner.getColumn();
@@ -365,6 +366,7 @@ public class Tokeniser {
                     c = scanner.next();
                 }
             }
+            //TODO: add a '\0' end char in the end of string
             return new Token(TokenClass.STRING_LITERAL, data.toString(), line, column);
         }
 
@@ -418,20 +420,32 @@ public class Tokeniser {
 
         // integer literal mode
         if (Character.isDigit(c)){
-            //TODO: integer literal mode
+            //TODO: test integer literal mode
             StringBuilder data = new StringBuilder();
             data.append(c);
             if (!scanner.hasNext()){
                 return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
             }
-            c = scanner.next();
+
+            // bug fix for scanner "eat up" next char
+            if (!Character.isDigit(scanner.peek())){
+                String result = data.toString();
+                return new Token(TokenClass.INT_LITERAL, result, line, column);
+            }else {
+                c = scanner.next();
+            }
             
             while (Character.isDigit(c)){
                 data.append(c);
                 if (!scanner.hasNext()){
                     return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
                 }
-                c = scanner.next();
+                // bug fix for scanner "eat up" next char
+                if (!Character.isDigit(scanner.peek())){
+                    break;
+                }else {
+                    c = scanner.next();
+                }
             }
             
             return new Token(TokenClass.INT_LITERAL, data.toString(), line, column);
