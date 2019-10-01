@@ -1,0 +1,123 @@
+# #  comment
+# () grouping
+# [] optional
+# *  zero or more
+# +  one or more
+# |  alternative
+# ε  nothing
+# '_pos'  postfix: positive closure ('+' in regex)
+# '_kle'  postfix: kleene closure ('*' in regex)
+# '_opt'  postfix: optional ('[]' in regex)
+# CAPITAL  tokens in Token.java
+
+program            ::= include_kle stru_decl_kle var_decl_kle fn_decl_kle EOF
+include_kle        ::= include include_kle
+                     | ε
+
+include            ::= INCLUDE STRING_LITERAL
+stru_decl_kle      ::= stru_decl stru_decl_kle
+                     | ε
+
+stru_decl          ::= stru_type LBRA var_decl_pos RBRA SC          # structure declaration
+stru_type          ::= STRUCT IDENTIFIER
+var_decl_pos       ::= var_decl var_decl_kle                        # one or more variable declaration
+var_decl_kle       ::= var_decl var_decl_kle                        # zero or more variable declaration
+                     | ε
+
+var_decl           ::= type IDENTIFIER SC                           # normal declaration, e.g. int a;
+                     | type IDENTIFIER LSBR INT_LITERAL RSBR SC     # array declaration, e.g. int a[2];
+
+fn_decl_kle        ::= fn_decl fn_decl_kle
+                     | ε
+
+fn_decl            ::= type IDENTIFIER LPAR params_opt RPAR block   # function declaration
+type               ::= primitive
+                     | primitive ASTERIX
+
+primitive          ::= INT
+                     | CHAR
+                     | VOID
+                     | stru_type
+
+params_opt         ::= type IDENTIFIER params_kle
+                     | ε
+
+params_kle         ::= COMMA type IDENTIFIER params_kle
+                     | ε
+
+block              ::= LBRA var_decl_kle stmt_kle RBRA
+stmt_kle           ::= stmt stmt_kle
+                     | ε
+
+stmt               ::= block
+                     | WHILE LPAR exp RPAR stmt                     # while loop
+                     | IF LPAR exp RPAR stmt else_stmt_opt          # if then else, else is optional
+                     | RETURN exp_opt SC                            # return
+                     | exp ASSIGN exp SC                            # assignment
+                     | exp SC                                       # expression statement, e.g. a function call
+
+else_stmt_opt      ::= ELSE stmt
+                     | ε
+
+exp_opt            ::= exp
+                     | ε
+
+
+# encoding precedence in expression rule
+exp                ::= exp_or
+exp_or             ::= exp_and exp_or_term
+exp_or_term        ::= OR exp_and exp_or_term
+                     | ε
+
+exp_and            ::= exp_eq exp_and_term
+exp_and_term       ::= AND exp_eq exp_and_term
+                     | ε
+
+exp_eq             ::= exp_comp exp_eq_term
+exp_eq_term        ::= EQ exp_comp exp_eq_term
+                     | NE exp_comp exp_eq_term
+                     | ε
+
+exp_comp           ::= exp_add exp_comp_term
+exp_comp_term      ::= LT exp_add exp_comp_term
+                     | GT exp_add exp_comp_term
+                     | LE exp_add exp_comp_term
+                     | GE exp_add exp_comp_term
+                     | ε
+
+exp_add            ::= exp_mult exp_add_term
+exp_add_term       ::= PLUS exp_mult exp_add_term
+                     | MINUS exp_mult exp_add_term
+                     | ε
+
+exp_mult           ::= exp_lv2 exp_mult_term
+exp_mult_term      ::= ASTERIX exp_lv2 exp_mult_term
+                     | DIV exp_lv2 exp_mult_term
+                     | REM exp_lv2 exp_mult_term
+                     | ε
+
+exp_lv2            ::= exp_lv1
+                     | SIZEOF LPAR type RPAR exp_lv2
+                     | ASTERIX exp_lv2
+                     | LPAR type RPAR exp_lv2
+                     | MINUS exp_lv2
+
+exp_lv1            ::= exp_bottom exp_lv1_term
+exp_lv1_term       ::= DOT IDENTIFIER exp_lv1_term
+                     | LSBR exp RSBR exp_lv1_term
+                     | ε
+
+exp_bottom         ::= LPAR exp RPAR
+                     | IDENTIFIER
+                     | INT_LITERAL
+                     | CHAR_LITERAL
+                     | STRING_LITERAL
+                     | fn_call
+
+fn_call            ::= IDENTIFIER LPAR args_opt RPAR
+args_opt           ::= exp args_kle
+                     | ε
+
+args_kle           ::= COMMA exp args_kle
+                     | ε
+
