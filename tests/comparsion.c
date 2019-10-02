@@ -1,0 +1,6 @@
+void main(){
+    while (){
+    }
+    if(>){
+    }
+}

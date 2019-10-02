@@ -187,7 +187,7 @@ public class Parser {
     }
 
     private void parseStructDecls() {
-        if (accept(TokenClass.STRUCT)){
+        if (accept(TokenClass.STRUCT) && lookAheadAccept(2, TokenClass.LBRA)){
             nextToken(); // consume the struct token
             expect(TokenClass.IDENTIFIER);
             expect(TokenClass.LBRA);
@@ -226,7 +226,7 @@ public class Parser {
     }
 
     private void parseVarDecls() {
-        if (accept(typeList) && !lookAheadAccept(2, TokenClass.LPAR)){
+        if (accept(typeList) && !lookAheadAccept(2, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR)){
             parseType();
             expect(TokenClass.IDENTIFIER); // name of var
             if (accept(TokenClass.SC)){
@@ -238,6 +238,8 @@ public class Parser {
                 expect(TokenClass.RSBR);
                 expect(TokenClass.SC);
                 parseVarDecls();
+            }else {
+                error(TokenClass.SC, TokenClass.LSBR);
             }
         }
     }
@@ -338,7 +340,11 @@ public class Parser {
     }
 
     private void parseExp(){
-        parseExp_or();
+        if (accept(expFirst)){
+            parseExp_or();
+        }else {
+            error(expFirst);
+        }
     }
 
     private void parseExp_or(){
