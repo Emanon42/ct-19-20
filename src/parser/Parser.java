@@ -183,7 +183,7 @@ public class Parser {
             expect(TokenClass.STRING_LITERAL);
             parseIncludes();
         }
-        // do nothing after if statement corresponding to branch of ε in ebnf
+        // do nothing after if statement corresponding to branch of epsilon in ebnf
     }
 
     private void parseStructDecls() {
@@ -323,6 +323,8 @@ public class Parser {
             }else {
                 error(TokenClass.SC, TokenClass.ASSIGN);
             }
+        }else{
+            error(stmtFirst);
         }
     }
 
@@ -348,8 +350,13 @@ public class Parser {
     }
 
     private void parseExp_or(){
-        parseExp_and();
-        parseExp_or_term();
+        if (accept(expFirst)){
+            parseExp_and();
+            parseExp_or_term();
+        }else {
+            error(expFirst);
+        }
+
     }
 
     private void parseExp_or_term(){
@@ -361,8 +368,13 @@ public class Parser {
     }
 
     private void parseExp_and(){
-        parseExp_eq();
-        parseExp_and_term();
+        if (accept(expFirst)){
+            parseExp_eq();
+            parseExp_and_term();
+        }else {
+            error(expFirst);
+        }
+
     }
 
     private void parseExp_and_term(){
@@ -374,8 +386,12 @@ public class Parser {
     }
 
     private void parseExp_eq(){
-        parseExp_comp();
-        parseExp_eq_term();
+        if (accept(expFirst)){
+            parseExp_comp();
+            parseExp_eq_term();
+        }else {
+            error(expFirst);
+        }
     }
 
     private void parseExp_eq_term(){
@@ -387,8 +403,13 @@ public class Parser {
     }
 
     private void parseExp_comp(){
-        parseExp_add();
-        parseExp_comp_term();
+        if (accept(expFirst)){
+            parseExp_add();
+            parseExp_comp_term();
+        }else {
+            error(expFirst);
+        }
+
     }
 
     private void parseExp_comp_term(){
@@ -400,8 +421,13 @@ public class Parser {
     }
 
     private void parseExp_add(){
-        parseExp_mult();
-        parseExp_add_term();
+        if (accept(expFirst)){
+            parseExp_mult();
+            parseExp_add_term();
+        }else {
+            error(expFirst);
+        }
+
     }
 
     private void parseExp_add_term(){
@@ -413,8 +439,13 @@ public class Parser {
     }
 
     private void parseExp_mult(){
-        parseExp_lv2();
-        parseExp_mult_term();
+        if (accept(expFirst)){
+            parseExp_lv2();
+            parseExp_mult_term();
+        }else {
+            error(expFirst);
+        }
+
     }
 
     private void parseExp_mult_term(){
@@ -431,7 +462,6 @@ public class Parser {
             expect(TokenClass.LPAR);
             parseType();
             expect(TokenClass.RPAR);
-            parseExp_lv2();
         }else if (accept(TokenClass.ASTERIX)){
             nextToken();
             parseExp_lv2();
@@ -445,12 +475,19 @@ public class Parser {
             parseExp_lv2();
         }else if (accept(expBottomFirst)){
             parseExp_lv1();
+        }else {
+            error(expFirst);
         }
     }
 
     private void parseExp_lv1(){
-        parseExp_bottom();
-        parseExp_lv1_term();
+        if (accept(expBottomFirst)){
+            parseExp_bottom();
+            parseExp_lv1_term();
+        }else {
+            error(expBottomFirst);
+        }
+
     }
 
     private void parseExp_bottom(){

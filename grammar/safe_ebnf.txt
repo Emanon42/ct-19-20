@@ -97,7 +97,7 @@ exp_mult_term      ::= ASTERIX exp_lv2 exp_mult_term
                      | ε
 
 exp_lv2            ::= exp_lv1
-                     | SIZEOF LPAR type RPAR exp_lv2
+                     | SIZEOF LPAR type RPAR
                      | ASTERIX exp_lv2
                      | LPAR type RPAR exp_lv2
                      | MINUS exp_lv2
