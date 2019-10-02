@@ -226,7 +226,7 @@ public class Parser {
     }
 
     private void parseVarDecls() {
-        if (accept(typeList) && !lookAheadAccept(2, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR)){
+        if (accept(typeList) && !lookAheadAccept(2, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR) && !lookAheadAccept(4, TokenClass.LPAR)){
             parseType();
             expect(TokenClass.IDENTIFIER); // name of var
             if (accept(TokenClass.SC)){

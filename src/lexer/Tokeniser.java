@@ -380,6 +380,12 @@ public class Tokeniser {
             StringBuilder data = new StringBuilder();
             c = scanner.next();
 
+            // error for empty char literal
+            if (c == '\''){
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+
             // error for illegal newline char in string
             if (c == '\n' || c == '\r'){
                 error++;

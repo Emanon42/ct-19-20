@@ -1,4 +1,5 @@
 int main(){
+    "adasf
     if(a>1) {
         // Executes when the expression 1 is true
         if(sizeof(b)<=b*) {

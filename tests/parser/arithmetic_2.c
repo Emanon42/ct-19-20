@@ -3,7 +3,7 @@
 // };
 
 int main(){
-4<=b*;
+sizeof(char)<=b*3;
     // int foo;
     // struct ab abb;
     // char* bar;

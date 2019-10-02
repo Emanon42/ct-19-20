@@ -7,5 +7,6 @@ do
     echo executing tests/$1/$eachtest
     cmd=`java -cp bin Main -$1 tests/$1/$eachtest dummy.out`
     echo $cmd
+    echo 
 done
 ant clean > /dev/null 2>&1
