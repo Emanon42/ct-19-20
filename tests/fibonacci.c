@@ -7,6 +7,8 @@ void main() {
   int next;
   int c;
   char t;
+  c>=b>a==s!=k;
+  a+b>=sizeof(char)==cyka(b,v[10]);
 
   // read n from the standard input
   n = read_i();

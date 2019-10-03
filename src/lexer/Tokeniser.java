@@ -144,10 +144,8 @@ public class Tokeniser {
         // skip the single line comment
         if (c == '/' && scanner.hasNext() && scanner.peek() == '/'){
             //TODO: test single line comment mode
-            while (scanner.hasNext()){
-                if (scanner.next() == '\n'){
-                    return next();
-                }
+            while (scanner.hasNext() && scanner.next() != '\n'){
+                // loop but do nothing
             }
             return next(); // fix: single comment get recognized as DIV
         }
@@ -156,13 +154,29 @@ public class Tokeniser {
         if (c == '/' && scanner.hasNext() && scanner.peek() == '*'){
             //TODO: test multi-line comment mode
             scanner.next(); // fix: consume the '*'
-            while (scanner.hasNext()){
-                if (scanner.next() == '*' && scanner.hasNext() && scanner.peek() == '/'){
-                    scanner.next(); // fix: consume the last '/'
+
+            if (!scanner.hasNext()){
+                error++;
+                return new Token(TokenClass.INVALID, line, column);
+            }
+            
+            char thisChar;
+            char nextChar = scanner.next();
+
+            // loop until file end or comment end
+            while (true){
+                if (!scanner.hasNext()){
+                    error++;
+                    return new Token(TokenClass.INVALID, line, column);
+                }
+
+                thisChar = nextChar;
+                nextChar = scanner.next();
+
+                if (thisChar == '*' && nextChar == '/') {
                     return next();
                 }
             }
-            return next();
         }
 
 
@@ -352,6 +366,10 @@ public class Tokeniser {
                     c = scanner.next();
                     if (escapeChar.containsKey(c)){
                         data.append(escapeChar.get(c));
+                        if (!scanner.hasNext()){
+                            error++;
+                            return new Token(TokenClass.INVALID, line, column);
+                        }
                         c = scanner.next();
                     }else {
                         error++;
@@ -401,6 +419,10 @@ public class Tokeniser {
                 c = scanner.next();
                 if (escapeChar.containsKey(c)){
                     data.append(escapeChar.get(c));
+                    if (!scanner.hasNext()){
+                        error++;
+                        return new Token(TokenClass.INVALID, line, column);
+                    }
                     c = scanner.next();
                 }else {
                     error++;
