@@ -99,7 +99,7 @@ exp_mult_term      ::= ASTERIX exp_lv2 exp_mult_term
 exp_lv2            ::= exp_lv1
                      | SIZEOF LPAR type RPAR
                      | ASTERIX exp_lv2
-                     | LPAR type RPAR exp_lv2
+                     | LPAR type RPAR exp_lv2           # ambiguity here: peek 1 for exp_lv2 or exp_bottom
                      | MINUS exp_lv2
 
 exp_lv1            ::= exp_bottom exp_lv1_term

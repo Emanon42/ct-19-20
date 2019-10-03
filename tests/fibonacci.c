@@ -17,7 +17,7 @@ void main() {
   print_s((char*)"First ");
   print_i(n);
   print_s((char*)" terms of Fibonacci series are : ");
- 
+
   c = 0;
   while (c < n) {
     if ( c <= 1 )

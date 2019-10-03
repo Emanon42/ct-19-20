@@ -226,7 +226,30 @@ public class Parser {
     }
 
     private void parseVarDecls() {
-        if (accept(typeList) && !lookAheadAccept(2, TokenClass.LPAR) && !lookAheadAccept(3, TokenClass.LPAR) && !lookAheadAccept(4, TokenClass.LPAR)){
+        // TODO: bug here: int x; print(); <- will be recognized as funcall since '(' appear in lookahead 4
+        // int a()
+        // int* a()
+        // struct aa bb()
+        // struct aa* bb()
+
+
+        int offset = 0;
+        if (accept(typeList)){
+            // peek 1 for check '('
+            offset = 1;
+            // if struct, skip its name ident
+            if (accept(TokenClass.STRUCT)){
+                offset += 1;
+            }
+            // if pointer, skip the asterix
+            if (lookAheadAccept(offset, TokenClass.ASTERIX)){
+                offset += 1;
+            }
+            // skip the var/fun/stru ident
+            offset += 1;
+        }
+
+        if ((offset != 0) && accept(typeList) && lookAheadAccept(offset, TokenClass.SC, TokenClass.LSBR)){
             parseType();
             expect(TokenClass.IDENTIFIER); // name of var
             if (accept(TokenClass.SC)){
@@ -465,7 +488,7 @@ public class Parser {
         }else if (accept(TokenClass.ASTERIX)){
             nextToken();
             parseExp_lv2();
-        }else if (accept(TokenClass.LPAR)){
+        }else if (accept(TokenClass.LPAR) && lookAheadAccept(1, typeList)){
             nextToken();
             parseType();
             expect(TokenClass.RPAR);
