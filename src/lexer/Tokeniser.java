@@ -159,7 +159,7 @@ public class Tokeniser {
                 error++;
                 return new Token(TokenClass.INVALID, line, column);
             }
-            
+
             char thisChar;
             char nextChar = scanner.next();
 

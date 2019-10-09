@@ -1,8 +1,8 @@
 int main(){
     if(bla2(x,b)) {
-        // Executes when the expression 1 is true
+
         if(sizeof(char)<=b*3) {
-            // Executes when the expression 2 is true
+
             if (array[10])
             {
                 if (bla.dgs)
@@ -28,9 +28,9 @@ int main(){
         return b;
     }else{
         return b;
-	//Executes when expression 1 is false
+
         if((char)aab){
-            //Executes when expression 3 is true
+
         } 
         return b;
     } 
