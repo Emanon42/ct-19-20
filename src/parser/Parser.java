@@ -1,11 +1,14 @@
 package parser;
 
+import ast.*;
+
 import lexer.Token;
 import lexer.Tokeniser;
 import lexer.Token.TokenClass;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.stream.Stream;
 
@@ -63,11 +66,11 @@ public class Parser {
         this.tokeniser = tokeniser;
     }
 
-    public void parse() {
+    public Program parse() {
         // get the first token
         nextToken();
 
-        parseProgram();
+        return parseProgram();
     }
 
     public int getErrorCount() {
@@ -168,12 +171,13 @@ public class Parser {
     }
 
 
-    private void parseProgram() {
+    private Program parseProgram() {
         parseIncludes();
-        parseStructDecls();
-        parseVarDecls();
-        parseFunDecls();
+        List<StructTypeDecl> stds = parseStructDecls();
+        List<VarDecl> vds = parseVarDecls();
+        List<FunDecl> fds = parseFunDecls();
         expect(TokenClass.EOF);
+        return new Program(stds, vds, fds);
     }
 
     // includes are ignored, so does not need to return an AST node
@@ -186,7 +190,7 @@ public class Parser {
         // do nothing after if statement corresponding to branch of epsilon in ebnf
     }
 
-    private void parseStructDecls() {
+    private List<StructTypeDecl> parseStructDecls() {
         if (accept(TokenClass.STRUCT) && lookAheadAccept(2, TokenClass.LBRA)){
             nextToken(); // consume the struct token
             expect(TokenClass.IDENTIFIER);
@@ -196,6 +200,8 @@ public class Parser {
             expect(TokenClass.SC);
             parseStructDecls();
         }
+
+        return null;
     }
 
     private void parseType(){
@@ -225,7 +231,7 @@ public class Parser {
         }
     }
 
-    private void parseVarDecls() {
+    private List<VarDecl> parseVarDecls() {
         // TODO: bug here: int x; print(); <- will be recognized as funcall since '(' appear in lookahead 4
         // int a()
         // int* a()
@@ -265,9 +271,10 @@ public class Parser {
                 error(TokenClass.SC, TokenClass.LSBR);
             }
         }
+        return null;
     }
 
-    private void parseFunDecls() {
+    private List<FunDecl> parseFunDecls() {
         if (accept(typeList)){
             parseType();
             expect(TokenClass.IDENTIFIER);
@@ -277,7 +284,7 @@ public class Parser {
             parseBlock();
             parseFunDecls();
         }
-
+        return null;
     }
 
     private void parseParams(){

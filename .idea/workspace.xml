@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/desc/part2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desc/part2/fibonacci.c-ast-dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desc/part2/typing-rules/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desc/part2/typing-rules/rules.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desc/part2/typing-rules/rules.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grammar/abstract_grammar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/alpaca_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/ape_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/badger_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/bald_eagle_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/bat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/bear_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/blue_crab_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/budgerigar_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/burro_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/camel_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/capybara_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/cat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/chamois_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/chimpanzee_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/civet_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/coati_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/colt_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/cougar_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/crocodile_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/crow_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/donkey_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/dromedary_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/duckbill_platypus_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/elk_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/finch_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/gemsbok_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/gila_monster_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/gnu_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/goat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/gopher_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/impala_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/kangaroo_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/koala_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/lion_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/lovebird_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/lynx_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/mongoose_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/mule_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/mustang_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/mynah_bird_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/newt_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/ocelot_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/opossum_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/orangutan_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/parakeet_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/pig_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/polar_bear_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/porcupine_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/pronghorn_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/puma_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/puppy_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/rabbit_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/ram_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/rat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/rooster_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/salamander_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/scoreboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/sheep_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/sloth_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/starfish_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/tiger_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/warthog_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/waterbuck_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/weasel_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/wildcat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/wombat_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/woodchuck_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/yak_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scoreboard/zebu_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainPart1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/ASTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/ASTPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/ASTVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/Expr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/FunDecl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/Stmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/StructTypeDecl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/VarDecl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/VarExpr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parser/ParserPart1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/BaseSemanticVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/Scope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/SemanticVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sem/TypeCheckVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1R6GCzkjg0gR0REEavLaAV4SXuG" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ct-19-20" />
+      <option name="PROGRAM_PARAMETERS" value="-lexer tests/lexer/error/comment_unclose.c dummy.out" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="" />
+      <created>1568980008334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568980008334</updated>
+      <workItem from="1568980011396" duration="370000" />
+      <workItem from="1568990351813" duration="20908000" />
+      <workItem from="1569154602038" duration="4663000" />
+      <workItem from="1569188366243" duration="113000" />
+      <workItem from="1569328934209" duration="1661000" />
+      <workItem from="1569496350428" duration="14593000" />
+      <workItem from="1569844918986" duration="2066000" />
+      <workItem from="1569848895497" duration="214000" />
+      <workItem from="1569956250024" duration="17165000" />
+      <workItem from="1570015449091" duration="4178000" />
+      <workItem from="1570032103949" duration="8246000" />
+      <workItem from="1570093165717" duration="9971000" />
+      <workItem from="1570210660392" duration="30000" />
+      <workItem from="1570211719952" duration="16000" />
+      <workItem from="1570212697313" duration="1516000" />
+      <workItem from="1570295747412" duration="1023000" />
+      <workItem from="1570714275042" duration="751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>173</line>
+          <properties class="parser.Parser" method="parseProgram">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>183</line>
+          <properties class="parser.Parser" method="parseIncludes">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>192</line>
+          <properties class="parser.Parser" method="parseStructDecls">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>206</line>
+          <properties class="parser.Parser" method="parseType">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>224</line>
+          <properties class="parser.Parser" method="parseVarDecls_pos">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>233</line>
+          <properties class="parser.Parser" method="parseVarDecls">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>276</line>
+          <properties class="parser.Parser" method="parseFunDecls">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>289</line>
+          <properties class="parser.Parser" method="parseParams">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>297</line>
+          <properties class="parser.Parser" method="parseParams_kle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>310</line>
+          <properties class="parser.Parser" method="parseBlock">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>317</line>
+          <properties class="parser.Parser" method="parseStmts_kle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>324</line>
+          <properties class="parser.Parser" method="parseStmts">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>488</line>
+          <properties class="parser.Parser" method="parseExp_lv2">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>480</line>
+          <properties class="parser.Parser" method="parseExp_mult_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>470</line>
+          <properties class="parser.Parser" method="parseExp_mult">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>462</line>
+          <properties class="parser.Parser" method="parseExp_add_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>452</line>
+          <properties class="parser.Parser" method="parseExp_add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>444</line>
+          <properties class="parser.Parser" method="parseExp_comp_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>434</line>
+          <properties class="parser.Parser" method="parseExp_comp">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>426</line>
+          <properties class="parser.Parser" method="parseExp_eq_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>417</line>
+          <properties class="parser.Parser" method="parseExp_eq">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>409</line>
+          <properties class="parser.Parser" method="parseExp_and_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>399</line>
+          <properties class="parser.Parser" method="parseExp_and">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>391</line>
+          <properties class="parser.Parser" method="parseExp_or_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>381</line>
+          <properties class="parser.Parser" method="parseExp_or">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>373</line>
+          <properties class="parser.Parser" method="parseExp">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>367</line>
+          <properties class="parser.Parser" method="parseExp_opt">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>360</line>
+          <properties class="parser.Parser" method="parseStmt_else">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>512</line>
+          <properties class="parser.Parser" method="parseExp_lv1">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>522</line>
+          <properties class="parser.Parser" method="parseExp_bottom">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>541</line>
+          <properties class="parser.Parser" method="parseExp_lv1_term">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>554</line>
+          <properties class="parser.Parser" method="parseFn_call">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>561</line>
+          <properties class="parser.Parser" method="parseArgs_opt">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
+          <line>568</line>
+          <properties class="parser.Parser" method="parseArgs_kle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
+          <line>391</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
