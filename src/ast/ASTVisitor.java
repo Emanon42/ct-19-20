@@ -23,6 +23,11 @@ public interface ASTVisitor<T> {
     public T visitValueAtExpr(ValueAtExpr vae);
     public T visitSizeOfExpr(SizeOfExpr soe);
     public T visitTypecastExpr(TypecastExpr te);
+    public T visitExprStmt(ExprStmt es);
+    public T visitWhile(While w);
+    public T visitIf(If i);
+    public T visitAssign(Assign a);
+    public T visitReturn(Return r);
 
     // to complete ... (should have one visit method for each concrete AST node class)
 }

@@ -85,6 +85,120 @@ public class ASTPrinter implements ASTVisitor<Void> {
         return null;
     }
 
+    @Override
+    public Void visitPointerType(PointerType pt) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitStructType(StructType st) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitArrayType(ArrayType at) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitIntLiteral(IntLiteral il) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitStrLiteral(StrLiteral sl) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitChrLiteral(ChrLiteral cl) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitFunCallExpr(FunCallExpr fce) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitBinOp(BinOp bo) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitOp(Op o) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitArrayAccessExpr(ArrayAccessExpr aae) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitFieldAccessExpr(FieldAccessExpr fae) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitValueAtExpr(ValueAtExpr vae) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitSizeOfExpr(SizeOfExpr soe) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitTypecastExpr(TypecastExpr te) {
+//to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitExprStmt(ExprStmt es) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitWhile(While w) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitIf(If i) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitAssign(Assign a) {
+        //to be completed...
+        return null;
+    }
+
+    @Override
+    public Void visitReturn(Return r) {
+        //to be completed...
+        return null;
+    }
+
     // to complete ...
     
 }
