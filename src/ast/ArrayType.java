@@ -3,11 +3,11 @@ package ast;
 public class ArrayType implements Type {
 
     public final Type type;
-    public final int index;
+    public final int capacity;
 
     public ArrayType(Type t, int i){
         this.type = t;
-        this.index = i;
+        this.capacity = i;
     }
 
     public <T> T accept(ASTVisitor<T> v){
