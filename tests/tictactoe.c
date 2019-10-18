@@ -2,6 +2,24 @@
 // Written by Daniel Hillerström
 
 #include "minic-stdlib.h"
+struct nlq{
+    int a;
+    struct foo foo1;
+    char* b;
+    struct foo2* foo2;
+};
+struct nlq2{
+    int a;
+    struct foo foo1;
+    char* b;
+    struct foo2* foo2;
+};
+struct nl234q{
+    int a;
+    struct foo foo1;
+    char* b;
+    struct foo2* foo2;
+};
 // Board layout
 char a11; char a12; char a13;
 char a21; char a22; char a23;

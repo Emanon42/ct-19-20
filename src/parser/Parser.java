@@ -6,10 +6,7 @@ import lexer.Token;
 import lexer.Tokeniser;
 import lexer.Token.TokenClass;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 import java.util.stream.Stream;
 
 
@@ -173,9 +170,11 @@ public class Parser {
 
     private Program parseProgram() {
         parseIncludes();
-        List<StructTypeDecl> stds = parseStructDecls();
-        List<VarDecl> vds = parseVarDecls();
-        List<FunDecl> fds = parseFunDecls();
+        List<StructTypeDecl> stds = parseStructDecls(new ArrayList<>());
+        List<VarDecl> vds = parseVarDecls(new ArrayList<>());
+//        List<FunDecl> fds = new ArrayList<>();
+//        parseFunDecls();
+        List<FunDecl> fds = parseFunDecls(new ArrayList<>());
         expect(TokenClass.EOF);
         return new Program(stds, vds, fds);
     }
@@ -190,48 +189,68 @@ public class Parser {
         // do nothing after if statement corresponding to branch of epsilon in ebnf
     }
 
-    private List<StructTypeDecl> parseStructDecls() {
+    private List<StructTypeDecl> parseStructDecls(List<StructTypeDecl> stds) {
         if (accept(TokenClass.STRUCT) && lookAheadAccept(2, TokenClass.LBRA)){
             nextToken(); // consume the struct token
-            expect(TokenClass.IDENTIFIER);
+            String struIdent = null;
+            if (accept(TokenClass.IDENTIFIER)){
+                struIdent = token.data;
+                nextToken();
+            }else {
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            //expect(TokenClass.IDENTIFIER);
             expect(TokenClass.LBRA);
-            parseVarDecls_pos(); // one or more field
+            List<VarDecl> vds = parseVarDecls_pos(new ArrayList<>()); // one or more field
             expect(TokenClass.RBRA);
             expect(TokenClass.SC);
-            parseStructDecls();
+            stds.add(new StructTypeDecl(new StructType(struIdent), vds));
+            parseStructDecls(stds);
         }
 
-        return null;
+        return stds;
     }
 
-    private void parseType(){
+    private Type parseType(){
+        Type innerType = null;
         if (accept(TokenClass.STRUCT)){
             nextToken();
-            expect(TokenClass.IDENTIFIER); // name of struct type
+            if (accept(TokenClass.IDENTIFIER)){
+                innerType = new StructType(token.data);
+                nextToken();
+            }else {
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            //expect(TokenClass.IDENTIFIER); // name of struct type
         }else if (accept(TokenClass.INT, TokenClass.CHAR, TokenClass.VOID)){
+            innerType = BaseType.fromTokenClass(token.tokenClass);
             nextToken();
         }else{
             // raise an error if not match type keyword
             error(typeList);
-            return;
+            return null;
         }
-        // skip the '*'
+        // return pointer type
         if (accept(TokenClass.ASTERIX)){
             nextToken();
+            return new PointerType(innerType);
         }
-
+        return innerType;
     }
 
-    private void parseVarDecls_pos(){
+    private List<VarDecl> parseVarDecls_pos(List<VarDecl> vds){
         if (accept(typeList)){
-            parseVarDecls();
+            return parseVarDecls(vds);
         }else {
             // if not match type decl, raise an error
             error(typeList);
+            return null;
         }
     }
 
-    private List<VarDecl> parseVarDecls() {
+    private List<VarDecl> parseVarDecls(List<VarDecl> vds) {
         // TODO: bug here: int x; print(); <- will be recognized as funcall since '(' appear in lookahead 4
         // int a()
         // int* a()
@@ -256,321 +275,462 @@ public class Parser {
         }
 
         if ((offset != 0) && accept(typeList) && lookAheadAccept(offset, TokenClass.SC, TokenClass.LSBR)){
-            parseType();
-            expect(TokenClass.IDENTIFIER); // name of var
+            Type type = parseType();
+            String varName = null;
+            if (accept(TokenClass.IDENTIFIER)){
+                varName = token.data;
+                nextToken();
+            }else{
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            //expect(TokenClass.IDENTIFIER); // name of var
             if (accept(TokenClass.SC)){
                 nextToken();
-                parseVarDecls();
+                vds.add(new VarDecl(type, varName));
+                parseVarDecls(vds);
             }else if (accept(TokenClass.LSBR)){
                 nextToken();
-                expect(TokenClass.INT_LITERAL);
+                String index = null;
+                if (accept(TokenClass.INT_LITERAL)){
+                    index = token.data;
+                    nextToken();
+                }else {
+                    error(TokenClass.INT_LITERAL);
+                    return null;
+                }
+                //expect(TokenClass.INT_LITERAL);
                 expect(TokenClass.RSBR);
                 expect(TokenClass.SC);
-                parseVarDecls();
+                type = new ArrayType(type, Integer.parseInt(index));
+                vds.add(new VarDecl(type, varName));
+                parseVarDecls(vds);
             }else {
                 error(TokenClass.SC, TokenClass.LSBR);
+                return null;
             }
         }
-        return null;
+        return vds;
     }
 
-    private List<FunDecl> parseFunDecls() {
+    private List<FunDecl> parseFunDecls(List<FunDecl> fds) {
         if (accept(typeList)){
-            parseType();
-            expect(TokenClass.IDENTIFIER);
+            Type type = null;
+            String ident = null;
+            Block block = null;
+            type = parseType();
+            if (accept(TokenClass.IDENTIFIER)){
+                ident = token.data;
+                nextToken();
+            }else {
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            //expect(TokenClass.IDENTIFIER);
             expect(TokenClass.LPAR);
-            parseParams();
+            List<VarDecl> params = parseParams(new ArrayList<>());
             expect(TokenClass.RPAR);
-            parseBlock();
-            parseFunDecls();
+            block = parseBlock();
+            fds.add(new FunDecl(type, ident, params, block));
+            parseFunDecls(fds);
         }
-        return null;
+        return fds;
     }
-
-    private void parseParams(){
+    // possible param bugs here
+    private List<VarDecl> parseParams(List<VarDecl> params){
         if (accept(typeList)){
-            parseType();
-            expect(TokenClass.IDENTIFIER);
-            parseParams_kle();
+            Type type = parseType();
+            String varName = null;
+            if (accept(TokenClass.IDENTIFIER)){
+                varName = token.data;
+                nextToken();
+            }else {
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            params.add(new VarDecl(type, varName));
+            //expect(TokenClass.IDENTIFIER);
+            params = parseParams_kle(params);
         }
+        return params;
     }
 
-    private void parseParams_kle(){
+    private List<VarDecl> parseParams_kle(List<VarDecl> params){
         if (accept(TokenClass.COMMA)){
             nextToken();
             if (accept(typeList)){
-                parseType();
-                expect(TokenClass.IDENTIFIER);
+                Type type = parseType();
+                String varName = null;
+                if (accept(TokenClass.IDENTIFIER)){
+                    varName = token.data;
+                    nextToken();
+                }else {
+                    error(TokenClass.IDENTIFIER);
+                    return null;
+                }
+                params.add(new VarDecl(type, varName));
+                //expect(TokenClass.IDENTIFIER);
             }else {
                 error(typeList);
             }
-            parseParams_kle();
+            parseParams_kle(params);
         }
+        return params;
     }
 
-    private void parseBlock(){
+    private Block parseBlock(){
         expect(TokenClass.LBRA);
-        parseVarDecls();
-        parseStmts_kle();
+        List<VarDecl> vds = parseVarDecls(new ArrayList<>());
+        List<Stmt> stmts = parseStmts_kle(new ArrayList<>());
         expect(TokenClass.RBRA);
+        return new Block(vds, stmts);
     }
 
-    private void parseStmts_kle(){
+    private List<Stmt> parseStmts_kle(List<Stmt> stmts){
         if (accept(stmtFirst)){
-            parseStmts();
-            parseStmts_kle();
+            Stmt s = parseStmts();
+            stmts.add(s);
+            parseStmts_kle(stmts);
         }
+        return stmts;
     }
-
-    private void parseStmts(){
+    // actually parse SINGLE stmt
+    private Stmt parseStmts(){
         if (accept(TokenClass.LBRA)){
-            parseBlock();
+            Block b = parseBlock();
+            return b;
         }else if (accept(TokenClass.WHILE)){
             nextToken();
             expect(TokenClass.LPAR);
-            parseExp();
+            Expr whileExp = parseExp();
             expect(TokenClass.RPAR);
-            parseStmts();
+            Stmt whileStmt = parseStmts();// belong to while
+            return new While(whileExp, whileStmt);
         }else if (accept(TokenClass.IF)){
             nextToken();
             expect(TokenClass.LPAR);
-            parseExp();
+            Expr ifExp = parseExp();
             expect(TokenClass.RPAR);
-            parseStmts();
-            parseStmt_else();
+            Stmt ifStmt = parseStmts();// belong to if
+            Stmt elseStmt = parseStmt_else();
+            return new If(ifExp, ifStmt, elseStmt);
         }else if (accept(TokenClass.RETURN)){
             nextToken();
-            parseExp_opt();
+            Expr returnExpr = null;
+            returnExpr = parseExp_opt();
             expect(TokenClass.SC);
+            return new Return(returnExpr);
         }else if (accept(expFirst)){
-            parseExp();
+            Expr lhs = parseExp();
+            Expr rhs = null;
             if (accept(TokenClass.ASSIGN)){
                 nextToken();
-                parseExp();
+                rhs = parseExp();
                 expect(TokenClass.SC);
+                return new Assign(lhs, rhs);
             }else if (accept(TokenClass.SC)){
                 nextToken();
+                return new ExprStmt(lhs);
             }else {
                 error(TokenClass.SC, TokenClass.ASSIGN);
+                return null;
             }
         }else{
             error(stmtFirst);
+            return null;
         }
     }
 
-    private void parseStmt_else(){
+    private Stmt parseStmt_else(){
         if (accept(TokenClass.ELSE)){
             nextToken();
-            parseStmts();
+            return parseStmts();
         }
+        return null;
     }
 
-    private void parseExp_opt(){
+    private Expr parseExp_opt(){
         if (accept(expFirst)){
-            parseExp();
+            return parseExp();
         }
+        return null;
     }
 
-    private void parseExp(){
+    private Expr parseExp(){
         if (accept(expFirst)){
-            parseExp_or();
+            return parseExp_or();
         }else {
             error(expFirst);
+            return null;
         }
     }
-
-    private void parseExp_or(){
+    // how does first method know the operator in second method???
+    private Expr parseExp_or(){
         if (accept(expFirst)){
-            parseExp_and();
-            parseExp_or_term();
+            Expr lhs = parseExp_and();
+            lhs = parseExp_or_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
 
     }
 
-    private void parseExp_or_term(){
+    private Expr parseExp_or_term(Expr lhs){
         if (accept(TokenClass.OR)){
             nextToken();
-            parseExp_and();
-            parseExp_or_term();
+            Expr rhs = parseExp_and();
+            lhs = new BinOp(lhs, Op.OR, rhs);
+            parseExp_or_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseExp_and(){
+    private Expr parseExp_and(){
         if (accept(expFirst)){
-            parseExp_eq();
-            parseExp_and_term();
+            Expr lhs = parseExp_eq();
+            lhs = parseExp_and_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
-
     }
 
-    private void parseExp_and_term(){
+    private Expr parseExp_and_term(Expr lhs){
         if (accept(TokenClass.AND)){
             nextToken();
-            parseExp_eq();
-            parseExp_and_term();
+            Expr rhs = parseExp_eq();
+            lhs = new BinOp(lhs, Op.AND, rhs);
+            parseExp_and_term(lhs);
         }
+        return lhs;
     }
-
-    private void parseExp_eq(){
+    // how does first method know the operator in second method???
+    private Expr parseExp_eq(){
         if (accept(expFirst)){
-            parseExp_comp();
-            parseExp_eq_term();
+            Expr lhs = parseExp_comp();
+            lhs = parseExp_eq_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
     }
 
-    private void parseExp_eq_term(){
+    private Expr parseExp_eq_term(Expr lhs){
         if (accept(TokenClass.EQ, TokenClass.NE)){
+            Op op = Op.fromTokenClass(token.tokenClass);
             nextToken();
-            parseExp_comp();
-            parseExp_eq_term();
+            Expr rhs = parseExp_comp();
+            lhs = new BinOp(lhs, op, rhs);
+            parseExp_eq_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseExp_comp(){
+    private Expr parseExp_comp(){
         if (accept(expFirst)){
-            parseExp_add();
-            parseExp_comp_term();
+            Expr lhs = parseExp_add();
+            lhs = parseExp_comp_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
-
     }
 
-    private void parseExp_comp_term(){
+    private Expr parseExp_comp_term(Expr lhs){
         if (accept(TokenClass.LT, TokenClass.GT, TokenClass.LE, TokenClass.GE)){
+            Op op = Op.fromTokenClass(token.tokenClass);
             nextToken();
-            parseExp_add();
-            parseExp_comp_term();
+            Expr rhs = parseExp_add();
+            lhs = new BinOp(lhs, op, rhs);
+            parseExp_comp_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseExp_add(){
+    private Expr parseExp_add(){
         if (accept(expFirst)){
-            parseExp_mult();
-            parseExp_add_term();
+            Expr lhs = parseExp_mult();
+            lhs = parseExp_add_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
-
     }
 
-    private void parseExp_add_term(){
+    private Expr parseExp_add_term(Expr lhs){
         if (accept(TokenClass.PLUS, TokenClass.MINUS)){
+            Op op = Op.fromTokenClass(token.tokenClass);
             nextToken();
-            parseExp_mult();
-            parseExp_add_term();
+            Expr rhs = parseExp_mult();
+            lhs = new BinOp(lhs, op, rhs);
+            parseExp_add_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseExp_mult(){
+    private Expr parseExp_mult(){
         if (accept(expFirst)){
-            parseExp_lv2();
-            parseExp_mult_term();
+            Expr lhs = parseExp_lv2();
+            lhs = parseExp_mult_term(lhs);
+            return lhs;
         }else {
             error(expFirst);
+            return null;
         }
 
     }
 
-    private void parseExp_mult_term(){
+    private Expr parseExp_mult_term(Expr lhs){
         if (accept(TokenClass.ASTERIX, TokenClass.DIV, TokenClass.REM)){
+            Op op = Op.fromTokenClass(token.tokenClass);
             nextToken();
-            parseExp_lv2();
-            parseExp_mult_term();
+            Expr rhs = parseExp_lv2();
+            lhs = new BinOp(lhs, op, rhs);
+            parseExp_mult_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseExp_lv2(){
+    private Expr parseExp_lv2(){
         if (accept(TokenClass.SIZEOF)){
             nextToken();
             expect(TokenClass.LPAR);
-            parseType();
+            Type t = parseType();
             expect(TokenClass.RPAR);
-        }else if (accept(TokenClass.ASTERIX)){
+            return new SizeOfExpr(t);
+        }else if (accept(TokenClass.ASTERIX)){// dereference(valueAt)
             nextToken();
-            parseExp_lv2();
-        }else if (accept(TokenClass.LPAR) && lookAheadAccept(1, typeList)){
+            Expr valueAt = parseExp_lv2();
+            return new ValueAtExpr(valueAt);
+        }else if (accept(TokenClass.LPAR) && lookAheadAccept(1, typeList)){// type cast
             nextToken();
-            parseType();
+            Type target = parseType();
             expect(TokenClass.RPAR);
-            parseExp_lv2();
+            Expr toCast = parseExp_lv2();
+            return new TypecastExpr(target, toCast);
         }else if (accept(TokenClass.MINUS)){
             nextToken();
-            parseExp_lv2();
+            Expr e = parseExp_lv2();
+            return new BinOp(new IntLiteral(0), Op.SUB, e);
         }else if (accept(expBottomFirst)){
-            parseExp_lv1();
+            return parseExp_lv1();
         }else {
             error(expFirst);
+            return null;
         }
     }
 
-    private void parseExp_lv1(){
+    private Expr parseExp_lv1(){
         if (accept(expBottomFirst)){
-            parseExp_bottom();
-            parseExp_lv1_term();
+            Expr lhs = parseExp_bottom();
+            lhs = parseExp_lv1_term(lhs);
+            return lhs;
         }else {
             error(expBottomFirst);
+            return null;
         }
-
     }
 
-    private void parseExp_bottom(){
+    private Expr parseExp_bottom(){
         if (accept(expBottomFirst)){
             if (accept(TokenClass.LPAR)){
                 nextToken();
-                parseExp();
+                Expr e = parseExp();
                 expect(TokenClass.RPAR);
+                return e;
             }else if (accept(TokenClass.INT_LITERAL, TokenClass.CHAR_LITERAL, TokenClass.STRING_LITERAL)){
+                Expr lit = null;
+                if (token.tokenClass == TokenClass.INT_LITERAL){
+                    lit = new IntLiteral(Integer.parseInt(token.data));
+                }else if (token.tokenClass == TokenClass.CHAR_LITERAL){
+                    lit = new ChrLiteral(token.data.charAt(0));
+                }else {
+                    lit = new StrLiteral(token.data);
+                }
                 nextToken();
+                return lit;
             }else if (accept(TokenClass.IDENTIFIER) && lookAheadAccept(1, TokenClass.LPAR)){
                 // fn_call
-                parseFn_call();
+                return parseFn_call();
             }else if (accept(TokenClass.IDENTIFIER)){
+                Expr ident = new VarExpr(token.data);
                 nextToken();
+                return ident;
+            }else {
+                error(TokenClass.LPAR, TokenClass.INT_LITERAL, TokenClass.CHAR_LITERAL, TokenClass.STRING_LITERAL, TokenClass.IDENTIFIER);
+                return null;
             }
         }else {
             error(expBottomFirst);
+            return null;
         }
     }
 
-    private void parseExp_lv1_term(){
-        if (accept(TokenClass.DOT)){
+    private Expr parseExp_lv1_term(Expr lhs){
+        if (accept(TokenClass.DOT)){// field access
             nextToken();
-            expect(TokenClass.IDENTIFIER);
-            parseExp_lv1_term();
-        }else if (accept(TokenClass.LSBR)){
+            String ident = null;
+            if (accept(TokenClass.IDENTIFIER)){
+                ident = token.data;
+                nextToken();
+            }else {
+                error(TokenClass.IDENTIFIER);
+                return null;
+            }
+            // TODO: add test for nested field access - stru1.stru2.x...
+            lhs = new FieldAccessExpr(lhs, ident);
+            //expect(TokenClass.IDENTIFIER);
+            parseExp_lv1_term(lhs);
+        }else if (accept(TokenClass.LSBR)){// array access
             nextToken();
-            parseExp();
+            Expr index = parseExp();
             expect(TokenClass.RSBR);
-            parseExp_lv1_term();
+            lhs = new ArrayAccessExpr(lhs, index);
+            parseExp_lv1_term(lhs);
         }
+        return lhs;
     }
 
-    private void parseFn_call(){
-        expect(TokenClass.IDENTIFIER);
+    private Expr parseFn_call(){
+        String name = null;
+        if (accept(TokenClass.IDENTIFIER)){
+            name = token.data;
+            nextToken();
+        }else {
+            error(TokenClass.IDENTIFIER);
+            return null;
+        }
+        //expect(TokenClass.IDENTIFIER);
         expect(TokenClass.LPAR);
-        parseArgs_opt();
+        List<Expr> exprs = parseArgs_opt(new ArrayList<>());
         expect(TokenClass.RPAR);
+        return new FunCallExpr(name, exprs);
     }
 
-    private void parseArgs_opt(){
+    private List<Expr> parseArgs_opt(List<Expr> exprs){
         if (accept(expFirst)){
-            parseExp();
-            parseArgs_kle();
+            Expr e = parseExp();
+            exprs.add(e);
+            exprs = parseArgs_kle(exprs);
+            return exprs;
         }
+        return exprs;
     }
 
-    private void parseArgs_kle(){
+    private List<Expr> parseArgs_kle(List<Expr> exprs){
         if (accept(TokenClass.COMMA)){
             nextToken();
-            parseExp();
-            parseArgs_kle();
+            Expr e = parseExp();
+            exprs.add(e);
+            parseArgs_kle(exprs);
+            return exprs;
         }
+        return exprs;
     }
 }

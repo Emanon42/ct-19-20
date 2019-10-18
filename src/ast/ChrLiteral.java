@@ -1,6 +1,6 @@
 package ast;
 
-public class ChrLiteral {
+public class ChrLiteral extends Expr{
     public final char value;
     public ChrLiteral(char c){
         this.value = c;

@@ -2,7 +2,7 @@ package ast;
 
 import java.util.List;
 
-public class FunCallExpr {
+public class FunCallExpr extends Expr{
     public final String ident;
     public final List<Expr> exprs;
     public FunCallExpr(String s, List<Expr> exprs){

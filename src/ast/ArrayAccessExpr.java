@@ -1,6 +1,6 @@
 package ast;
 
-public class ArrayAccessExpr implements ASTNode{
+public class ArrayAccessExpr extends Expr{
     public final Expr array;
     public final Expr index;
 

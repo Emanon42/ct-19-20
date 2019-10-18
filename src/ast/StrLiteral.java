@@ -1,6 +1,6 @@
 package ast;
 
-public class StrLiteral {
+public class StrLiteral extends Expr{
     public final String value;
     public StrLiteral(String s){
         this.value = s;

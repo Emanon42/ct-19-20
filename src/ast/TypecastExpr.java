@@ -1,6 +1,6 @@
 package ast;
 
-public class TypecastExpr implements ASTNode{
+public class TypecastExpr extends Expr{
     public final Type type;
     public final Expr expr;
     public TypecastExpr(Type t, Expr e){

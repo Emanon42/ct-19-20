@@ -1,6 +1,6 @@
 package ast;
 
-public class FieldAccessExpr {
+public class FieldAccessExpr extends Expr{
     public final Expr stru;
     public final String field;
 

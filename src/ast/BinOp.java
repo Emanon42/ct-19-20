@@ -1,6 +1,6 @@
 package ast;
 
-public class BinOp {
+public class BinOp extends Expr{
     public final Expr lhs;
     public final Expr rhs;
     public final Op operator;
