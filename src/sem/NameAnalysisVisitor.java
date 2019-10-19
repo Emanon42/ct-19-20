@@ -3,10 +3,28 @@ package sem;
 import ast.*;
 
 public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
+	public Scope scope;
+
+	public NameAnalysisVisitor(){
+		scope = new Scope();
+	}
+
+	public NameAnalysisVisitor(Scope s){
+		this.scope = s;
+	}
 
 	@Override
-	public Void visitBaseType(BaseType bt) {
+	public Void visitProgram(Program p) {
 		// To be completed...
+		for (StructTypeDecl std : p.structTypeDecls){
+			visitStructTypeDecl(std);
+		}
+		for (VarDecl vd : p.varDecls){
+			visitVarDecl(vd);
+		}
+		for (FunDecl fd : p.funDecls){
+			visitFunDecl(fd);
+		}
 		return null;
 	}
 
@@ -15,6 +33,23 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 		// To be completed...
 		return null;
 	}
+
+
+
+
+
+
+
+
+
+
+	@Override
+	public Void visitBaseType(BaseType bt) {
+		// To be completed...
+		return null;
+	}
+
+
 
 	@Override
 	public Void visitBlock(Block b) {
@@ -29,11 +64,7 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 	}
 
 
-	@Override
-	public Void visitProgram(Program p) {
-		// To be completed...
-		return null;
-	}
+
 
 	@Override
 	public Void visitVarDecl(VarDecl vd) {

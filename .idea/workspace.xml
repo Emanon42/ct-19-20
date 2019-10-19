@@ -3,21 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ArrayAccessExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayAccessExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BinOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BinOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ChrLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ChrLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/FieldAccessExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FieldAccessExpr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/FunCallExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunCallExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/IntLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/IntLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Op.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Op.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/SizeOfExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/SizeOfExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/StrLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StrLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/TypecastExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/TypecastExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ValueAtExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ValueAtExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tictactoe.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tictactoe.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/Symbol.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -42,7 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,7 +83,9 @@
       <workItem from="1570796676153" duration="642000" />
       <workItem from="1571242665641" duration="599000" />
       <workItem from="1571330947817" duration="6673000" />
-      <workItem from="1571407413273" duration="21227000" />
+      <workItem from="1571407413273" duration="21518000" />
+      <workItem from="1571438921655" duration="185000" />
+      <workItem from="1571501816352" duration="5605000" />
     </task>
     <servers />
   </component>
