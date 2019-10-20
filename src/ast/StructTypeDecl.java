@@ -3,9 +3,6 @@ package ast;
 import java.util.List;
 
 public class StructTypeDecl implements ASTNode {
-
-
-
     public final StructType st;
     public final List<VarDecl> varDecls;
 

@@ -2,19 +2,36 @@ package sem;
 
 import ast.*;
 
+import java.util.Hashtable;
+import java.util.Map;
+
 public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 	public Scope scope;
+	public Map<String, StruTypeSymbol> globalStruTypeTable;
 
 	public NameAnalysisVisitor(){
-		scope = new Scope();
+		this.scope = new Scope();
+		globalStruTypeTable = new Hashtable<>();
 	}
 
 	public NameAnalysisVisitor(Scope s){
 		this.scope = s;
+		globalStruTypeTable = new Hashtable<>();
+	}
+
+	private boolean notDeclared(String name){
+		Symbol s = scope.lookupCurrent(name);
+		if (s == null){
+			return true;
+		}else {
+			error("redefinition of \"" + s.name + "\" as different symbol");
+			return false;
+		}
 	}
 
 	@Override
 	public Void visitProgram(Program p) {
+
 		// To be completed...
 		for (StructTypeDecl std : p.structTypeDecls){
 			visitStructTypeDecl(std);
@@ -30,168 +47,223 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 
 	@Override
 	public Void visitStructTypeDecl(StructTypeDecl sts) {
-		// To be completed...
+		// check in global struct type table instead of scope
+		if (!globalStruTypeTable.containsKey(sts.st.ident)){
+
+			// load to global struct type table
+			StruTypeSymbol to_put = new StruTypeSymbol(sts);
+			this.globalStruTypeTable.put(to_put.name, to_put);
+
+			sts.st.accept(this); // visit its first subnode: StructType
+			Scope oldScope = this.scope; // save current scope
+			this.scope = new Scope(oldScope); // create and switch to new inner scope to process the vardecls
+			for (VarDecl vd : sts.varDecls){
+				// early check for "nested define struct field" and terminate
+				if (vd.type.isStructType()){
+					StructType to_check = (StructType) vd.type;
+					if (to_check.ident.equals(sts.st.ident)){
+						error("field has incomplete type " + sts.st.ident);
+						break;
+					}
+				}
+				visitVarDecl(vd);
+			}
+			this.scope = oldScope; // switch back
+		}else {
+			error("struct type: " + sts.st.ident + " has been declared!");
+		}
 		return null;
 	}
-
-
-
-
-
-
-
-
-
-
-	@Override
-	public Void visitBaseType(BaseType bt) {
-		// To be completed...
-		return null;
-	}
-
-
-
-	@Override
-	public Void visitBlock(Block b) {
-		// To be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitFunDecl(FunDecl p) {
-		// To be completed...
-		return null;
-	}
-
-
-
 
 	@Override
 	public Void visitVarDecl(VarDecl vd) {
-		// To be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitVarExpr(VarExpr v) {
-		// To be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitPointerType(PointerType pt) {
-		//to be completed...
+		if (notDeclared(vd.varName)){
+			vd.type.accept(this);
+			this.scope.put(new VarSymbol(vd));
+		}
 		return null;
 	}
 
 	@Override
 	public Void visitStructType(StructType st) {
-		//to be completed...
+		if (globalStruTypeTable.containsKey(st.ident)){
+			// possible multiple assign to same value here. maybe FIX later?
+			st.decl = globalStruTypeTable.get(st.ident).std;
+		}else {
+			error("field has incomplete type " + st.ident);
+		}
+		return null;
+	}
+
+	@Override
+	public Void visitBaseType(BaseType bt) {
+		return null; // do nothing
+	}
+
+	@Override
+	public Void visitPointerType(PointerType pt) {
+		pt.type.accept(this);
 		return null;
 	}
 
 	@Override
 	public Void visitArrayType(ArrayType at) {
-		//to be completed...
+		at.type.accept(this);
 		return null;
 	}
 
 	@Override
-	public Void visitIntLiteral(IntLiteral il) {
-		//to be completed...
+	public Void visitFunDecl(FunDecl p) {
+		if (notDeclared(p.name)){
+			scope.put(new FnSymbol(p));
+
+			Scope oldScope = this.scope;
+			this.scope = new Scope(oldScope);
+
+			for (VarDecl vd : p.params){
+				visitVarDecl(vd);
+			}
+			visitBlock(p.block);
+
+			this.scope = oldScope;
+
+		}
 		return null;
 	}
 
 	@Override
-	public Void visitStrLiteral(StrLiteral sl) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitChrLiteral(ChrLiteral cl) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitFunCallExpr(FunCallExpr fce) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitBinOp(BinOp bo) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitOp(Op o) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitArrayAccessExpr(ArrayAccessExpr aae) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitFieldAccessExpr(FieldAccessExpr fae) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitValueAtExpr(ValueAtExpr vae) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitSizeOfExpr(SizeOfExpr soe) {
-		//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitTypecastExpr(TypecastExpr te) {
-//to be completed...
-		return null;
-	}
-
-	@Override
-	public Void visitExprStmt(ExprStmt es) {
-		//to be completed...
+	public Void visitBlock(Block b) {
+		for (VarDecl vd : b.varDecls){
+			visitVarDecl(vd);
+		}
+		for (Stmt s : b.stmts){
+			s.accept(this);
+		}
 		return null;
 	}
 
 	@Override
 	public Void visitWhile(While w) {
-		//to be completed...
+		w.expr.accept(this);
+		w.stmt.accept(this);
 		return null;
 	}
 
 	@Override
 	public Void visitIf(If i) {
-		//to be completed...
+		i.expr.accept(this);
+		i.stmt.accept(this);
+		if (i.elseStmt != null) {
+			i.elseStmt.accept(this);
+		}
 		return null;
 	}
 
 	@Override
 	public Void visitAssign(Assign a) {
-		//to be completed...
+		a.lhs.accept(this);
+		a.rhs.accept(this);
 		return null;
 	}
 
 	@Override
 	public Void visitReturn(Return r) {
-		//to be completed...
+		if (r.expr != null) {
+			r.expr.accept(this);
+		}
 		return null;
 	}
-	// To be completed...
 
+	@Override
+	public Void visitExprStmt(ExprStmt es) {
+		es.expr.accept(this);
+		return null;
+	}
 
+	@Override
+	public Void visitIntLiteral(IntLiteral il) {
+		return null; // do nothing
+	}
+
+	@Override
+	public Void visitStrLiteral(StrLiteral sl) {
+		return null;
+	}
+
+	@Override
+	public Void visitChrLiteral(ChrLiteral cl) {
+		return null;
+	}
+
+	@Override
+	public Void visitVarExpr(VarExpr v) {
+		Symbol vs = this.scope.lookup(v.name);
+		if (vs != null && vs.isVar()){
+			v.vd = ((VarSymbol)vs).vd;
+		}else if (vs != null && !vs.isVar()){
+			error(v.name + " is not variable expression!");
+		}else {
+			error(v.name + " not declared!");
+		}
+		return null;
+	}
+
+	@Override
+	public Void visitFunCallExpr(FunCallExpr fce) {
+		Symbol fs = this.scope.lookup(fce.ident);
+		if (fs != null && fs.isFn()){
+			fce.fd = ((FnSymbol)fs).fd;
+		}else if (fs != null && !fs.isFn()){
+			error(fce.ident + " is not a function!");
+		}else {
+			error(fce.ident + " not declared!");
+		}
+		for (Expr e: fce.exprs){
+			e.accept(this);
+		}
+		return null;
+	}
+
+	@Override
+	public Void visitBinOp(BinOp bo) {
+		bo.lhs.accept(this);
+		bo.rhs.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitArrayAccessExpr(ArrayAccessExpr aae) {
+		aae.array.accept(this);
+		aae.index.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitFieldAccessExpr(FieldAccessExpr fae) {
+		fae.stru.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitValueAtExpr(ValueAtExpr vae) {
+		vae.expr.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitSizeOfExpr(SizeOfExpr soe) {
+		soe.type.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitTypecastExpr(TypecastExpr te) {
+		te.expr.accept(this);
+		return null;
+	}
+
+	@Override
+	public Void visitOp(Op o) {
+		return null;
+	}
 }

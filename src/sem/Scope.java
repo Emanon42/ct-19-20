@@ -1,13 +1,16 @@
 package sem;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Scope {
 	private Scope outer;
+	// only contains FnSym and VarSym.
 	private Map<String, Symbol> symbolTable;
 	
 	public Scope(Scope outer) { 
-		this.outer = outer; 
+		this.outer = outer;
+		symbolTable = new HashMap<>();
 	}
 	
 	public Scope() { this(null); }

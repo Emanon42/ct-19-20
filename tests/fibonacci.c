@@ -1,4 +1,13 @@
 #include "minic-stdlib.h"
+struct blaf{
+    int blyat;
+};
+
+struct bla{
+    int cyka;
+    struct blaf sf;
+};
+int bla;
 
 void main() {
   int n;
@@ -7,6 +16,7 @@ void main() {
   int next;
   int c;
   char t;
+  int ssf[190];
 
   // read n from the standard input
   n = read_i();

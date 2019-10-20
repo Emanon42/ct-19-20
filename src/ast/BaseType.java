@@ -9,6 +9,21 @@ public enum BaseType implements Type {
         return v.visitBaseType(this);
     }
 
+    @Override
+    public boolean isStructType() {
+        return false;
+    }
+
+    @Override
+    public String toString(){
+        switch(this) {
+            case INT: return "INT";
+            case CHAR: return "CHAR";
+            case VOID: return "VOID";
+            default: throw new IllegalArgumentException();
+        }
+    }
+
     public static BaseType fromTokenClass(Token.TokenClass tc){
         if (tc == Token.TokenClass.INT) {
             return INT;

@@ -8,8 +8,18 @@ public class PointerType implements Type {
         return v.visitPointerType(this);
     }
 
+    @Override
+    public boolean isStructType() {
+        return false;
+    }
+
     public PointerType(Type type){
         this.type = type;
 
+    }
+
+    @Override
+    public String toString(){
+        return "*"+type.toString();
     }
 }

@@ -14,4 +14,14 @@ public class ArrayType implements Type {
         return v.visitArrayType(this);
     }
 
+    @Override
+    public boolean isStructType() {
+        return false;
+    }
+
+    @Override
+    public String toString(){
+        return type.toString() + Integer.toString(capacity);
+    }
+
 }

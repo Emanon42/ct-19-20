@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/FunCallExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunCallExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/ArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/BaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/FunDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/PointerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/PointerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/StructType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/StructTypeDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructTypeDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sem/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/Scope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/StruSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/StruTypeSymbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/SymbolEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/SymbolEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +59,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ct-19-20" />
-      <option name="PROGRAM_PARAMETERS" value="-ast tests/fibonacci.c dummy.out" />
+      <option name="PROGRAM_PARAMETERS" value="-sem tests/fibonacci.c dummy.out" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +95,9 @@
       <workItem from="1571330947817" duration="6673000" />
       <workItem from="1571407413273" duration="21518000" />
       <workItem from="1571438921655" duration="185000" />
-      <workItem from="1571501816352" duration="5605000" />
+      <workItem from="1571501816352" duration="5888000" />
+      <workItem from="1571512039531" duration="7880000" />
+      <workItem from="1571580178877" duration="12237000" />
     </task>
     <servers />
   </component>
@@ -401,6 +413,11 @@
           <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
           <line>144</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ast/VarDecl.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
