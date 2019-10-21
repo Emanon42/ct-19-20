@@ -6,4 +6,10 @@ public interface Type extends ASTNode {
 
     public boolean isStructType();
 
+    public boolean isBaseType();
+
+    public boolean isPointerType();
+
+    public boolean isArrayType();
+
 }

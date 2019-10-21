@@ -108,7 +108,7 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 
 	@Override
 	public Void visitArrayType(ArrayType at) {
-		at.type.accept(this);
+		at.innerType.accept(this);
 		return null;
 	}
 
@@ -263,19 +263,19 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 
 	@Override
 	public Void visitValueAtExpr(ValueAtExpr vae) {
-		vae.expr.accept(this);
+		vae.toDeref.accept(this);
 		return null;
 	}
 
 	@Override
 	public Void visitSizeOfExpr(SizeOfExpr soe) {
-		soe.type.accept(this);
+		soe.toCheck.accept(this);
 		return null;
 	}
 
 	@Override
 	public Void visitTypecastExpr(TypecastExpr te) {
-		te.expr.accept(this);
+		te.fromExpr.accept(this);
 		return null;
 	}
 

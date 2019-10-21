@@ -15,6 +15,21 @@ public enum BaseType implements Type {
     }
 
     @Override
+    public boolean isBaseType() {
+        return true;
+    }
+
+    @Override
+    public boolean isPointerType() {
+        return false;
+    }
+
+    @Override
+    public boolean isArrayType() {
+        return false;
+    }
+
+    @Override
     public String toString(){
         switch(this) {
             case INT: return "INT";

@@ -10,4 +10,9 @@ public class IntLiteral extends Expr {
         return v.visitIntLiteral(this);
     }
 
+    @Override
+    public boolean isLegalLeftForAssign() {
+        return false;
+    }
+
 }

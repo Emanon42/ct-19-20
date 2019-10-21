@@ -13,6 +13,21 @@ public class PointerType implements Type {
         return false;
     }
 
+    @Override
+    public boolean isBaseType() {
+        return false;
+    }
+
+    @Override
+    public boolean isPointerType() {
+        return true;
+    }
+
+    @Override
+    public boolean isArrayType() {
+        return false;
+    }
+
     public PointerType(Type type){
         this.type = type;
 

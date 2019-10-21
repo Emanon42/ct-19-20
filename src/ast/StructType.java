@@ -14,6 +14,21 @@ public class StructType implements Type{
     }
 
     @Override
+    public boolean isBaseType() {
+        return false;
+    }
+
+    @Override
+    public boolean isPointerType() {
+        return false;
+    }
+
+    @Override
+    public boolean isArrayType() {
+        return false;
+    }
+
+    @Override
     public String toString(){
         return "struct"+ident;
     }

@@ -13,4 +13,9 @@ public class ArrayAccessExpr extends Expr{
         return v.visitArrayAccessExpr(this);
     }
 
+    @Override
+    public boolean isLegalLeftForAssign() {
+        return true;
+    }
+
 }

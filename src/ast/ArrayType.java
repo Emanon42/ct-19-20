@@ -2,11 +2,11 @@ package ast;
 
 public class ArrayType implements Type {
 
-    public final Type type;
+    public final Type innerType;
     public final int capacity;
 
     public ArrayType(Type t, int i){
-        this.type = t;
+        this.innerType = t;
         this.capacity = i;
     }
 
@@ -20,8 +20,23 @@ public class ArrayType implements Type {
     }
 
     @Override
+    public boolean isBaseType() {
+        return false;
+    }
+
+    @Override
+    public boolean isPointerType() {
+        return false;
+    }
+
+    @Override
+    public boolean isArrayType() {
+        return true;
+    }
+
+    @Override
     public String toString(){
-        return type.toString() + Integer.toString(capacity);
+        return innerType.toString() + Integer.toString(capacity);
     }
 
 }

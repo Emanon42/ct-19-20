@@ -133,7 +133,7 @@ public class ASTdotPrinter implements ASTVisitor<String> {
     public String visitArrayType(ArrayType at) {
         //to be completed...
         writer.print("ArrayType(");
-        at.type.accept(this);
+        at.innerType.accept(this);
         writer.print(", " + at.capacity + ")");
         return null;
     }
@@ -215,7 +215,7 @@ public class ASTdotPrinter implements ASTVisitor<String> {
     public String visitValueAtExpr(ValueAtExpr vae) {
         //to be completed...
         writer.print("ValueAtExpr(");
-        vae.expr.accept(this);
+        vae.toDeref.accept(this);
         writer.print(")");
         return null;
     }
@@ -224,7 +224,7 @@ public class ASTdotPrinter implements ASTVisitor<String> {
     public String visitSizeOfExpr(SizeOfExpr soe) {
         //to be completed...
         writer.print("SizeOfExpr(");
-        soe.type.accept(this);
+        soe.toCheck.accept(this);
         writer.print(")");
         return null;
     }
@@ -233,9 +233,9 @@ public class ASTdotPrinter implements ASTVisitor<String> {
     public String visitTypecastExpr(TypecastExpr te) {
         //to be completed...
         writer.print("TypecastExpr(");
-        te.type.accept(this);
+        te.target.accept(this);
         writer.print(", ");
-        te.expr.accept(this);
+        te.fromExpr.accept(this);
         writer.print(")");
         return null;
     }

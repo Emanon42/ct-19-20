@@ -13,4 +13,9 @@ public class BinOp extends Expr{
     public <T> T accept(ASTVisitor<T> v){
         return v.visitBinOp(this);
     }
+
+    @Override
+    public boolean isLegalLeftForAssign() {
+        return false;
+    }
 }

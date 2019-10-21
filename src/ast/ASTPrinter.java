@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 public class ASTPrinter implements ASTVisitor<Void> {
     // format:
     // AST_NODE_CLASS_NAME '(' [SUB_TREE (',' SUB_TREE)*] ')'
+    // TODO: edit/make new printer for testing shadowing(display the decl which connect to expr)
 
     private PrintWriter writer;
 
@@ -126,7 +127,7 @@ public class ASTPrinter implements ASTVisitor<Void> {
     public Void visitArrayType(ArrayType at) {
         //to be completed...
         writer.print("ArrayType(");
-        at.type.accept(this);
+        at.innerType.accept(this);
         writer.print(", " + at.capacity + ")");
         return null;
     }
@@ -208,7 +209,7 @@ public class ASTPrinter implements ASTVisitor<Void> {
     public Void visitValueAtExpr(ValueAtExpr vae) {
         //to be completed...
         writer.print("ValueAtExpr(");
-        vae.expr.accept(this);
+        vae.toDeref.accept(this);
         writer.print(")");
         return null;
     }
@@ -217,7 +218,7 @@ public class ASTPrinter implements ASTVisitor<Void> {
     public Void visitSizeOfExpr(SizeOfExpr soe) {
         //to be completed...
         writer.print("SizeOfExpr(");
-        soe.type.accept(this);
+        soe.toCheck.accept(this);
         writer.print(")");
         return null;
     }
@@ -226,9 +227,9 @@ public class ASTPrinter implements ASTVisitor<Void> {
     public Void visitTypecastExpr(TypecastExpr te) {
         //to be completed...
         writer.print("TypecastExpr(");
-        te.type.accept(this);
+        te.target.accept(this);
         writer.print(", ");
-        te.expr.accept(this);
+        te.fromExpr.accept(this);
         writer.print(")");
         return null;
     }

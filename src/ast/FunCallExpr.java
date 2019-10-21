@@ -14,4 +14,9 @@ public class FunCallExpr extends Expr{
     public <T> T accept(ASTVisitor<T> v){
         return v.visitFunCallExpr(this);
     }
+
+    @Override
+    public boolean isLegalLeftForAssign() {
+        return false;
+    }
 }

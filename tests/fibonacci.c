@@ -9,8 +9,6 @@ struct bla{
 };
 int bla;
 
-void shadow(){}
-
 void main() {
   int n;
   int first;
@@ -29,6 +27,9 @@ void main() {
             char* shadow;
         }
     }
+  }
+  if(1){
+    return wef
   }
 
   // read n from the standard input
