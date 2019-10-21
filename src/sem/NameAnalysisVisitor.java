@@ -123,7 +123,7 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 			for (VarDecl vd : p.params){
 				visitVarDecl(vd);
 			}
-			visitBlock(p.block);
+			visitFnBlk(p.block);
 
 			this.scope = oldScope;
 
@@ -131,14 +131,32 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 		return null;
 	}
 
-	@Override
-	public Void visitBlock(Block b) {
+
+	// for block in funcDecl, no need to switch scope
+	public Void visitFnBlk(Block b){
 		for (VarDecl vd : b.varDecls){
 			visitVarDecl(vd);
 		}
 		for (Stmt s : b.stmts){
 			s.accept(this);
 		}
+		return null;
+	}
+
+	// for regular block, switch to inner scope
+	@Override
+	public Void visitBlock(Block b) {
+		Scope oldScope = this.scope;
+		this.scope = new Scope(oldScope);
+
+		for (VarDecl vd : b.varDecls){
+			visitVarDecl(vd);
+		}
+		for (Stmt s : b.stmts){
+			s.accept(this);
+		}
+
+		this.scope = oldScope;
 		return null;
 	}
 

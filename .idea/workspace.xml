@@ -3,20 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/FunDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunDecl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/PointerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/PointerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/StructType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/StructTypeDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructTypeDecl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/Scope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/StruSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/StruTypeSymbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/SymbolEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/SymbolEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tictactoe.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tictactoe.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +87,8 @@
       <workItem from="1571438921655" duration="185000" />
       <workItem from="1571501816352" duration="5888000" />
       <workItem from="1571512039531" duration="7880000" />
-      <workItem from="1571580178877" duration="12237000" />
+      <workItem from="1571580178877" duration="14190000" />
+      <workItem from="1571666289486" duration="1107000" />
     </task>
     <servers />
   </component>
@@ -398,6 +389,22 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java</url>
+          <line>78</line>
+          <properties class="sem.NameAnalysisVisitor" method="visitVarDecl">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java</url>
+          <line>147</line>
+          <properties class="sem.NameAnalysisVisitor" method="visitBlock">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>

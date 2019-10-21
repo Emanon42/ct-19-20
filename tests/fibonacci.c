@@ -9,14 +9,27 @@ struct bla{
 };
 int bla;
 
+void shadow(){}
+
 void main() {
   int n;
   int first;
   int second;
   int next;
   int c;
+  int shadow;
+  int bla;
   char t;
   int ssf[190];
+  {
+    int shadow;
+    {
+        char shadow;
+        {
+            char* shadow;
+        }
+    }
+  }
 
   // read n from the standard input
   n = read_i();

@@ -20,13 +20,13 @@ public class FunDecl implements ASTNode {
     }
 
     // for buildIn func only
-    public FunDecl(Type type, String name, Type maybeParam, String param) {
+    public FunDecl(Type type, String name, Type paramType, String param) {
         this.type = type;
         this.name = name;
 
         this.params = new ArrayList<>();
-        if (maybeParam != null) {
-            params.add(new VarDecl(maybeParam, param));
+        if (paramType != null) {
+            params.add(new VarDecl(paramType, param));
         }
 
         this.block = new Block(Collections.emptyList(), Collections.emptyList());
