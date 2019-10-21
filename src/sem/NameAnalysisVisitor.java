@@ -133,14 +133,13 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 
 
 	// for block in funcDecl, no need to switch scope
-	public Void visitFnBlk(Block b){
+	public void visitFnBlk(Block b){
 		for (VarDecl vd : b.varDecls){
 			visitVarDecl(vd);
 		}
 		for (Stmt s : b.stmts){
 			s.accept(this);
 		}
-		return null;
 	}
 
 	// for regular block, switch to inner scope
