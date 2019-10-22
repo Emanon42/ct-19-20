@@ -3,35 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ASTPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ASTPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ASTdotPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ASTdotPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ArrayAccessExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayAccessExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Assign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BinOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BinOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ChrLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ChrLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Expr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ExprStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ExprStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/FieldAccessExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FieldAccessExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/FunCallExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunCallExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/If.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/IntLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/IntLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/PointerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/PointerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Return.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Return.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/SizeOfExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/SizeOfExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Stmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/StrLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StrLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/StructType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/TypecastExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/TypecastExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ValueAtExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ValueAtExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/VarExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/VarExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/While.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/While.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/SemanticAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sem/TypeCheckVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/TypeCheckVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,7 +87,8 @@
       <workItem from="1571512039531" duration="7880000" />
       <workItem from="1571580178877" duration="14190000" />
       <workItem from="1571666289486" duration="4148000" />
-      <workItem from="1571674059222" duration="18430000" />
+      <workItem from="1571674059222" duration="18483000" />
+      <workItem from="1571735338779" duration="3325000" />
     </task>
     <servers />
   </component>
@@ -146,304 +119,44 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>170</line>
-          <properties class="parser.Parser" method="parseProgram">
+          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
+          <line>239</line>
+          <properties class="sem.TypeCheckVisitor" method="visitVarExpr">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>182</line>
-          <properties class="parser.Parser" method="parseIncludes">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>191</line>
-          <properties class="parser.Parser" method="parseStructDecls">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>214</line>
-          <properties class="parser.Parser" method="parseType">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>242</line>
-          <properties class="parser.Parser" method="parseVarDecls_pos">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>252</line>
-          <properties class="parser.Parser" method="parseVarDecls">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>315</line>
-          <properties class="parser.Parser" method="parseFunDecls">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>339</line>
-          <properties class="parser.Parser" method="parseParams">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>357</line>
-          <properties class="parser.Parser" method="parseParams_kle">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>380</line>
-          <properties class="parser.Parser" method="parseBlock">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>388</line>
-          <properties class="parser.Parser" method="parseStmts_kle">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>397</line>
-          <properties class="parser.Parser" method="parseStmts">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>599</line>
-          <properties class="parser.Parser" method="parseExp_lv2">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>588</line>
-          <properties class="parser.Parser" method="parseExp_mult_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>576</line>
-          <properties class="parser.Parser" method="parseExp_mult">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>565</line>
-          <properties class="parser.Parser" method="parseExp_add_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>554</line>
-          <properties class="parser.Parser" method="parseExp_add">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>543</line>
-          <properties class="parser.Parser" method="parseExp_comp_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>532</line>
-          <properties class="parser.Parser" method="parseExp_comp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>521</line>
-          <properties class="parser.Parser" method="parseExp_eq_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>510</line>
-          <properties class="parser.Parser" method="parseExp_eq">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>500</line>
-          <properties class="parser.Parser" method="parseExp_and_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>489</line>
-          <properties class="parser.Parser" method="parseExp_and">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>479</line>
-          <properties class="parser.Parser" method="parseExp_or_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>467</line>
-          <properties class="parser.Parser" method="parseExp_or">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>458</line>
-          <properties class="parser.Parser" method="parseExp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>451</line>
-          <properties class="parser.Parser" method="parseExp_opt">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>443</line>
-          <properties class="parser.Parser" method="parseStmt_else">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>628</line>
-          <properties class="parser.Parser" method="parseExp_lv1">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>639</line>
-          <properties class="parser.Parser" method="parseExp_bottom">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>674</line>
-          <properties class="parser.Parser" method="parseExp_lv1_term">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>699</line>
-          <properties class="parser.Parser" method="parseFn_call">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>715</line>
-          <properties class="parser.Parser" method="parseArgs_opt">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/parser/Parser.java</url>
-          <line>725</line>
-          <properties class="parser.Parser" method="parseArgs_kle">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="39" />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java</url>
-          <line>78</line>
-          <properties class="sem.NameAnalysisVisitor" method="visitVarDecl">
+          <line>193</line>
+          <properties class="sem.NameAnalysisVisitor" method="visitExprStmt">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
-          <line>391</line>
-          <option name="timeStamp" value="41" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java</url>
+          <line>214</line>
+          <properties class="sem.NameAnalysisVisitor" method="visitVarExpr">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="42" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sem/NameAnalysisVisitor.java</url>
+          <line>115</line>
+          <properties class="sem.NameAnalysisVisitor" method="visitFunDecl">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lexer/Tokeniser.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ast/VarDecl.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="44" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
+          <line>64</line>
+          <properties class="sem.TypeCheckVisitor" method="visitFunDecl">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

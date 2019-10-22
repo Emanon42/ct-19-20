@@ -114,20 +114,19 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 
 	@Override
 	public Void visitFunDecl(FunDecl p) {
-		if (notDeclared(p.name)){
-			scope.put(new FnSymbol(p));
+		// should we let it analysis or just crash???
+		notDeclared(p.name);
+		scope.put(new FnSymbol(p));
 
-			Scope oldScope = this.scope;
-			this.scope = new Scope(oldScope);
+		Scope oldScope = this.scope;
+		this.scope = new Scope(oldScope);
 
-			for (VarDecl vd : p.params){
-				visitVarDecl(vd);
-			}
-			visitFnBlk(p.block);
-
-			this.scope = oldScope;
-
+		for (VarDecl vd : p.params){
+			visitVarDecl(vd);
 		}
+		visitFnBlk(p.block);
+
+		this.scope = oldScope;
 		return null;
 	}
 
@@ -222,6 +221,12 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 		}else {
 			error(v.name + " not declared!");
 		}
+
+		// fix for type check null pointer
+		if (v.vd == null){
+			v.vd = new VarDecl(BaseType.VOID, v.name);
+		}
+
 		return null;
 	}
 
@@ -237,6 +242,11 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 		}
 		for (Expr e: fce.exprs){
 			e.accept(this);
+		}
+
+		// fix for type check null pointer
+		if (fce.fd == null){
+			fce.fd = new FunDecl(BaseType.VOID, fce.ident);
 		}
 		return null;
 	}

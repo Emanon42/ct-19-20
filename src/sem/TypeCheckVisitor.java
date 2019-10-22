@@ -9,7 +9,7 @@ import java.util.List;
 public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
 
     //TODO: check block and return related stuff CAREFULLY and do more test, they are possible buggy
-
+    //TODO: better error message: include the identifier name
     private boolean equal(Type a, Type b){
         //deal with null
         if (a == null || b == null){

@@ -9,6 +9,11 @@ struct bla{
 };
 int bla;
 
+void bla(int ss){
+    int fds;
+    fds=1+fds;
+}
+
 void main() {
   int n;
   int first;
@@ -29,11 +34,12 @@ void main() {
     }
   }
   if(1){
-    return wef
+    return wef;
   }
 
   // read n from the standard input
   n = read_i();
+  fwewef(few);
 
   first = 0;
   second = 1;
