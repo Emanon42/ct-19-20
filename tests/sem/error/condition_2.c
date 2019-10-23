@@ -1,6 +1,6 @@
 int main() {
 	if (true) {
-		return 1;
+		return 666;
 	}
-	return 0;
+	return 666;
 }

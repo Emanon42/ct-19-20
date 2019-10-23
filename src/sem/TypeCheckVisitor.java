@@ -155,6 +155,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
         if (possibleReturn(w.stmt)){
             return w.stmt.accept(this);
         }else {
+            w.stmt.accept(this);
             return null;
         }
     }
@@ -169,6 +170,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
         if (possibleReturn(i.stmt)){
             maybeReturn1 = i.stmt.accept(this);
         }else {
+            i.stmt.accept(this);
             return null;
         }
 
@@ -177,9 +179,14 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
             if (possibleReturn(i.elseStmt)){
                 maybeReturn2 = i.elseStmt.accept(this);
             }else {
+                i.stmt.accept(this);
                 return null;
             }
             if (!equal(maybeReturn1, maybeReturn2)){
+                if (maybeReturn1 == null || maybeReturn2 == null){
+                    // bug fix: return non-null branch type
+                    return maybeReturn1 == null ? maybeReturn2 : maybeReturn1;
+                }
                 error("return types are inconsistent in if/else branch: "+maybeReturn1.toString()+" vs "+maybeReturn2.toString());
             }
         }

@@ -1,4 +1,4 @@
-struct foo_t {
+struct foo {
   int bar;
   int bar;
 };

@@ -1,10 +1,6 @@
-int auto_return() {
-	return 1;
-}
+void main(){
+    int a;
+    while(1)
+        a='c';
 
-
-int main() {
-	if (1) {
-		auto_return();
-	}
 }
