@@ -315,32 +315,6 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
                 return bo.type;
             }
         }
-
-//        switch (bo.operator){
-//            case ADD: case SUB: case MUL: case DIV: case MOD: case OR: case AND: case GT: case LT: case GE: case LE:
-//                if (lhs == BaseType.INT && rhs == BaseType.INT){
-//                    bo.type = BaseType.INT;
-//                    return bo.type.accept(this);
-//                }else {
-//                    error("Type mismatch in operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString());
-//                    return bo.type;// maybe null?
-//                }
-//            case NE: case EQ:
-//                if (!lhs.isArrayType() && !lhs.isStructType() && lhs != BaseType.VOID &&
-//                        !rhs.isArrayType() && !rhs.isStructType() && rhs != BaseType.VOID &&
-//                        equal(lhs, rhs)){
-//                    bo.type = BaseType.INT;
-//                    return bo.type.accept(this);
-//                }else {
-//                    error("Type mismatch in equivalence operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString()+"(cannot compare struct type or array type using equivalence operator");
-//                    return bo.type;
-//                }
-//            default:
-//                break;
-//        }
-//        error("can't find binary operator");
-//        assert false;
-//        return null;
     }
 
     @Override
