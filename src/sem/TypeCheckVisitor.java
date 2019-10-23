@@ -179,7 +179,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
             if (possibleReturn(i.elseStmt)){
                 maybeReturn2 = i.elseStmt.accept(this);
             }else {
-                i.stmt.accept(this);
+                i.elseStmt.accept(this);
                 return null;
             }
             if (!equal(maybeReturn1, maybeReturn2)){
