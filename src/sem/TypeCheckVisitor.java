@@ -278,36 +278,69 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
         return fce.type;
     }
 
+    private boolean isArithmtic(Op op){
+        if (op == Op.ADD || op == Op.SUB || op == Op.MUL || op == Op.DIV || op == Op.MOD || op == Op.OR || op == Op.AND || op == Op.GT || op == Op.LT || op == Op.GE || op == Op.LE){
+            return true;
+        }else if (op == Op.NE || op == Op.EQ){
+            return false;
+        }else {
+            error("can't find binary operator");
+            assert false;
+            return false;
+        }
+    }
+
     @Override
     public Type visitBinOp(BinOp bo) {
         Type lhs = bo.lhs.accept(this);
         Type rhs = bo.rhs.accept(this);
         bo.type = BaseType.INT;
-        switch (bo.operator){
-            case ADD: case SUB: case MUL: case DIV: case MOD: case OR: case AND: case GT: case LT: case GE: case LE:
-                if (lhs == BaseType.INT && rhs == BaseType.INT){
-                    bo.type = BaseType.INT;
-                    return bo.type.accept(this);
-                }else {
-                    error("Type mismatch in operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString());
-                    return bo.type;// maybe null?
-                }
-            case NE: case EQ:
-                if (!lhs.isArrayType() && !lhs.isStructType() && lhs != BaseType.VOID &&
-                        !rhs.isArrayType() && !rhs.isStructType() && rhs != BaseType.VOID &&
-                        equal(lhs, rhs)){
-                    bo.type = BaseType.INT;
-                    return bo.type.accept(this);
-                }else {
-                    error("Type mismatch in equivalence operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString()+"(cannot compare struct type or array type using equivalence operator");
-                    return bo.type;
-                }
-            default:
-                break;
+
+        if (isArithmtic(bo.operator)){
+            if (lhs == BaseType.INT && rhs == BaseType.INT){
+                bo.type = BaseType.INT;
+                return bo.type.accept(this);
+            }else {
+                error("Type mismatch in operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString());
+                return bo.type;// maybe null?
+            }
+        }else {
+            if (!lhs.isArrayType() && !lhs.isStructType() && lhs != BaseType.VOID &&
+                    !rhs.isArrayType() && !rhs.isStructType() && rhs != BaseType.VOID &&
+                    equal(lhs, rhs)){
+                bo.type = BaseType.INT;
+                return bo.type.accept(this);
+            }else {
+                error("Type mismatch in equivalence operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString()+"(cannot compare struct type or array type using equivalence operator");
+                return bo.type;
+            }
         }
-        error("can't find binary operator");
-        assert false;
-        return null;
+
+//        switch (bo.operator){
+//            case ADD: case SUB: case MUL: case DIV: case MOD: case OR: case AND: case GT: case LT: case GE: case LE:
+//                if (lhs == BaseType.INT && rhs == BaseType.INT){
+//                    bo.type = BaseType.INT;
+//                    return bo.type.accept(this);
+//                }else {
+//                    error("Type mismatch in operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString());
+//                    return bo.type;// maybe null?
+//                }
+//            case NE: case EQ:
+//                if (!lhs.isArrayType() && !lhs.isStructType() && lhs != BaseType.VOID &&
+//                        !rhs.isArrayType() && !rhs.isStructType() && rhs != BaseType.VOID &&
+//                        equal(lhs, rhs)){
+//                    bo.type = BaseType.INT;
+//                    return bo.type.accept(this);
+//                }else {
+//                    error("Type mismatch in equivalence operator "+bo.operator.toString()+": "+lhs.toString()+" vs "+rhs.toString()+"(cannot compare struct type or array type using equivalence operator");
+//                    return bo.type;
+//                }
+//            default:
+//                break;
+//        }
+//        error("can't find binary operator");
+//        assert false;
+//        return null;
     }
 
     @Override
