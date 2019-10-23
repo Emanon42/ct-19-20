@@ -41,6 +41,10 @@ public class SemanticAnalyzer {
 		
 		// Apply each visitor to the AST
 		for (SemanticVisitor v : visitors) {
+			// another solution: stop when error happen
+			if (errors > 0){
+				break;
+			}
 			prog.accept(v);
 			errors += v.getErrorCount();
 		}

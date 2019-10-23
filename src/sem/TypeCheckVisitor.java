@@ -79,6 +79,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
                 return fd.type;
             }else {
                 error("function "+fd.name+" has no return value but it is not void.");
+                return fd.type;
             }
         }
         if (!equal(to_return, fd.type)){
@@ -326,7 +327,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
             assert false;
         }
         aae.type = innerType;
-        return aae.accept(this);
+        return aae.type.accept(this);
     }
 
     @Override

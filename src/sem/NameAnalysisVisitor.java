@@ -121,6 +121,7 @@ public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {
 		Scope oldScope = this.scope;
 		this.scope = new Scope(oldScope);
 
+		p.type.accept(this);
 		for (VarDecl vd : p.params){
 			visitVarDecl(vd);
 		}
