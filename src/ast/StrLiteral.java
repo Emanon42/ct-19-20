@@ -14,4 +14,15 @@ public class StrLiteral extends Expr{
     public boolean isLegalLeftForAssign() {
         return false;
     }
+
+    public String extractValue() {
+        return this.value.replace("\\", "\\\\")
+                         .replace("\t", "\\t")
+                         .replace("\b", "\\b")
+                         .replace("\n", "\\n")
+                         .replace("\r", "\\r")
+                         .replace("\f", "\\f")
+                         .replace("\"", "\\\"")
+                         .replace("\0", "\\0");
+    }
 }

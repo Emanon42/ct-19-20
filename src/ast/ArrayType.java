@@ -35,6 +35,13 @@ public class ArrayType implements Type {
     }
 
     @Override
+    public int sizeof() {
+        double compact = capacity * innerType.sizeof();
+        int aligned = (int) (4.0 * Math.ceil(compact / 4.0));
+        return aligned;
+    }
+
+    @Override
     public String toString(){
         return innerType.toString() + Integer.toString(capacity);
     }

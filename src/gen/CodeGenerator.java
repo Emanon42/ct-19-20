@@ -5,10 +5,13 @@ import ast.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class CodeGenerator implements ASTVisitor<Register> {
+    // return Register just for Expr!
+    // maybe write another pass which return void for higher level ast node?
 
     /*
      * Simple register allocator.
@@ -35,18 +38,61 @@ public class CodeGenerator implements ASTVisitor<Register> {
         freeRegs.push(reg);
     }
 
-
+    /*
+    .data
+    $LC1: .ascii "blablabla\0"
+    $LC2: .ascii "blablabla\0"
+    ...
+    .text
+    .global main
+    otherFunc:
+    ...
+    main:
+     */
 
 
 
     private PrintWriter writer; // use this writer to output the assembly instructions
-
-
+    private LabelManager lm;
+    private AsmWritter aw;
+    // general entry point of code generator
     public void emitProgram(Program program, File outputFile) throws FileNotFoundException {
-        writer = new PrintWriter(outputFile);
+        // input: ast
+        // output: ASM
+        // actually, no real "global variable" since we can only declare.
+        // only need to write string literals to .data and compute struct size.
+        // need some sort of IR?
+        /* ast -> ast+hashset(for literals)
+                     +hashtable(struct and their sizes) -> ASM*/
 
-        visitProgram(program);
+
+
+        writer = new PrintWriter(outputFile);
+        aw = new AsmWritter(writer);
+        lm = new LabelManager();
+        program.accept(new DataVisitor(aw, lm));
+
+        //visitProgram(program);
         writer.close();
+    }
+
+
+    //maybe need a code segment loader?
+
+    @Override
+    public Register visitProgram(Program p) {
+        // TODO: to complete
+        for (StructTypeDecl std: p.structTypeDecls){
+            visitStructTypeDecl(std);
+        }
+        for (VarDecl vd: p.varDecls){
+            visitVarDecl(vd);
+        }
+        for (FunDecl fd: p.funDecls){
+            visitFunDecl(fd);
+        }
+
+        return null;
     }
 
     @Override
@@ -65,17 +111,29 @@ public class CodeGenerator implements ASTVisitor<Register> {
         return null;
     }
 
-    @Override
-    public Register visitFunDecl(FunDecl p) {
-        // TODO: to complete
+    private Register visitBuildInFun(FunDecl fd){
+        switch (fd.name){
+            case "print_s":break;
+            case "print_i":break;
+            case "print_c":break;
+            case "read_c":break;
+            case "read_i":break;
+            case "mcmalloc":break;
+        }
         return null;
     }
 
     @Override
-    public Register visitProgram(Program p) {
+    public Register visitFunDecl(FunDecl fd) {
         // TODO: to complete
+        if (fd.isBuildIn){
+            visitBuildInFun(fd);
+        }
+
         return null;
     }
+
+
 
     @Override
     public Register visitVarDecl(VarDecl vd) {

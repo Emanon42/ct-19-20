@@ -39,6 +39,20 @@ public enum BaseType implements Type {
         }
     }
 
+    @Override
+    public int sizeof() {
+        switch (this) {
+            case INT:
+                return 4;
+            case CHAR:
+                return 1;
+            case VOID:
+                return 0;
+            default:
+                throw new RuntimeException("Sizeof called on " + this.toString());
+        }
+    }
+
     public static BaseType fromTokenClass(Token.TokenClass tc){
         if (tc == Token.TokenClass.INT) {
             return INT;
