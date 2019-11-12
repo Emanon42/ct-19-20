@@ -104,7 +104,13 @@ public class TextVisitor implements ASTVisitor<Register> {
     low address
      */
 
-
+    private int charSizeFix(int size){
+        if (size == 1){
+            return 4;
+        }else {
+            return size;
+        }
+    }
 
     @Override
     public Register visitFunDecl(FunDecl f) {
@@ -271,7 +277,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         // pre-allocate stack space for vardecls
         int preAllocSize = 0;
         for (VarDecl local : b.varDecls){
-            int size = local.type.sizeof();
+            int size = charSizeFix(local.type.sizeof());
             frameOffset -= size;
             preAllocSize += size;
             writer.comment(String.format("local var %s frameOffset(relative to $fp): %d", local.varName, frameOffset));
@@ -292,7 +298,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         // release local var mem
         int toReleaseSize = 0;
         for (VarDecl local : b.varDecls){
-            int size = local.type.sizeof();
+            int size = charSizeFix(local.type.sizeof());
             frameOffset += size;
             toReleaseSize += size;
         }
