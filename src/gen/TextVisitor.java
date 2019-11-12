@@ -104,6 +104,7 @@ public class TextVisitor implements ASTVisitor<Register> {
     low address
      */
 
+    //TODO: make a new align tool instead of this dirty fix
     private int charSizeFix(int size){
         if (size == 1){
             return 4;
@@ -138,7 +139,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         int argOffset = 0; // relative to FP
         for (VarDecl arg : f.params){
             arg.setFrameOffset(argOffset); //TODO: possible bug here
-            int size = arg.type.sizeof();
+            int size = charSizeFix(arg.type.sizeof());
             argOffset += size;
             writer.comment(String.format("arg %s offset: %d($fp)", arg.varName, argOffset));
         }
@@ -219,7 +220,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         writer.comment("pre-allocate space for args");
         int totalArgSize = 0;
         for (VarDecl declaredArg : f.fd.params){
-            totalArgSize += declaredArg.type.sizeof();
+            totalArgSize += charSizeFix(declaredArg.type.sizeof());
         }
         writer.sub(Register.sp, Register.sp, totalArgSize);
 
@@ -237,7 +238,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             regAllocater.free(result); // remember to free!!
 
             int expectedOffset = declaredArg.getFrameOffset();
-            int argSize = argType.sizeof();
+            int argSize = charSizeFix(argType.sizeof());
             //System.out.println("expectedOffset: " + expectedOffset + " loadoffset: " + loadArgsOffset);
             assert expectedOffset == loadArgsOffset;
             loadArgsOffset += argSize;
@@ -439,7 +440,7 @@ public class TextVisitor implements ASTVisitor<Register> {
                 regAllocater.free(innerSourceValue);
 
                 // Increment our read offset and struct address by the size we've just read
-                int size = v.type.sizeof();
+                int size = charSizeFix(v.type.sizeof());
                 writer.add(sourceValue, sourceValue, size);
                 offset += size;
                 totalSize += size;
@@ -571,7 +572,7 @@ public class TextVisitor implements ASTVisitor<Register> {
                 writer.add(address, address, offset);
                 return address;
             }
-            offset += v.type.sizeof();
+            offset += charSizeFix(v.type.sizeof());
         }
 
         throw new RuntimeException("could not find field in: " + f.toString());
