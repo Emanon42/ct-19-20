@@ -280,9 +280,6 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
 
     @Override
     public Type visitVarExpr(VarExpr v) {
-        if (v.name.equals("first")){
-            System.out.println(v.vd.type);
-        }
         v.type = v.vd.type;
         return v.type;
     }

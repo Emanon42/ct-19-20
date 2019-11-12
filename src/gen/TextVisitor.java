@@ -488,6 +488,7 @@ public class TextVisitor implements ASTVisitor<Register> {
                     "getValue not implemented yet with type " + t.toString());
         }
 
+        regAllocater.free(address);
         return value;
     }
 
