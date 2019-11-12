@@ -1,14 +1,82 @@
 .data
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-_str0:    .asciiz "First "
+_gv_a11:    .space 1
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-_str1:    .asciiz " terms of Fibonacci series are : "
+_gv_a12:    .space 1
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-_str2:    .asciiz " "
+_gv_a13:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a21:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a22:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a23:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a31:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a32:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_a33:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_gv_empty:    .space 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str0:    .asciiz "\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str1:    .asciiz "     1   2   3\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str2:    .asciiz "   +---+---+---+\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str3:    .asciiz "a  | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str4:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str5:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str6:    .asciiz " |\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str7:    .asciiz "   +---+---+---+\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str8:    .asciiz "b  | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str9:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str10:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str11:    .asciiz " |\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str12:    .asciiz "   +---+---+---+\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str13:    .asciiz "c  | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str14:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str15:    .asciiz " | "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str16:    .asciiz " |\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str17:    .asciiz "   +---+---+---+\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str18:    .asciiz "\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str19:    .asciiz "Player "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str20:    .asciiz " has won!\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str21:    .asciiz "Player "
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str22:    .asciiz " select move (e.g. a2)>"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str23:    .asciiz "That is not a valid move!\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str24:    .asciiz "That move is not possible!\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str25:    .asciiz "It's a draw!\n"
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+_str26:    .asciiz "Play again? (y/n)> "
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
 .text
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-fn_main_prologue:    # main starts here
+fn_reset_prologue:    # reset starts here
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
 # reset frame pointer
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
@@ -72,303 +140,2695 @@ sw $ra 92($sp)
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
 # Set $ra to epilogue
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-la $ra, fn_main_epilogue
+la $ra, fn_reset_epilogue
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-fn_main_content:    
+fn_reset_content:    
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var n frameOffset(relative to $fp): -100
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var first frameOffset(relative to $fp): -104
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var second frameOffset(relative to $fp): -108
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var next frameOffset(relative to $fp): -112
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var c frameOffset(relative to $fp): -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# local var t frameOffset(relative to $fp): -117
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# pre-alloc 21 bytes for local var
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-subi $sp, $sp, 21
+# no local var detected
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
 # assign ast.Assign@16b98e56
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-addi $t9, $fp, -100
+la $t9, _gv_a11
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-# $v0 = read_i()
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-li $v0, 5
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-move $t8, $v0
+la $t8, _gv_empty
 # free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-sw $t8 0($t9)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
+lb $s7, 0($t8)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6]
+sb $s7 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8]
 # assign ast.Assign@7ef20235
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-addi $t8, $fp, -104
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9]
-li $t9, 0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-sw $t9 0($t8)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7]
+la $s7, _gv_a12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7]
+sb $t9 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9]
 # assign ast.Assign@27d6c5e0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-addi $t9, $fp, -108
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-li $t8, 1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-sw $t8 0($t9)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-# exprStmt ast.ExprStmt@4f3f5b24
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-la $t8, _str0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9]
-move $a0, $t8
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9]
-# print_s($a0)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-li $v0, 4
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-# exprStmt ast.ExprStmt@15aeb7ab
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-addi $t8, $fp, -100
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9]
-lw $t9, 0($t8)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-move $a0, $t9
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-# print_i($a0)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-li $v0, 1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-# exprStmt ast.ExprStmt@7b23ec81
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-la $t9, _str1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-move $a0, $t9
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-# print_s($a0)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-li $v0, 4
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9]
+la $t9, _gv_a13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7]
+la $s7, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7]
+lb $s7, 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9]
+sb $s7 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7]
+# assign ast.Assign@4f3f5b24
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+la $s7, _gv_a21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7]
+sb $t9 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9]
+# assign ast.Assign@15aeb7ab
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+la $t9, _gv_a22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+la $s7, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+lb $s7, 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+sb $s7 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# assign ast.Assign@7b23ec81
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+la $s7, _gv_a23
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+sb $t9 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
 # assign ast.Assign@6acbcfc0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8, $t9]
-addi $t9, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t8]
-li $t8, 0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-sw $t8 0($t9)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-_while3_start:    # while (ast.BinOp@5f184fc6)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9, $t8]
-addi $t8, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $t9]
-lw $t9, 0($t8)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-addi $t8, $fp, -100
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7]
-lw $s7, 0($t8)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6]
-slt $t8, $t9, $s7
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6]
-beq $t8, $zero, _while4_end
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6]
-# no local var detected
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8]
-# if ast.If@3feba861
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8]
-addi $t8, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6]
-lw $s6, 0($t8)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5]
-li $t8, 1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5]
-sle $s5, $s6, $t8
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4]
-beq $s5, $zero, _if6_else
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4]
-# assign ast.Assign@5b480cf9
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5]
-addi $s5, $fp, -112
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4]
-addi $s4, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3]
-lw $s3, 0($s4)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2]
-sw $s3 0($s5)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4]
-b _if5_end
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4, $s5, $s3]
-_if6_else:    # else
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4, $s5, $s3]
-# no local var detected
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4, $s5, $s3]
-# assign ast.Assign@6f496d9f
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4, $s5, $s3]
-addi $s3, $fp, -112
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4, $s5]
-addi $s5, $fp, -104
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s4]
-lw $s4, 0($s5)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2]
-addi $s5, $fp, -108
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2]
-lw $s2, 0($s5)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1]
-add $s5, $s4, $s2
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1]
-sw $s5 0($s3)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1]
-# assign ast.Assign@723279cf
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s3, $s5]
-addi $s5, $fp, -104
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s3]
-addi $s3, $fp, -108
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1]
-lw $s1, 0($s3)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0]
-sw $s1 0($s5)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s3]
-# assign ast.Assign@10f87f48
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s3, $s5, $s1]
-addi $s1, $fp, -108
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s3, $s5]
-addi $s5, $fp, -112
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s3]
-lw $s3, 0($s5)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0]
-sw $s3 0($s1)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5]
-_if5_end:    nop
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s1, $s3]
-# exprStmt ast.ExprStmt@b4c966a
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s1, $s3]
-addi $s3, $fp, -112
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s1]
-lw $s1, 0($s3)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5]
-move $a0, $s1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3]
-# print_i($a0)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-li $v0, 1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-# exprStmt ast.ExprStmt@2f4d3709
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-la $s1, _str2
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3]
-move $a0, $s1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3]
-# print_s($a0)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-li $v0, 4
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-# assign ast.Assign@4e50df2e
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3, $s1]
-addi $s1, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5, $s3]
-addi $s3, $fp, -116
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s5]
-lw $s5, 0($s3)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0]
-li $s3, 1
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0]
-add $s0, $s5, $s3
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7]
-sw $s0 0($s1)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7]
-b _while3_start
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-_while4_end:    nop
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-# release pre-allocated mem for local vars
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-addi $sp, $sp, 21
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+la $t9, _gv_a31
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+la $s7, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+lb $s7, 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+sb $s7 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# assign ast.Assign@5f184fc6
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+la $s7, _gv_a32
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+sb $t9 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+# assign ast.Assign@3feba861
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+la $t9, _gv_a33
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+la $s7, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+lb $s7, 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+sb $s7 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 # Store default return value to $v0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 li $v0, 0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-fn_main_epilogue:    
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+fn_reset_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 move $sp, $fp
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 subi $sp, $sp, 96
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 # restore registers
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t0, 0($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t1, 4($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t2, 8($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t3, 12($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t4, 16($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t5, 20($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t6, 24($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t7, 28($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s0, 32($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s1, 36($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s2, 40($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s3, 44($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s4, 48($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s5, 52($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s6, 56($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $s7, 60($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t8, 64($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $t9, 68($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $a0, 72($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $a1, 76($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $a2, 80($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $a3, 84($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $gp, 88($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 lw $ra, 92($sp)
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 addi $sp, $sp, 96
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
 jr $ra
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-main:    .globl main
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-jal fn_main_prologue
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-move $a0, $v0
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
-li $v0, 17
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+fn_full_prologue:    # full starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# no args in current function
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+la $ra, fn_full_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+fn_full_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# local var n frameOffset(relative to $fp): -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# pre-alloc 4 bytes for local var
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+subi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+# assign ast.Assign@5b480cf9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+addi $s7, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+sw $t9 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+# if ast.If@6f496d9f
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+la $t9, _gv_a11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+lb $s7, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+lb $s7, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+sne $t9, $s7, $s7
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+beq $t9, $zero, _if27_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+# assign ast.Assign@723279cf
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7]
+addi $s7, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7]
+lw $s7, 0($s7)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+li $s7, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9]
+add $t9, $s7, $s7
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7]
+b _if27_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+_if27_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+# if ast.If@10f87f48
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+la $t9, _gv_a21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9]
+beq $t9, $zero, _if28_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+# assign ast.Assign@b4c966a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9]
+b _if28_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+_if28_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@2f4d3709
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a31
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+beq $t9, $zero, _if29_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@4e50df2e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+b _if29_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if29_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@1d81eb93
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if30_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@7291c18f
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if30_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if30_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@34a245ab
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if31_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@7cc355be
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if31_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if31_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@6e8cf4c6
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a32
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if32_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@12edcd21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if32_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if32_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@34c45dca
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if33_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@52cc8049
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if33_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if33_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@5b6f7412
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a23
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if34_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@27973e9b
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if34_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if34_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@312b1dae
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a33
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sne $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if35_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@7530d0a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+add $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if35_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if35_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@27bc2616
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if37_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@3941a79c
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if36_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if37_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@506e1b77
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if36_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# release pre-allocated mem for local vars
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_full_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_set_prologue:    # set starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg row offset: 1($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg col offset: 5($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg mark offset: 6($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_set_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_set_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var r frameOffset(relative to $fp): -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# pre-alloc 4 bytes for local var
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@4fca772d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@9807454
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 97
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if39_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@3d494fbf
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if41_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@1ddc4ec2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if43_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@133314b
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if42_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if43_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@b1bc7ed
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if42_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if40_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if41_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@7cd84586
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if45_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@30dae81
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if47_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@1b2c6ec2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if46_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if47_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@4edde6e5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if46_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if44_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if45_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@70177ecd
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if49_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@1e80bfe8
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if51_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@66a29884
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if50_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if51_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@4769b07b
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if50_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if48_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if49_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@cc34f4d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if48_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if44_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if40_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if38_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if39_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@17a7cec2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 98
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if53_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@65b3120a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if55_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@6f539caf
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if57_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@79fc0f2f
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if56_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if57_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@50040f0c
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if56_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if54_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if55_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@2dda6444
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if59_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@5e9f23b4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if61_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@4783da3f
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if60_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if61_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@378fd1ac
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if60_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if58_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if59_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@49097b5d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if63_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@6e2c634b
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a23
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if65_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@37a71e93
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a23
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if64_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if65_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@7e6cbb7a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if64_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if62_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if63_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@7c3df479
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if62_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if58_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if54_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if52_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if53_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@7106e68e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 99
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if67_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@7eda2dbb
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if69_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@6576fe71
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a31
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if71_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@76fb509a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a31
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if70_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if71_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@300ffa5d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if70_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if68_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if69_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@1f17ae12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if73_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@4d405ef7
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a32
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if75_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@6193b845
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a32
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if74_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if75_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@2e817b38
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if74_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if72_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if73_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@c4437c4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if77_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@433c675d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a33
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_empty
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if79_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@3f91beef
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a33
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if78_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if79_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@1a6c5a9e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sub $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if78_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if76_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if77_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@37bba400
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if76_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if72_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if68_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if66_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if67_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@179d3b25
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if66_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if52_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if38_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@254989ff
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -100
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# release pre-allocated mem for local vars
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_set_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printGame_prologue:    # printGame starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no args in current function
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_printGame_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printGame_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@5d099f62
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
 syscall
-# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s1, $s0]
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@37f8bb67
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@49c2faae
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@20ad9418
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@31cefde0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@439f5b3d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@1d56ce6a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@5197848c
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@17f052a3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@2e0fa5d3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str6
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@5010be6
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str7
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@685f4c2e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str8
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@7daf6ecc
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@2e5d6d97
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@238e0d81
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@31221be2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str10
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@377dca04
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a23
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@728938a9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@21b8d17c
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@6433a2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str13
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@5910e440
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a31
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@6267c3bb
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str14
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@533ddba
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a32
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@246b179d
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str15
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@7a07c5b4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _gv_a33
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lb $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_c($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 11
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@26a1ab54
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str16
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@3d646c37
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str17
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@41cf53f9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str18
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printGame_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printWinner_prologue:    # printWinner starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg player offset: 4($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_printWinner_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printWinner_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@5a10411
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str19
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@2ef1e4fa
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_i($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@306a30c7
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str20
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_printWinner_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_switchPlayer_prologue:    # switchPlayer starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg currentPlayer offset: 4($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_switchPlayer_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_switchPlayer_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@b81eda8
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if81_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@68de145
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 2
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if80_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if81_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@27fa135a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if80_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_switchPlayer_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_get_mark_prologue:    # get_mark starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg player offset: 4($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_get_mark_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_get_mark_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# if ast.If@46f7f36a
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+seq $t9, $t9, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _if83_else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@421faab1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 88
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+b _if82_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if83_else:    # else
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# return ast.Return@2b71fc7e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 79
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# store return value at $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $v0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# jump to epilogue of current func (defined at $ra)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_if82_end:    nop
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store default return value to $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_get_mark_epilogue:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $sp, $fp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# restore registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t0, 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t1, 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t2, 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t3, 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t4, 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t5, 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t6, 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t7, 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s0, 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s1, 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s2, 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s3, 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s4, 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s5, 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s6, 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $s7, 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t8, 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a0, 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a1, 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a2, 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $a3, 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $gp, 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $ra, 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+jr $ra
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_selectmove_prologue:    # selectmove starts here
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# reset frame pointer
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $fp, $sp
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# setting args frame offset (relative to current fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# arg player offset: 4($fp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# snapshot registers
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 96
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t0 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t1 4($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t2 8($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t3 12($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t4 16($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t5 20($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t6 24($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t7 28($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s0 32($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s1 36($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s2 40($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s3 44($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s4 48($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s5 52($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s6 56($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $s7 60($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t8 64($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 68($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a0 72($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a1 76($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a2 80($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $a3 84($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $gp 88($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 92($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Set $ra to epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $ra, fn_selectmove_epilogue
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+fn_selectmove_content:    
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var row frameOffset(relative to $fp): -97
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var col frameOffset(relative to $fp): -101
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var selected frameOffset(relative to $fp): -105
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var success frameOffset(relative to $fp): -109
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# local var mark frameOffset(relative to $fp): -110
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# pre-alloc 14 bytes for local var
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 14
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@5ce65a89
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -105
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $t9, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+_while84_start:    # while (ast.VarExpr@25f38edc)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -105
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+beq $t9, $zero, _while85_end
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# no local var detected
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@1a86f2f1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str21
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@3eb07fd3
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_i($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 1
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# exprStmt ast.ExprStmt@506c589e
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+la $t9, _str22
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $a0, $t9
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# print_s($a0)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@69d0a921
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -97
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# $v0 = read_c()
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 12
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $t9, $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sb $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@446cdf90
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -101
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# $v0 = read_i()
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+li $v0, 5
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+syscall
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+move $t9, $v0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# assign ast.Assign@799f7e29
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, -110
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# precall for get_mark
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store current $ra in stack mem
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $ra 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# Store current $fp in stack mem
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $fp 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# pre-allocate space for args
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+subi $sp, $sp, 4
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# eval and store args
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+# storing arg player offset: 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+addi $t9, $fp, 0
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+lw $t9, 0($t9)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]
+sw $t9 0($sp)
+# free regs: [$t0, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $s0, $s1, $s2, $s3, $s4, $s5, $s6, $t8, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $t9, $s7, $s7, $t9, $s7, $s7, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9, $t9]

@@ -9,7 +9,7 @@ void main() {
   char t;
 
   // read n from the standard input
-  n = read_i();
+  n = 10;
 
   first = 0;
   second = 1;

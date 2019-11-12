@@ -410,8 +410,12 @@ public class TextVisitor implements ASTVisitor<Register> {
     public void assignValue(Register sourceValue, Type type, Register targetAddress, int offset){
         if (type == BaseType.CHAR) {
             writer.sb(sourceValue, targetAddress, offset);
+            regAllocater.free(sourceValue);
+            regAllocater.free(targetAddress);
         } else if (type == BaseType.INT || type.isPointerType()) {
             writer.sw(sourceValue, targetAddress, offset);
+            regAllocater.free(sourceValue);
+            regAllocater.free(targetAddress);
         } else if (type.isStructType()) {
 
             // Note, sourceValue is actually referring to the struct's address
@@ -435,6 +439,8 @@ public class TextVisitor implements ASTVisitor<Register> {
 
             // Restore sourceValue to original address
             writer.sub(sourceValue, sourceValue, totalSize);
+            regAllocater.free(sourceValue);
+            regAllocater.free(targetAddress);
         } else {
             throw new RuntimeException(
                     "storeValue hasn't been implemented for type: " + type.toString());
@@ -743,6 +749,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
         // Emit finish label
         writer.withLabel(finishLabel).nop();
+        regAllocater.free(x);
 
         return result;
     }
@@ -781,6 +788,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
         // Emit finish label
         writer.withLabel(finishLabel).nop();
+        regAllocater.free(x);
 
         return result;
     }
@@ -788,6 +796,8 @@ public class TextVisitor implements ASTVisitor<Register> {
     private Register mul(Register x, Register y) {
         Register result = regAllocater.get();
         writer.mul(result, x, y);
+        regAllocater.free(y);
+        regAllocater.free(x);
         return result;
     }
 
@@ -795,6 +805,8 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register result = regAllocater.get();
         writer.div(num, dividedBy);
         writer.mfhi(result);
+        regAllocater.free(num);
+        regAllocater.free(dividedBy);
         return result;
     }
 
@@ -802,6 +814,8 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register result = regAllocater.get();
         writer.div(num, dividedBy);
         writer.mflo(result);
+        regAllocater.free(num);
+        regAllocater.free(dividedBy);
         return result;
     }
 
@@ -810,27 +824,43 @@ public class TextVisitor implements ASTVisitor<Register> {
         switch (op){
             case LT:
                 writer.slt(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case GT:
                 writer.sgt(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case LE:
                 writer.sle(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case GE:
                 writer.sge(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case ADD:
                 writer.add(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case SUB:
                 writer.sub(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case EQ:
                 writer.seq(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             case NE:
                 writer.sne(result, x, y);
+                regAllocater.free(x);
+                regAllocater.free(y);
                 return result;
             default:
                 throw new RuntimeException("unsupported operation");
