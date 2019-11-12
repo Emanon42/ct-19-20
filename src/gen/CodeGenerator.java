@@ -69,8 +69,9 @@ public class CodeGenerator implements ASTVisitor<Register> {
 
         writer = new PrintWriter(outputFile);
         lm = new LabelManager();
-        aw = new AsmWritter(writer, lm);
         ra = new RegAllocater();
+        aw = new AsmWritter(writer, lm, ra);
+
 
         program.accept(new DataVisitor(aw, lm));
         program.accept(new TextVisitor(aw, lm, ra));

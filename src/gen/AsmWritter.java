@@ -7,11 +7,13 @@ public class AsmWritter {
     private PrintWriter writer;
     private LabelManager labeller;
     private String currentLabel;
+    private RegAllocater rar;
 
-    public AsmWritter(PrintWriter writer, LabelManager lm) {
+    public AsmWritter(PrintWriter writer, LabelManager lm, RegAllocater rar) {
         this.writer = writer;
         this.labeller = lm;
         this.currentLabel = "";
+        this.rar = rar;
     }
 
     public AsmWritter withLabel(String l){
@@ -28,6 +30,7 @@ public class AsmWritter {
         }
         writer.print(currentLabel + s);
         writer.print("\n");
+        writer.print("# free regs: " + rar.availableRegs + "\n");
         writer.flush();
         currentLabel = "";
     }

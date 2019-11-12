@@ -8,7 +8,7 @@ import static gen.Register.unfreeable;
 public class RegAllocater {
 
     // maintain a stack for free regs
-    private Stack<Register> availableRegs = new Stack<Register>();
+    public Stack<Register> availableRegs = new Stack<Register>();
 
     public RegAllocater() {
         availableRegs.addAll(Register.tmp);

@@ -333,7 +333,9 @@ public class TextVisitor implements ASTVisitor<Register> {
     public Register visitExprStmt(ExprStmt es) {
         writer.comment("exprStmt " + es.toString());
         Register result = es.expr.accept(this); // can be null!
-        regAllocater.free(result);
+        if (result != null){
+            regAllocater.free(result);
+        }
         return null;
     }
 
@@ -470,11 +472,9 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     // purify above funcs
 
-
     // Get value of a certain type stored at this address
     public Register getValue(Register address, Type t) {
         Register value = regAllocater.get();
-
         if (t == BaseType.CHAR) {
             writer.lb(value, address, 0);
         } else if (t == BaseType.INT || t.isPointerType()) {
@@ -639,6 +639,7 @@ public class TextVisitor implements ASTVisitor<Register> {
     @Override
     public Register visitVarExpr(VarExpr v) {
         assert v.type == v.vd.type;
+        //System.out.println(" v.name: " + v.name + " v.type: " + v.type + " vd.type: " + v.vd.type);
         Register address = addressOf(v);
         return getValue(address, v.type);
     }

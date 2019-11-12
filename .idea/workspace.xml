@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dummy.asm" beforeDir="false" afterPath="$PROJECT_DIR$/dummy.asm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gen/AsmWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/AsmWritter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/RegAllocater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/RegAllocater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gen/TextVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/TextVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sem/TypeCheckVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sem/TypeCheckVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +59,7 @@
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ct-19-20" />
       <option name="PROGRAM_PARAMETERS" value="-gen tests/fibonacci.c dummy.asm" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,7 +113,7 @@
       <workItem from="1573058221231" duration="7982000" />
       <workItem from="1573142382959" duration="46313000" />
       <workItem from="1573505382086" duration="8443000" />
-      <workItem from="1573555043797" duration="6656000" />
+      <workItem from="1573555043797" duration="12523000" />
     </task>
     <servers />
   </component>
@@ -141,204 +147,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>247</line>
-          <properties class="sem.TypeCheckVisitor" method="visitVarExpr">
+          <url>file://$PROJECT_DIR$/src/gen/RegAllocater.java</url>
+          <line>26</line>
+          <properties class="gen.RegAllocater" method="free">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>64</line>
-          <properties class="sem.TypeCheckVisitor" method="visitFunDecl">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>37</line>
-          <properties class="sem.TypeCheckVisitor" method="visitProgram">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>51</line>
-          <properties class="sem.TypeCheckVisitor" method="visitStructTypeDecl">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>56</line>
-          <properties class="sem.TypeCheckVisitor" method="visitVarDecl">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>91</line>
-          <properties class="sem.TypeCheckVisitor" method="visitStructType">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>96</line>
-          <properties class="sem.TypeCheckVisitor" method="visitBaseType">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>101</line>
-          <properties class="sem.TypeCheckVisitor" method="visitPointerType">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>106</line>
-          <properties class="sem.TypeCheckVisitor" method="visitArrayType">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>114</line>
-          <properties class="sem.TypeCheckVisitor" method="visitBlock">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>148</line>
-          <properties class="sem.TypeCheckVisitor" method="visitWhile">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>163</line>
-          <properties class="sem.TypeCheckVisitor" method="visitIf">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>196</line>
-          <properties class="sem.TypeCheckVisitor" method="visitReturn">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>205</line>
-          <properties class="sem.TypeCheckVisitor" method="visitExprStmt">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>210</line>
-          <properties class="sem.TypeCheckVisitor" method="visitAssign">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>229</line>
-          <properties class="sem.TypeCheckVisitor" method="visitIntLiteral">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>235</line>
-          <properties class="sem.TypeCheckVisitor" method="visitStrLiteral">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>241</line>
-          <properties class="sem.TypeCheckVisitor" method="visitChrLiteral">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>293</line>
-          <properties class="sem.TypeCheckVisitor" method="visitBinOp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>320</line>
-          <properties class="sem.TypeCheckVisitor" method="visitArrayAccessExpr">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>347</line>
-          <properties class="sem.TypeCheckVisitor" method="visitFieldAccessExpr">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>372</line>
-          <properties class="sem.TypeCheckVisitor" method="visitValueAtExpr">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>388</line>
-          <properties class="sem.TypeCheckVisitor">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>391</line>
-          <properties class="sem.TypeCheckVisitor" method="visitTypecastExpr">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/sem/TypeCheckVisitor.java</url>
-          <line>413</line>
-          <properties class="sem.TypeCheckVisitor" method="visitOp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="81" />
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
