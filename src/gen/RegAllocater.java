@@ -3,6 +3,8 @@ package gen;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
+import static gen.Register.unfreeable;
+
 public class RegAllocater {
 
     // maintain a stack for free regs
@@ -23,6 +25,11 @@ public class RegAllocater {
     }
 
     public void free(Register reg) {
+        for (Register r : unfreeable) {
+            if (r == reg) {
+                throw new RuntimeException("Attempted to free non-freeable register.");
+            }
+        }
         availableRegs.push(reg);
     }
 

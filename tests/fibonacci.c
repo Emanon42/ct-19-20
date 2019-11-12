@@ -1,8 +1,8 @@
-void bla(){
-    print_s((char*)"bla");
-}
+
+
 
 void main(){
-    bla();
-    print_s((char*)"hello");
+    int ema;
+    ema = 114514;
+    print_i(ema);
 }

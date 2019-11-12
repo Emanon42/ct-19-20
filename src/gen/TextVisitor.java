@@ -20,6 +20,25 @@ public class TextVisitor implements ASTVisitor<Register> {
         buildInFuncSet.add("print_c");
         buildInFuncSet.add("read_c");
     }
+    private static HashSet<Op> binOpComparation;
+    static {
+        binOpComparation = new HashSet<Op>();
+        binOpComparation.add(Op.LT);
+        binOpComparation.add(Op.GT);
+        binOpComparation.add(Op.LE);
+        binOpComparation.add(Op.GE);
+        binOpComparation.add(Op.ADD);
+        binOpComparation.add(Op.SUB);
+        binOpComparation.add(Op.EQ);
+        binOpComparation.add(Op.NE);
+    }
+    private static HashSet<Op> binOpArithmic;
+    static {
+        binOpArithmic = new HashSet<Op>();
+        binOpArithmic.add(Op.MUL);
+        binOpArithmic.add(Op.MOD);
+        binOpArithmic.add(Op.DIV);
+    }
     private int frameOffset; // use to point "where are we up to" in current stack frame (only useful in function traverse)
     private final int snapshotRegSize = Register.toSnapshot.size() * 4; // in bytes
 
@@ -208,6 +227,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             writer.comment(String.format("storing arg %s offset: %d($sp)", declaredArg.varName, loadArgsOffset));
             Register result = actualArg.accept(this);
             writer.sw(result, Register.sp, loadArgsOffset);
+            regAllocater.free(result); // remember to free!!
 
             int expectedOffset = declaredArg.getFrameOffset();
             int argSize = argType.sizeof();
@@ -293,6 +313,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             Register toReturn = r.expr.accept(this);
             writer.comment("store return value at $v0");
             writer.move(Register.v0, toReturn);
+            regAllocater.free(toReturn);
         } else {
             writer.comment("store default return value at $v0");
             writer.li(Register.v0, 0);
@@ -311,6 +332,7 @@ public class TextVisitor implements ASTVisitor<Register> {
     public Register visitExprStmt(ExprStmt es) {
         writer.comment("exprStmt " + es.toString());
         Register result = es.expr.accept(this); // can be null!
+        regAllocater.free(result);
         return null;
     }
 
@@ -327,6 +349,8 @@ public class TextVisitor implements ASTVisitor<Register> {
         writer.comment("if " + i.toString());
         Register conditionResult = i.expr.accept(this);
         writer.beqz(conditionResult, elseLabel);
+        regAllocater.free(conditionResult);
+
         i.stmt.accept(this);
         writer.b(endLabel);
 
@@ -352,6 +376,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
         Register conditionResult = w.expr.accept(this);
         writer.beqz(conditionResult, endLabel);
+        regAllocater.free(conditionResult);
 
         w.stmt.accept(this);
 
@@ -396,6 +421,7 @@ public class TextVisitor implements ASTVisitor<Register> {
                 // Read the value at the struct address (which may or may not have been incremented)
                 Register innerSourceValue = getValue(sourceValue, v.type);
                 assignValue(innerSourceValue, v.type, targetAddress, offset);
+                regAllocater.free(innerSourceValue);
 
                 // Increment our read offset and struct address by the size we've just read
                 int size = v.type.sizeof();
@@ -418,6 +444,8 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register lhs = addressOf(a.lhs);
         Register rhs = a.rhs.accept(this);
         assignValue(rhs, a.rhs.type, lhs, 0);
+        regAllocater.free(lhs);
+        regAllocater.free(rhs);
         return null;
     }
 
@@ -482,6 +510,8 @@ public class TextVisitor implements ASTVisitor<Register> {
         int size = e.type.realSize();
         writer.mul(index, index, size);
         writer.add(pointer, pointer, index);
+        regAllocater.free(index);
+
         return pointer;
     }
 
@@ -641,16 +671,49 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     @Override
     public Register visitTypecastExpr(TypecastExpr te) {
-        Register value;
-        value = te.fromExpr.accept(this);
+        Register value  = te.fromExpr.accept(this);
         return value;
     }
 
+
+    private Register and(Register lhs, Expr rhsExpr){
+        return null;
+    }
+
+    private Register or(Register lhs, Expr rhsExpr){
+        return null;
+    }
+
+    private Register mul(Register x, Register y) {
+        Register result = regAllocater.get();
+        writer.mul(result, x, y);
+        return result;
+    }
+
+    private Register mod(Register num, Register dividedBy) {
+        Register result = regAllocater.get();
+        writer.div(num, dividedBy);
+        writer.mfhi(result);
+        return result;
+    }
+
+    private Register div(Register num, Register dividedBy) {
+        Register result = regAllocater.get();
+        writer.div(num, dividedBy);
+        writer.mflo(result);
+        return result;
+    }
 
 
     // now binOP
     @Override
     public Register visitBinOp(BinOp bo) {
+        if (bo.operator == Op.AND){
+            Register lhs = bo.lhs.accept(this);
+            return and(lhs, bo.rhs);
+        }
+
+
         return null;
     }
 
@@ -723,6 +786,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         } else {
             Register val = arg.accept(this);
             writer.move(Register.arg.get(0), val);
+            regAllocater.free(val);
         }
 
         writer.comment("print_i($a0)");
@@ -735,6 +799,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         Expr arg = args.get(0);
         Register val = arg.accept(this);
         writer.move(Register.arg.get(0), val);
+        regAllocater.free(val);
 
         writer.comment("print_s($a0)");
         writer.li(Register.v0, 4);
@@ -759,6 +824,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register byteCount = arg.accept(this);
         // Set the argument of the syscall to these bytes
         writer.move(Register.arg.get(0), byteCount);
+        regAllocater.free(byteCount);
 
         // Call syscall 9 - this puts the address in v0
         writer.comment("mcmalloc($a0)");
@@ -779,6 +845,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         } else {
             Register val = arg.accept(this);
             writer.move(Register.arg.get(0), val);
+            regAllocater.free(val);
         }
 
         writer.comment("print_c($a0)");
