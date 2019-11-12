@@ -412,12 +412,12 @@ public class TextVisitor implements ASTVisitor<Register> {
     public void assignValue(Register sourceValue, Type type, Register targetAddress, int offset){
         if (type == BaseType.CHAR) {
             writer.sb(sourceValue, targetAddress, offset);
-            regAllocater.free(sourceValue);
-            regAllocater.free(targetAddress);
+            //regAllocater.free(sourceValue);
+            //regAllocater.free(targetAddress);
         } else if (type == BaseType.INT || type.isPointerType()) {
             writer.sw(sourceValue, targetAddress, offset);
-            regAllocater.free(sourceValue);
-            regAllocater.free(targetAddress);
+            //regAllocater.free(sourceValue);
+            //regAllocater.free(targetAddress);
         } else if (type.isStructType()) {
 
             // Note, sourceValue is actually referring to the struct's address
@@ -441,8 +441,8 @@ public class TextVisitor implements ASTVisitor<Register> {
 
             // Restore sourceValue to original address
             writer.sub(sourceValue, sourceValue, totalSize);
-            regAllocater.free(sourceValue);
-            regAllocater.free(targetAddress);
+            //regAllocater.free(sourceValue);
+            //regAllocater.free(targetAddress);
         } else {
             throw new RuntimeException(
                     "storeValue hasn't been implemented for type: " + type.toString());

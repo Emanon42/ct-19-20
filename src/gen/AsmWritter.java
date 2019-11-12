@@ -30,7 +30,7 @@ public class AsmWritter {
         }
         writer.print(currentLabel + s);
         writer.print("\n");
-        //writer.print("# free regs: " + rar.availableRegs + "\n");
+        writer.print("# free regs: " + rar.availableRegs + "\n");
         writer.flush();
         currentLabel = "";
     }
