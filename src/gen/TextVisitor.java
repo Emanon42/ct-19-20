@@ -232,8 +232,10 @@ public class TextVisitor implements ASTVisitor<Register> {
 
             int expectedOffset = declaredArg.getFrameOffset();
             int argSize = argType.sizeof();
-            loadArgsOffset += argSize;
+            //System.out.println("expectedOffset: " + expectedOffset + " loadoffset: " + loadArgsOffset);
             assert expectedOffset == loadArgsOffset;
+            loadArgsOffset += argSize;
+
         }
         assert loadArgsOffset == totalArgSize;
 
