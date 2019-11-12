@@ -53,6 +53,11 @@ public enum BaseType implements Type {
         }
     }
 
+    @Override
+    public int realSize() {
+        return sizeof();
+    }
+
     public static BaseType fromTokenClass(Token.TokenClass tc){
         if (tc == Token.TokenClass.INT) {
             return INT;

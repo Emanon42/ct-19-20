@@ -5,7 +5,6 @@ import ast.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
@@ -21,7 +20,7 @@ public class CodeGenerator implements ASTVisitor<Register> {
     private Stack<Register> freeRegs = new Stack<Register>();
 
     public CodeGenerator() {
-        freeRegs.addAll(Register.tmpRegs);
+        freeRegs.addAll(Register.tmp);
     }
 
     private class RegisterAllocationError extends Error {}
@@ -55,6 +54,7 @@ public class CodeGenerator implements ASTVisitor<Register> {
     private PrintWriter writer; // use this writer to output the assembly instructions
     private LabelManager lm;
     private AsmWritter aw;
+    private RegAllocater ra;
     // general entry point of code generator
     public void emitProgram(Program program, File outputFile) throws FileNotFoundException {
         // input: ast
@@ -68,9 +68,12 @@ public class CodeGenerator implements ASTVisitor<Register> {
 
 
         writer = new PrintWriter(outputFile);
-        aw = new AsmWritter(writer);
         lm = new LabelManager();
+        aw = new AsmWritter(writer, lm);
+        ra = new RegAllocater();
+
         program.accept(new DataVisitor(aw, lm));
+        program.accept(new TextVisitor(aw, lm, ra));
 
         //visitProgram(program);
         writer.close();

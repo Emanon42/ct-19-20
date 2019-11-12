@@ -3,13 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d44bc9f7-21dc-4aab-9eb5-664a9ac66c7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dummy.asm" beforeDir="false" afterPath="$PROJECT_DIR$/dummy.asm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/ArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ArrayType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/BaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BaseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/FunDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/FunDecl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/PointerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/PointerType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/StrLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StrLiteral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/StructType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/StructType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/VarDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/VarDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/AsmWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/AsmWritter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gen/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/DataVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/DataVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/LabelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/LabelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/TextVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/TextVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +62,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ct-19-20" />
-      <option name="PROGRAM_PARAMETERS" value="-gen tests/tictactoe.c dummy.asm" />
+      <option name="PROGRAM_PARAMETERS" value="-gen tests/fibonacci.c dummy.asm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,7 +114,8 @@
       <workItem from="1572285512693" duration="5723000" />
       <workItem from="1572531110652" duration="1091000" />
       <workItem from="1573058221231" duration="7982000" />
-      <workItem from="1573142382959" duration="4111000" />
+      <workItem from="1573142382959" duration="46313000" />
+      <workItem from="1573505382086" duration="8340000" />
     </task>
     <servers />
   </component>

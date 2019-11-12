@@ -40,6 +40,17 @@ public class StructType implements Type{
     }
 
     @Override
+    public int realSize() {
+        int size = 0;
+
+        // Each field for a struct must be 4-byte aligned
+        for (VarDecl v : decl.varDecls) {
+            size += v.type.realSize();
+        }
+        return size;
+    }
+
+    @Override
     public String toString(){
         return "struct"+ident;
     }

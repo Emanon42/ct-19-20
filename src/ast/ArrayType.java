@@ -42,6 +42,11 @@ public class ArrayType implements Type {
     }
 
     @Override
+    public int realSize(){
+        return capacity * innerType.realSize();
+    }
+
+    @Override
     public String toString(){
         return innerType.toString() + Integer.toString(capacity);
     }

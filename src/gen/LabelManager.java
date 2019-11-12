@@ -22,13 +22,41 @@ public class LabelManager {
     }
 
     public String addGlobalStringLabel(){
-        String label = String.format("$str%d", counter);
+        String label = String.format("_str%d", counter);
         if (labels.contains(label)) {
             throw new RuntimeException("Gen Error: duplicate label: " + label);
         }else {
             labels.add(label);
             counter++;
             return label;
+        }
+    }
+
+    public String addNumLabel(String prefix){
+        String label = String.format("_%s%d", prefix, counter);
+        if (labels.contains(label)) {
+            throw new RuntimeException("Gen Error: duplicate label: " + label);
+        }else {
+            labels.add(label);
+            counter++;
+            return label;
+        }
+    }
+
+    public String addNumLabel(String prefix, String postfix){
+        String label = String.format("_%s%d_%s", prefix, counter, postfix);
+        if (labels.contains(label)) {
+            throw new RuntimeException("Gen Error: duplicate label: " + label);
+        }else {
+            labels.add(label);
+            counter++;
+            return label;
+        }
+    }
+
+    public void verifyLabel(String label) {
+        if (!labels.contains(label)) {
+            throw new RuntimeException("Gen Error : using undefined label: " + label);
         }
     }
 

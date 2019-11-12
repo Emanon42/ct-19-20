@@ -14,4 +14,6 @@ public interface Type extends ASTNode {
 
     public int sizeof();
 
+    public int realSize();
+
 }

@@ -1,21 +1,16 @@
-// Solve Towers of Hanoi with three pillars and n disks.
-// This program prints the solution trace.
-// Written by Daniel Hillerström
-#include "io.h"
+struct vodka{
+    int cheeki[9];
+    char* breeki;
+};
 
-void solve_toh(int ndisks, char a, char b, char c) {
-  if (ndisks > 0) {
-    ndisks = ndisks - 1;
-    solve_toh(ndisks, a, c, b);
-    print_c(a); print_s((char*)" -> "); print_c(b); print_s((char*)"\n");
-    solve_toh(ndisks, c, b, a);
-  }
+struct vodka nahui;
+int tnok;
+int yjsp;
+int* laser_shark[114];
+
+int cykablyat(int a, char b){
+    return 10;
 }
-
-void main() {
-  int ndisks;
-  char a; char b; char c;
-  a = 'A'; b = 'B'; c = 'C';
-  print_s((char*)"Enter number of disks> "); ndisks = read_i();
-  solve_toh(ndisks, a, b, c);
+void main(){
+    cykablyat(1, 'c');
 }

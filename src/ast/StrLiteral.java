@@ -2,6 +2,7 @@ package ast;
 
 public class StrLiteral extends Expr{
     public final String value;
+    public String asmLabel;
     public StrLiteral(String s){
         this.value = s;
     }

@@ -33,10 +33,18 @@ public class DataVisitor implements ASTVisitor<Void> {
         // add struct info as comment
         writer.comment(String.format("%s as \"struct %s\" (size %d)", varDecl.varName, structType.ident, structType.sizeof()));
 
-        // maybe need to set label to this stru decl?
+        //NOTE : NO LABEL FOR STRUCT DECL
+        // TODO: it maybe produce bug: consider to add a total label for stru
+        //ONLY LABEL FOR EACH FIELD
+
+        // label entire struct
+        String struLabel = labelTable.addLabel(String.format("_g_struct_%s",varDecl.varName));
+        varDecl.setGlobalLabel(struLabel);
+        writer.withLabel(struLabel).newline();
 
         for (VarDecl field: structType.decl.varDecls){
-            String label = labelTable.addLabel(String.format("$%s_%s", varDecl.varName, field.varName));
+            String label = labelTable.addLabel(String.format("_gs_%s_%s", varDecl.varName, field.varName));
+            field.setGlobalLabel(label);
             int size = field.type.sizeof();
             writer.withLabel(label).dataSpace(size);
 
@@ -47,8 +55,8 @@ public class DataVisitor implements ASTVisitor<Void> {
         if (varDecl.type.isStructType()) {
             visitGlobalStructDecl(varDecl, (StructType) varDecl.type);
         }else {
-            String label = labelTable.addLabel(varDecl.varName);
-            //varDecl.setGlobalLabel(label);
+            String label = labelTable.addLabel("_gv_"+varDecl.varName);
+            varDecl.setGlobalLabel(label);
 
             int size = varDecl.type.sizeof();
             writer.withLabel(label).dataSpace(size);
@@ -59,8 +67,9 @@ public class DataVisitor implements ASTVisitor<Void> {
 
     public Void visitStrLiteral(StrLiteral s) {
 
-        //s.genLabel = strLabeller.num();
+
         String label = labelTable.addGlobalStringLabel();
+        s.asmLabel = label;
         writer.withLabel(label).dataAsciiNullTerminated(s.extractValue());
         return null;
     }

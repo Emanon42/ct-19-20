@@ -39,6 +39,11 @@ public class PointerType implements Type {
     }
 
     @Override
+    public int realSize(){
+        return 4;
+    }
+
+    @Override
     public String toString(){
         return "*"+type.toString();
     }

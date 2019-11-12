@@ -1,6 +1,7 @@
 package ast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class FunDecl implements ASTNode {
     public final List<VarDecl> params;
     public final Block block;
     public final boolean isBuildIn;
+    public String asmLabel;
 
     public FunDecl(Type type, String name, List<VarDecl> params, Block block) {
 	    this.type = type;
@@ -41,6 +43,10 @@ public class FunDecl implements ASTNode {
 
         this.block = new Block(Collections.emptyList(), Collections.emptyList());
         this.isBuildIn = true;
+    }
+
+    public String signString() {
+        return String.format("%s %s %s", this.type.toString(), this.name, Arrays.toString(params.toArray()));
     }
 
     public <T> T accept(ASTVisitor<T> v) {
