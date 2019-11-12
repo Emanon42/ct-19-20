@@ -62,6 +62,7 @@ public class Register {
         toSnapshot.addAll(tmp);
         toSnapshot.addAll(arg);
         toSnapshot.add(gp);
+        toSnapshot.add(ra);
     }
 
 

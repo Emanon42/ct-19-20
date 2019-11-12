@@ -1,20 +1,14 @@
 .data
-# nahui as "struct vodka" (size 40)
-_g_struct_nahui:    
-_gs_nahui_cheeki:    .space 36
-_gs_nahui_breeki:    .space 4
-_gv_tnok:    .space 4
-_gv_yjsp:    .space 4
-_gv_laser_shark:    .space 456
+_str0:    .asciiz "bla"
+_str1:    .asciiz "hello"
 .text
-fn_cykablyat_prologue:    # cykablyat starts here
+fn_bla_prologue:    # bla starts here
 # reset frame pointer
 move $fp, $sp
 # setting args frame offset (relative to current fp)
-# arg a offset: 4($fp)
-# arg b offset: 5($fp)
+# no args in current function
 # snapshot registers
-subi $sp, $sp, 92
+subi $sp, $sp, 96
 sw $t0 0($sp)
 sw $t1 4($sp)
 sw $t2 8($sp)
@@ -38,20 +32,22 @@ sw $a1 76($sp)
 sw $a2 80($sp)
 sw $a3 84($sp)
 sw $gp 88($sp)
+sw $ra 92($sp)
 # Set $ra to epilogue
-la $ra, fn_cykablyat_epilogue
-fn_cykablyat_content:    
+la $ra, fn_bla_epilogue
+fn_bla_content:    
 # no local var detected
-# return ast.Return@7cca494b
-# store return value at $v0
-move $v0, null
-# jump to epilogue of current func (defined at $ra)
-jr $ra
+# exprStmt ast.ExprStmt@7cca494b
+la $t9, _str0
+move $a0, $t9
+# print_s($a0)
+li $v0, 4
+syscall
 # Store default return value to $v0
 li $v0, 0
-fn_cykablyat_epilogue:    
+fn_bla_epilogue:    
 move $sp, $fp
-subi $sp, $sp, 92
+subi $sp, $sp, 96
 # restore registers
 lw $t0, 0($sp)
 lw $t1, 4($sp)
@@ -76,7 +72,8 @@ lw $a1, 76($sp)
 lw $a2, 80($sp)
 lw $a3, 84($sp)
 lw $gp, 88($sp)
-addi $sp, $sp, 92
+lw $ra, 92($sp)
+addi $sp, $sp, 96
 jr $ra
 fn_main_prologue:    # main starts here
 # reset frame pointer
@@ -84,7 +81,7 @@ move $fp, $sp
 # setting args frame offset (relative to current fp)
 # no args in current function
 # snapshot registers
-subi $sp, $sp, 92
+subi $sp, $sp, 96
 sw $t0 0($sp)
 sw $t1 4($sp)
 sw $t2 8($sp)
@@ -108,12 +105,13 @@ sw $a1 76($sp)
 sw $a2 80($sp)
 sw $a3 84($sp)
 sw $gp 88($sp)
+sw $ra 92($sp)
 # Set $ra to epilogue
 la $ra, fn_main_epilogue
 fn_main_content:    
 # no local var detected
 # exprStmt ast.ExprStmt@7ba4f24f
-# precall for cykablyat
+# precall for bla
 # Store current $ra in stack mem
 subi $sp, $sp, 4
 sw $ra 0($sp)
@@ -121,17 +119,13 @@ sw $ra 0($sp)
 subi $sp, $sp, 4
 sw $fp 0($sp)
 # pre-allocate space for args
-subi $sp, $sp, 5
+subi $sp, $sp, 0
 # eval and store args
-# storing arg a offset: 0($sp)
-sw null 0($sp)
-# storing arg b offset: 4($sp)
-sw null 4($sp)
-# perform jump to callee: cykablyat
-jal fn_cykablyat_prologue
-# postreturn for cykablyat
+# perform jump to callee: bla
+jal fn_bla_prologue
+# postreturn for bla
 # dispose args space
-addi $sp, $sp, 5
+addi $sp, $sp, 0
 # restore $fp from stack mem
 lw $fp, 0($sp)
 addi $sp, $sp, 4
@@ -139,12 +133,18 @@ addi $sp, $sp, 4
 lw $ra, 0($sp)
 addi $sp, $sp, 4
 # extract return value
-move $t9, $v0
+move $t8, $v0
+# exprStmt ast.ExprStmt@3b9a45b3
+la $s7, _str1
+move $a0, $s7
+# print_s($a0)
+li $v0, 4
+syscall
 # Store default return value to $v0
 li $v0, 0
 fn_main_epilogue:    
 move $sp, $fp
-subi $sp, $sp, 92
+subi $sp, $sp, 96
 # restore registers
 lw $t0, 0($sp)
 lw $t1, 4($sp)
@@ -169,7 +169,8 @@ lw $a1, 76($sp)
 lw $a2, 80($sp)
 lw $a3, 84($sp)
 lw $gp, 88($sp)
-addi $sp, $sp, 92
+lw $ra, 92($sp)
+addi $sp, $sp, 96
 jr $ra
 main:    .globl main
 jal fn_main_prologue
