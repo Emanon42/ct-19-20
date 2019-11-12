@@ -171,6 +171,26 @@ public class AsmWritter {
         write(String.format("bgtz %s, %s", value, label));
     }
 
+    // set if less than
+    public void slt(Register result, Register x, Register y){
+        write(String.format("slt %s, %s, %s", result, x, y));
+    }
+
+    // set if greater than
+    public void sgt(Register result, Register x, Register y){
+        write(String.format("sgt %s, %s, %s", result, x, y));
+    }
+
+    // set if less equal
+    public void sle(Register result, Register x, Register y){
+        write(String.format("sle %s, %s, %s", result, x, y));
+    }
+
+    // set if grater equal
+    public void sge(Register result, Register x, Register y){
+        write(String.format("sge %s, %s, %s", result, x, y));
+    }
+
     // jump to label: j label
     public void j(String label) {
         labeller.verifyLabel(label);

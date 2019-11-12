@@ -2,6 +2,7 @@ package gen;
 
 import ast.*;
 
+import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -676,12 +677,110 @@ public class TextVisitor implements ASTVisitor<Register> {
     }
 
 
-    private Register and(Register lhs, Expr rhsExpr){
-        return null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private Register and(Register x, Expr yExpr){
+        // Generate a result register
+        Register result = regAllocater.get();
+
+        // Generate a "false", "true", "end" label ahead of time
+        String falseLabel = labeller.addNumLabel("and_false");
+        String trueLabel = labeller.addNumLabel("and_true");
+        String finishLabel = labeller.addNumLabel("and_finish");
+
+        // Plan:
+        // - jump to FALSE if X fails, otherwise continue (jump to CHECK_Y)
+        // - CHECK_Y: jump to TRUE if Y success, otherwise continue (jump to FALSE)
+        // - FALSE  : set result to 0, then finish (jump to FINISH)
+        // - TRUE   : set result to 1
+        // - FINISH : return the result
+
+        // Jump to FALSE if X is zero
+        writer.beqz(x, falseLabel);
+
+        // Jump to TRUE if Y success
+        // If y is greater than zero, we want to skip to the true label
+        Register y = yExpr.accept(this);
+        writer.bgtz(y, trueLabel);
+        regAllocater.free(y);
+
+
+        // FALSE: Set result to 0, jump to finish
+        writer.withLabel(falseLabel).li(result, 0);
+        writer.b(finishLabel);
+
+        // TRUE : Set result to 1
+        writer.withLabel(trueLabel).li(result, 1);
+
+        // Emit finish label
+        writer.withLabel(finishLabel).nop();
+
+        return result;
     }
 
-    private Register or(Register lhs, Expr rhsExpr){
-        return null;
+    private Register or(Register x, Expr yExpr){
+        // Generate a result register
+        Register result = regAllocater.get();
+
+        // Generate a "false", "true", "end" label ahead of time
+        String falseLabel = labeller.addNumLabel("or_false");
+        String trueLabel = labeller.addNumLabel("or_true");
+        String finishLabel = labeller.addNumLabel("or_finish");
+
+        // Plan:
+        // - jump to TRUE if X success, otherwise continue (jump to CHECK_Y)
+        // - CHECK_Y: continue if Y success, otherwise jump to FALSE
+        // - TRUE   : set result to 1 (jump to FINISH)
+        // - FALSE  : set result to 0
+        // - FINISH : return the result
+
+        // Jump to TRUE if X success
+        writer.bnez(x, trueLabel);
+
+        // Jump to FALSE if Y fail
+        // If y is greater than zero, we want to skip to the true label
+        Register y = yExpr.accept(this);
+        writer.beqz(y, falseLabel);
+        regAllocater.free(y);
+
+        // TRUE : Set result to 1, jump to finish
+        writer.withLabel(trueLabel).li(result, 1);
+        writer.b(finishLabel);
+
+        // FALSE: Set result to 0
+        writer.withLabel(falseLabel).li(result, 0);
+
+        // Emit finish label
+        writer.withLabel(finishLabel).nop();
+
+        return result;
     }
 
     private Register mul(Register x, Register y) {
@@ -704,6 +803,38 @@ public class TextVisitor implements ASTVisitor<Register> {
         return result;
     }
 
+    private Register compare(Register x, Register y, Op op) {
+        Register result = regAllocater.get();
+        switch (op){
+            case LT:
+                writer.slt(result, x, y);
+                return result;
+            case GT:
+                writer.sgt(result, x, y);
+                return result;
+            case LE:
+                writer.sle(result, x, y);
+                return result;
+            case GE:
+                writer.sge(result, x, y);
+                return result;
+            case ADD:
+                writer.add(result, x, y);
+                return result;
+            case SUB:
+                writer.sub(result, x, y);
+                return result;
+            case EQ:
+                writer.seq(result, x, y);
+                return result;
+            case NE:
+                writer.sne(result, x, y);
+                return result;
+            default:
+                throw new RuntimeException("unsupported operation");
+        }
+    }
+
 
     // now binOP
     @Override
@@ -711,10 +842,29 @@ public class TextVisitor implements ASTVisitor<Register> {
         if (bo.operator == Op.AND){
             Register lhs = bo.lhs.accept(this);
             return and(lhs, bo.rhs);
+        }else if (bo.operator == Op.OR){
+            Register lhs = bo.lhs.accept(this);
+            return or(lhs, bo.rhs);
+        }else if (binOpArithmic.contains(bo.operator)){
+            Register lhs = bo.lhs.accept(this);
+            Register rhs = bo.rhs.accept(this);
+            switch (bo.operator){
+                case MUL:
+                    return mul(lhs, rhs);
+                case MOD:
+                    return mod(lhs, rhs);
+                case DIV:
+                    return div(lhs, rhs);
+                default:
+                    throw new RuntimeException("unsupported operation");
+            }
+        }else if (binOpComparation.contains(bo.operator)){
+            Register lhs = bo.lhs.accept(this);
+            Register rhs = bo.rhs.accept(this);
+            return compare(lhs, rhs, bo.operator);
+        }else {
+            throw new RuntimeException("unsupported operation");
         }
-
-
-        return null;
     }
 
     @Override
