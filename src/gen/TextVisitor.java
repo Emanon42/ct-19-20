@@ -537,7 +537,6 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register value = regAllocater.get();
 
         if (decl.isGlobal()) {
-            // Load address into to value register
             String label = decl.getGlobalLabel();
             writer.la(value, label);
             return value;
@@ -551,7 +550,6 @@ public class TextVisitor implements ASTVisitor<Register> {
     private Register addressOf(FieldAccessExpr f) {
         assert f.stru.type.isStructType();
 
-        // Only varExpr.fieldName can take advantage of directly addressing by label
         if (f.stru instanceof VarExpr) {
             if (((VarExpr) f.stru).vd.isGlobal()) {
                 String label = ((VarExpr) f.stru).vd.getGlobalLabel();
@@ -561,10 +559,8 @@ public class TextVisitor implements ASTVisitor<Register> {
             }
         }
 
-        // Get the address of the struct
         Register address = f.stru.accept(this);
 
-        // Offset the address by whichever amount
         StructType structType = (StructType) f.stru.type;
         int offset = 0; // todo: only calculate this stuff once (also elsewhere in assign)
         for (VarDecl v : structType.decl.varDecls) {
@@ -580,13 +576,10 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     private Register addressOf(ValueAtExpr e) {
         assert e.toDeref.type instanceof PointerType;
-        // Store address of the pointer in a register
         Register locationOfPointer = addressOf(e.toDeref);
 
-        // Read the pointer into our register
         writer.lw(locationOfPointer, locationOfPointer, 0);
 
-        // This is what the above load word has done
         Register pointer = locationOfPointer;
 
         return pointer;
@@ -724,20 +717,17 @@ public class TextVisitor implements ASTVisitor<Register> {
 
 
     private Register and(Register x, Expr yExpr){
-        // Generate a result register
         Register result = regAllocater.get();
 
-        // Generate a "false", "true", "end" label ahead of time
         String falseLabel = labeller.addNumLabel("and_false");
         String trueLabel = labeller.addNumLabel("and_true");
         String finishLabel = labeller.addNumLabel("and_finish");
 
-        // Plan:
-        // - jump to FALSE if X fails, otherwise continue (jump to CHECK_Y)
-        // - CHECK_Y: jump to TRUE if Y success, otherwise continue (jump to FALSE)
-        // - FALSE  : set result to 0, then finish (jump to FINISH)
-        // - TRUE   : set result to 1
-        // - FINISH : return the result
+        /*
+        check x -> check y -> true
+          |          |
+          ------------------> false
+         */
 
         // Jump to FALSE if X is zero
         writer.beqz(x, falseLabel);
@@ -764,20 +754,13 @@ public class TextVisitor implements ASTVisitor<Register> {
     }
 
     private Register or(Register x, Expr yExpr){
-        // Generate a result register
         Register result = regAllocater.get();
 
-        // Generate a "false", "true", "end" label ahead of time
         String falseLabel = labeller.addNumLabel("or_false");
         String trueLabel = labeller.addNumLabel("or_true");
         String finishLabel = labeller.addNumLabel("or_finish");
 
-        // Plan:
-        // - jump to TRUE if X success, otherwise continue (jump to CHECK_Y)
-        // - CHECK_Y: continue if Y success, otherwise jump to FALSE
-        // - TRUE   : set result to 1 (jump to FINISH)
-        // - FALSE  : set result to 0
-        // - FINISH : return the result
+        // same as and
 
         // Jump to TRUE if X success
         writer.bnez(x, trueLabel);
@@ -972,7 +955,7 @@ public class TextVisitor implements ASTVisitor<Register> {
     private Register print_i(FunDecl f, List<Expr> args) {
         Expr arg = args.get(0);
         if (arg instanceof IntLiteral) {
-            // this is left here for efficiency. removing this will just make an extra intermediary register.
+            // short cut
             writer.li(Register.arg.get(0), ((IntLiteral) arg).value);
         } else {
             Register val = arg.accept(this);
@@ -1000,7 +983,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     private Register read_i(FunDecl f, List<Expr> args) {
         writer.comment("$v0 = read_i()");
-        // Call syscall 5 - this sets the read integer to v0
+        // syscall 5 sets the read integer to v0
         writer.li(Register.v0, 5);
         writer.syscall();
 
@@ -1017,7 +1000,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         writer.move(Register.arg.get(0), byteCount);
         regAllocater.free(byteCount);
 
-        // Call syscall 9 - this puts the address in v0
+        // syscall 9 puts the address in v0
         writer.comment("mcmalloc($a0)");
         writer.li(Register.v0, 9);
         writer.syscall();
@@ -1031,7 +1014,6 @@ public class TextVisitor implements ASTVisitor<Register> {
         Expr arg = args.get(0);
 
         if (arg instanceof ChrLiteral) {
-            // this is left here for efficiency. removing this will just make an extra intermediary register.
             writer.li(Register.arg.get(0), ((ChrLiteral) arg).value);
         } else {
             Register val = arg.accept(this);
@@ -1047,7 +1029,7 @@ public class TextVisitor implements ASTVisitor<Register> {
     }
 
     private Register read_c(FunDecl f, List<Expr> args) {
-        // Call syscall 12 - this sets the read character to v0
+        // syscall 12 sets the read character to v0
         writer.comment("$v0 = read_c()");
         writer.li(Register.v0, 12);
         writer.syscall();

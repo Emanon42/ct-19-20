@@ -65,43 +65,37 @@ public class AsmWritter {
         write("syscall");
     }
 
-    // load immediate: li $register, 1
+    // load immediate
     public void li(Register r, int i) {
         write(String.format("li %s, %d", r, i));
     }
 
-    // load address from label: la $register, some_global
+    // load address from label
     public void la(Register r, String label) {
         labeller.verifyLabel(label);
         write(String.format("la %s, %s", r, label));
     }
 
-    // add
     public void add(Register value, Register x, Register y) {
         write(String.format("add %s, %s, %s", value, x, y));
     }
 
-    // addi
     public void add(Register value, Register x, int y) {
         write(String.format("addi %s, %s, %d", value, x, y));
     }
 
-    // sub: value = x - y
     public void sub(Register value, Register x, Register y) {
         write(String.format("sub %s, %s, %s", value, x, y));
     }
 
-    // subi: value = $x - i
     public void sub(Register value, Register x, int i) {
         write(String.format("subi %s, %s, %d", value, x, i));
     }
 
-    // seq: value = x == y
     public void seq(Register value, Register x, Register y) {
         write(String.format("seq %s, %s, %s", value, x, y));
     }
 
-    // sne: value = x != y
     public void sne(Register value, Register x, Register y) {
         write(String.format("sne %s, %s, %s", value, x, y));
     }

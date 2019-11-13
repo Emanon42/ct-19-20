@@ -164,60 +164,25 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
     //TODO: purify this
     @Override
     public Type visitIf(If i) {
-//        Type condition = i.expr.accept(this);
-//        if (!equal(condition, BaseType.INT)){
-//            error("expect INT for condition of while, found: " + i.expr.type.toString());
-//        }
-//        Type maybeReturn1 = i.stmt.accept(this);
-//        Type hasReturn = possibleReturn(i.stmt) ? maybeReturn1 : null;
-//
-//
-//
-////        Type maybeReturn1 = null;
-////        if (possibleReturn(i.stmt)){
-////            maybeReturn1 = i.stmt.accept(this);
-////        }else {
-////            i.stmt.accept(this);
-////            return null;
-////        }
-//
-//        if (i.elseStmt != null){
-//            Type maybeReturn2 = null;
-//            if (possibleReturn(i.elseStmt)){
-//                maybeReturn2 = i.elseStmt.accept(this);
-//            }else {
-//                i.elseStmt.accept(this);
-//                return null;
-//            }
-//            if (!equal(maybeReturn1, maybeReturn2)){
-//                if (maybeReturn1 == null || maybeReturn2 == null){
-//                    // bug fix: return non-null branch type
-//                    return maybeReturn1 == null ? maybeReturn2 : maybeReturn1;
-//                }
-//                error("return types are inconsistent in if/else branch: "+maybeReturn1.toString()+" vs "+maybeReturn2.toString());
-//            }
-//        }
-//        return maybeReturn1;
-        Type e = i.expr.accept(this);
-        if (e != BaseType.INT) {
-            error("expect INT for condition of while, found: " + i.expr.type.toString());
+        Type condition = i.expr.accept(this);
+        if (condition != BaseType.INT) {
+            error("expect INT for condition of if, found: " + i.expr.type.toString());
         }
 
-        Type a = i.stmt.accept(this);
-        Type returned = possibleReturn(i.stmt) ? a : null;
+        Type stmtType = i.stmt.accept(this);
+        Type returned = possibleReturn(i.stmt) ? stmtType : null;
         if (i.elseStmt != null) {
-            Type b = i.elseStmt.accept(this);
-            boolean bReturnable = possibleReturn(i.elseStmt);
+            Type elseType = i.elseStmt.accept(this);
+            boolean isElseReturn = possibleReturn(i.elseStmt);
 
             // If b exists we need to check for equality
-            if (b != null) {
+            if (elseType != null) {
                 if (returned == null) {
-                    // If a is not a returnable statement, we set our If return value appropriately
-                    returned = bReturnable ? b : null;
-                } else if (bReturnable && !equal(a, b)) {
-                    // If b can return, and a can return (we checked this by checking returned==null)
-                    // Make sure both return types are equal
-                    error("return types are inconsistent in if/else branch: "+a.toString()+" vs "+b.toString());
+                    // If stmt does not contain return, we set our If return value appropriately
+                    returned = isElseReturn ? elseType : null;
+                } else if (isElseReturn && !equal(stmtType, elseType)) {
+                    // check consistency
+                    error("return types are inconsistent in if/else branch: "+stmtType.toString()+" vs "+elseType.toString());
                 }
             }
         }
