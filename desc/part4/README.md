@@ -2,7 +2,7 @@
 The goal of part IV is to write a simple LLVM pass.
 If you have no previous experience with C++, we suggest that you take a look at these [C++ for Java programmers](https://www.cs.cmu.edu/afs/cs/academic/class/15494-s12/lectures/c++forjava.pdf) slides.
 
-The project counts for 30% of your grade: 10% for writing a simple dead code elimination pass using the skeleton code provided, and 20% for implementing liveness analysis and writing your own method to determine dead code.
+The project counts for 30% of your grade: 10% for writing a simple dead code elimination pass using the code provided, and 20% for implementing liveness analysis and writing your own method to determine dead code.
 
 ## 0. Setup
 
@@ -70,7 +70,7 @@ attributes #0 = { nounwind ssp uwtable "disable-tail-calls"="false" "less-precis
 Congratulations you have just built LLVM!
 
 
-## 1. Writing a Skeleton LLVM Pass
+## 1. Writing a LLVM Pass
 
 You have LLVM and are able to compile C programs. The next step is to create a pass of your own. There is example code for an LLVM pass in the CT git repository on GitLab. If you have not done so already, clone the git repo as follows.
 
@@ -79,7 +79,7 @@ cd ~
 git clone https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/
 ```
 
-Change to the directory for the skeleton pass and take a look at the source. It does nothing except print the name of whatever function it encounters.
+Change to the directory for the example pass and take a look at the source. It does nothing except print the name of whatever function it encounters.
 
 ```
 cd ct-19-20/src/llvm-pass
@@ -93,7 +93,7 @@ mkdir build
 cd build
 ```
 
-Before running Cmake and building the pass, you need to set LLVM_DIR to your LLVM build directory, i.e. ~/ug3-ct/build. Otherwise when you build the skeleton pass it will try to build with the version of LLVM that
+Before running Cmake and building the pass, you need to set LLVM_DIR to your LLVM build directory, i.e. ~/ug3-ct/build. Otherwise when you build the pass it will try to build with the version of LLVM that
 is already installed on DICE and fail.
 
 ```
@@ -107,7 +107,7 @@ cmake3 ../ct-19-20/src/llvm-pass
 make
 ```
 
-There should be a shared library for your new pass in skeleton/libSkeletonPass.so. When you compile a program with LLVM it will load your pass and automatically call it. You'll need a C file to use as a test. You can use the test.c you created in Step 0 or create a new file.
+There should be a shared library for your new pass in src/libMyPass.so. When you compile a program with LLVM it will load your pass and automatically call it. You'll need a C file to use as a test. You can use the test.c you created in Step 0 or create a new file.
 
 ```
 ~/ug3-ct/build/bin/clang -Xclang -load -Xclang src/libMyPass.so ~/ug3-ct/build/test.c
@@ -119,7 +119,7 @@ Congratulations you've just created an LLVM pass and successfully executed it wi
 
 ## 2. Write a Pass to Count Instructions
 
-Use the skeleton pass above and the [lecture notes from 
+Use the pass above and the [lecture notes from 
 class](http://www.inf.ed.ac.uk/teaching/courses/ct/slides-16-17/llvm/4-lab3_intro.pdf) to write a simple pass to print the number of instructions in a function.
 
 NOTE!! LLVM will run your pass on EACH function. You do not need to use any module iterators. Only function and basic block iterators.
@@ -175,11 +175,11 @@ SmallVector<Instruction*, 64> Worklist;
 
 You need to run LLVM's 'mem2reg' pass before your DCE pass to convert the bitcode into a form that will work with your optimization. Without running 'mem2reg' all instructions will store their destinations operands to the stack and load their source operands from the stack. The memory instructions will block the ability for you to discover dead code. When you run 'mem2reg', you are converting the stack allocated code in non-SSA form, into SSA form with virtual registers.
 
-Use the 'opt' tool to run 'mem2reg' before your DCE pass. Give your pass a command line option called 'skeletonpass'.
+Use the 'opt' tool to run 'mem2reg' before your DCE pass. Give your pass a command line option called 'mypass'.
 
 ```
 ~/ug3-ct/build/bin/clang -S -emit-llvm -Xclang -disable-O0-optnone dead.c
-~/ug3-ct/build/bin/opt -load skeleton/libSkeletonPass.so -mem2reg -skeletonpass dead.ll
+~/ug3-ct/build/bin/opt -load src/libMyPass.so -mem2reg -mypass dead.ll
 ``` 
 
 ## 4. Implement Iterative Liveness Analysis
@@ -198,7 +198,7 @@ Passes should be stored in a folder `part-4/passes`. The folder should *only* co
 - `llvm-pass-simple-dce` (part 3, a Simple Dead Code Elimination Pass)
 - `llvm-pass-my-dce` (part 4, an Iteratrive Liveness Analysis pass)
 
-The sources for each pass should be in a folder named `skeleton`, and the pass (when compiled) should be a shared object called `libSkeletonPass.so`. If you cloned the skeleton pass repository (i.e. https://github.com/sampsyo/llvm-pass-skeleton.git), and did not change the CMakelists or the name of the source (`Skeleton.cpp`) then the pass should be configured correctly. 
+The sources for each pass should be in a folder named `src`, and the pass (when compiled) should be a shared object called `libMyPass.so`.
 
 In other words, the `part-4/passes` folder should be structured as follows: 
 
@@ -207,14 +207,14 @@ part-4
 `-- passes
     |-- llvm-pass-my-dce
     |   |-- CMakeLists.txt
-    |   `-- skeleton
+    |   `-- src
     |       |-- CMakeLists.txt
-    |       `-- Skeleton.cpp
+    |       `-- MyPass.cpp
     `-- llvm-pass-simple-dce
         |-- CMakeLists.txt
-        `-- skeleton
+        `-- src
             |-- CMakeLists.txt
-            `-- Skeleton.cpp
+            `-- MyPass.cpp
 ```
 
 (you should get a similar output if you run `tree --charset=ascii` in your `part-4` folder)
@@ -223,11 +223,11 @@ It is generally good engineering practice to exclude build directories from your
 
 ### Naming your pass
 
-When registering the pass with LLVM, it should be called `skeletonpass`. Otherwise, our scripts will not be able to call it. In other words, your pass registration code (in C++) should look like (SimpleDCE used as an example): 
+When registering the pass with LLVM, it should be called `mypass`. Otherwise, our scripts will not be able to call it. In other words, your pass registration code (in C++) should look like (SimpleDCE used as an example): 
 
 ```
 char SimpleDCE::ID = 0;
 __attribute__((unused)) static RegisterPass<SimpleDCE>
-    X("skeletonpass", "Simple dead code elimination"); // NOLINT
+    X("mypass", "Simple dead code elimination"); // NOLINT
 
 ```
