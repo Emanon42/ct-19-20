@@ -72,18 +72,18 @@ Congratulations you have just built LLVM!
 
 ## 1. Writing a Skeleton LLVM Pass
 
-You have LLVM and are able to compile C programs. The next step is to create a pass of your own. Adrian Sampson at Cornell has put a simple skeleton pass online that you can use as a starting point. Change to your home directory and clone Adrian's git repository with the code.
+You have LLVM and are able to compile C programs. The next step is to create a pass of your own. There is example code for an LLVM pass in the CT git repository on GitLab. If you have not done so already, clone the git repo as follows.
 
 ```
 cd ~
-git clone https://github.com/sampsyo/llvm-pass-skeleton.git
+git clone https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/
 ```
 
 Change to the directory for the skeleton pass and take a look at the source. It does nothing except print the name of whatever function it encounters.
 
 ```
-cd llvm-pass-skeleton
-less skeleton/Skeleton.cpp
+cd ct-19-20/src/llvm-pass
+less src/MyPass.cpp
 ```
 
 Let's build the pass now. Create a build directory and change to the directory.
@@ -103,14 +103,14 @@ export LLVM_DIR=~/ug3-ct/build
 You're ready to create the Makefiles and build the pass.
 
 ```
-cmake3 ..
+cmake3 ../ct-19-20/src/llvm-pass
 make
 ```
 
 There should be a shared library for your new pass in skeleton/libSkeletonPass.so. When you compile a program with LLVM it will load your pass and automatically call it. You'll need a C file to use as a test. You can use the test.c you created in Step 0 or create a new file.
 
 ```
-~/ug3-ct/build/bin/clang -Xclang -load -Xclang skeleton/libSkeletonPass.so ~/ug3-ct/build/test.c
+~/ug3-ct/build/bin/clang -Xclang -load -Xclang src/libMyPass.so ~/ug3-ct/build/test.c
 I saw a function called main!
 ```
 
