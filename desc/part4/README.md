@@ -6,15 +6,15 @@ The project counts for 30% of your grade: 10% for writing a simple dead code eli
 
 ## 0. Setup
 
-You will use Git to clone the LLVM sources and Cmake to generate the Makefiles to build LLVM on Linux. You need a minimum of Cmake 3.4 or later. The version of Cmake installed in /usr/bin on DICE is sufficient for LLVM.
+You will use Git to clone the LLVM sources and cmake to generate the Makefiles to build LLVM on Linux. For the latest LLVM you need a minimum of cmake 3.4.3 or later. Since DICE does not have the latest LLVM we will use LLVM Release 7 which works with cmake3 on DICE.
 
-To get started, you will clone the LLVM and Clang sources into your home directory (or location of your choice). You will need about 1GB of free disk space to clone the sources. We will use 'ug3-ct' as the name of the directory to clone into.
+To get started, clone the LLVM sources into your home directory (or location of your choice). If you clone the entire llvm-project git repo you need about 2GBs of free disk space. If you do a shallow clone (--depth option) it will take about 500MB. We will use 'ug3-ct' as the name of the directory to clone into.
 
 ```
 cd ~
 mkdir ug3-ct
 cd ug3-ct
-git clone --depth 500 https://github.com/llvm/llvm-project
+git clone --depth=100 --branch release/7.x https://github.com/llvm/llvm-project
 ```
 
 You have been given an extra 40GB of space for this course. The Debug build of LLVM requires around 30GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
