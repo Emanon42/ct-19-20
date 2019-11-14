@@ -75,7 +75,7 @@ Congratulations you have just built LLVM!
 You have LLVM and are able to compile C programs. The next step is to create a pass of your own. There is example code for an LLVM pass in the CT git repository on GitLab. If you have not done so already, clone the git repo as follows.
 
 ```
-cd ~
+cd ~/ug3-ct
 git clone https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/
 ```
 
@@ -83,7 +83,7 @@ Change to the directory for the example pass and take a look at the source. It d
 
 ```
 cd ct-19-20/src/llvm-pass
-less src/MyPass.cpp
+cat src/MyPass.cpp
 ```
 
 Let's build the pass now. Create a build directory and change to the directory.
@@ -103,7 +103,7 @@ export LLVM_DIR=~/ug3-ct/build
 You're ready to create the Makefiles and build the pass.
 
 ```
-cmake3 ../ct-19-20/src/llvm-pass
+cmake3 ..
 make
 ```
 
