@@ -1,8 +1,6 @@
 package gen;
 import ast.*;
 
-import java.util.List;
-
 public class DataVisitor implements ASTVisitor<Void> {
     private AsmWritter writer;
     private LabelManager labelTable;
@@ -31,7 +29,7 @@ public class DataVisitor implements ASTVisitor<Void> {
 
 
         // add struct info as comment
-        writer.comment(String.format("%s as \"struct %s\" (size %d)", varDecl.varName, structType.ident, structType.sizeof()));
+        writer.comment(String.format("%s as \"struct %s\" (size %d)", varDecl.varName, structType.ident, structType.alignedSize()));
 
         //NOTE : NO LABEL FOR STRUCT DECL
         // TODO: it maybe produce bug: consider to add a total label for stru
@@ -44,10 +42,9 @@ public class DataVisitor implements ASTVisitor<Void> {
 
         for (VarDecl field: structType.decl.varDecls){
             String label = labelTable.addLabel(String.format("_gs_%s_%s", varDecl.varName, field.varName));
-            field.setGlobalLabel(label);
-            int size = field.type.sizeof();
+            varDecl.setAsmStructFieldLables(field.varName, label);
+            int size = field.type.alignedSize();
             writer.withLabel(label).dataSpace(size);
-
         }
     }
 
@@ -57,8 +54,8 @@ public class DataVisitor implements ASTVisitor<Void> {
         }else {
             String label = labelTable.addLabel("_gv_"+varDecl.varName);
             varDecl.setGlobalLabel(label);
-
-            int size = varDecl.type.sizeof();
+            // aligned size or real size???
+            int size = varDecl.type.realSize();
             writer.withLabel(label).dataSpace(size);
         }
 

@@ -12,7 +12,7 @@ public interface Type extends ASTNode {
 
     public boolean isArrayType();
 
-    public int sizeof();
+    public int alignedSize();
 
     public int realSize();
 

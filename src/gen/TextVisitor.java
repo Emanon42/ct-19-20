@@ -2,8 +2,6 @@ package gen;
 
 import ast.*;
 
-import java.lang.ref.WeakReference;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
@@ -49,6 +47,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         this.regAllocater = ra;
     }
 
+    // using realsize for addressof-arrayaccess and visitsizeof
     @Override
     public Register visitProgram(Program p) {
         writer.directive("text");
@@ -104,15 +103,6 @@ public class TextVisitor implements ASTVisitor<Register> {
     low address
      */
 
-    //TODO: make a new align tool instead of this dirty fix
-    private int charSizeFix(int size){
-        if (size == 1){
-            return 4;
-        }else {
-            return size;
-        }
-    }
-
     @Override
     public Register visitFunDecl(FunDecl f) {
         // do prologue and epilogue here
@@ -139,7 +129,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         int argOffset = 0; // relative to FP
         for (VarDecl arg : f.params){
             arg.setFrameOffset(argOffset); //TODO: possible bug here
-            int size = charSizeFix(arg.type.sizeof());
+            int size = arg.type.alignedSize();
             argOffset += size;
             writer.comment(String.format("arg %s offset: %d($fp)", arg.varName, argOffset));
         }
@@ -220,7 +210,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         writer.comment("pre-allocate space for args");
         int totalArgSize = 0;
         for (VarDecl declaredArg : f.fd.params){
-            totalArgSize += charSizeFix(declaredArg.type.sizeof());
+            totalArgSize += declaredArg.type.alignedSize();
         }
         writer.sub(Register.sp, Register.sp, totalArgSize);
 
@@ -238,7 +228,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             regAllocater.free(result); // remember to free!!
 
             int expectedOffset = declaredArg.getFrameOffset();
-            int argSize = charSizeFix(argType.sizeof());
+            int argSize = argType.alignedSize();
             //System.out.println("expectedOffset: " + expectedOffset + " loadoffset: " + loadArgsOffset);
             assert expectedOffset == loadArgsOffset;
             loadArgsOffset += argSize;
@@ -278,7 +268,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         // pre-allocate stack space for vardecls
         int preAllocSize = 0;
         for (VarDecl local : b.varDecls){
-            int size = charSizeFix(local.type.sizeof());
+            int size = local.type.alignedSize();
             frameOffset -= size;
             preAllocSize += size;
             writer.comment(String.format("local var %s frameOffset(relative to $fp): %d", local.varName, frameOffset));
@@ -299,7 +289,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         // release local var mem
         int toReleaseSize = 0;
         for (VarDecl local : b.varDecls){
-            int size = charSizeFix(local.type.sizeof());
+            int size = local.type.alignedSize();
             frameOffset += size;
             toReleaseSize += size;
         }
@@ -440,7 +430,7 @@ public class TextVisitor implements ASTVisitor<Register> {
                 regAllocater.free(innerSourceValue);
 
                 // Increment our read offset and struct address by the size we've just read
-                int size = charSizeFix(v.type.sizeof());
+                int size = v.type.alignedSize();
                 writer.add(sourceValue, sourceValue, size);
                 offset += size;
                 totalSize += size;
@@ -452,7 +442,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             //regAllocater.free(targetAddress);
         } else {
             throw new RuntimeException(
-                    "storeValue hasn't been implemented for type: " + type.toString());
+                    "can't assign value for type: " + type.toString());
         }
     }
 
@@ -562,16 +552,16 @@ public class TextVisitor implements ASTVisitor<Register> {
         Register address = f.stru.accept(this);
 
         StructType structType = (StructType) f.stru.type;
-        int offset = 0; // todo: only calculate this stuff once (also elsewhere in assign)
+        int offset = 0; // maybe pre-offset?
         for (VarDecl v : structType.decl.varDecls) {
             if (v.varName.equals(f.field)) {
                 writer.add(address, address, offset);
                 return address;
             }
-            offset += charSizeFix(v.type.sizeof());
+            offset += v.type.alignedSize();
         }
 
-        throw new RuntimeException("could not find field in: " + f.toString());
+        throw new RuntimeException("can't find wanted field in: " + f.toString());
     }
 
     private Register addressOf(ValueAtExpr e) {

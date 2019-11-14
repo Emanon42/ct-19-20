@@ -29,12 +29,12 @@ public class StructType implements Type{
     }
 
     @Override
-    public int sizeof() {
+    public int alignedSize() {
         int size = 0;
 
         // Each field for a struct must be 4-byte aligned
         for (VarDecl v : decl.varDecls) {
-            size += (int) (4.0 * Math.ceil((double)v.type.sizeof() / 4.0));
+            size += (int) (4.0 * Math.ceil((double)v.type.alignedSize() / 4.0));
         }
         return size;
     }

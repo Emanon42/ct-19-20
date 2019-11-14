@@ -40,7 +40,21 @@ public enum BaseType implements Type {
     }
 
     @Override
-    public int sizeof() {
+    public int alignedSize() {
+        switch (this) {
+            case INT:
+                return 4;
+            case CHAR:
+                return 4;
+            case VOID:
+                return 0;
+            default:
+                throw new RuntimeException("Sizeof called on " + this.toString());
+        }
+    }
+
+    @Override
+    public int realSize() {
         switch (this) {
             case INT:
                 return 4;
@@ -51,11 +65,6 @@ public enum BaseType implements Type {
             default:
                 throw new RuntimeException("Sizeof called on " + this.toString());
         }
-    }
-
-    @Override
-    public int realSize() {
-        return sizeof();
     }
 
     public static BaseType fromTokenClass(Token.TokenClass tc){
