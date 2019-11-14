@@ -410,6 +410,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
 
     public void assignValue(Register sourceValue, Type type, Register targetAddress, int offset){
+        writer.comment(String.format("(%s + %d) = valueOf(%s, %s)", targetAddress, offset, sourceValue, type));
         if (type == BaseType.CHAR) {
             writer.sb(sourceValue, targetAddress, offset);
             //regAllocater.free(sourceValue);
@@ -472,7 +473,11 @@ public class TextVisitor implements ASTVisitor<Register> {
 
 
 
-
+    private Register getValueWrapper(Expr e){
+        Register addr = addressOf(e);
+        //regAllocater.free(addr);
+        return getValue(addr, e.type);
+    }
 
     @Override
     public Register visitVarExpr(VarExpr v) {
@@ -480,12 +485,14 @@ public class TextVisitor implements ASTVisitor<Register> {
         //System.out.println(" v.name: " + v.name + " v.type: " + v.type + " vd.type: " + v.vd.type);
         Register address = addressOf(v);
         return getValue(address, v.type);
+        //return getValueWrapper(v);
     }
 
     @Override
     public Register visitArrayAccessExpr(ArrayAccessExpr aae) {
         Register address = addressOf(aae);
         return getValue(address, aae.type);
+        //return getValueWrapper(aae);
     }
 
     @Override
@@ -493,6 +500,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         assert fae.type != null;
         Register address = addressOf(fae);
         return getValue(address, fae.type);
+        //return getValueWrapper(fae);
     }
 
     @Override
@@ -500,6 +508,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         assert vae.toDeref.type.isPointerType();
         Register address = addressOf(vae);
         return getValue(address, vae.type);
+        //return getValueWrapper(vae);
     }
 
     @Override
@@ -511,14 +520,15 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     @Override
     public Register visitTypecastExpr(TypecastExpr te) {
-        Register value  = te.fromExpr.accept(this);
+//        Register value  = te.fromExpr.accept(this);
+//        return value;
+        Register value;
+        value = te.fromExpr.accept(this);
+        //regAllocater.free(value);
         return value;
     }
 
-    private Register getValueWrapper(Expr e){
-        Register addr = addressOf(e);
-        return getValue(addr, e.type);
-    }
+
 
 
 

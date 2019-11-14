@@ -30,7 +30,10 @@ public class RegAllocater {
                 throw new RuntimeException("Attempted to free non-freeable register.");
             }
         }
-        availableRegs.push(reg);
+        if (!availableRegs.contains(reg)){
+            availableRegs.push(reg);
+        }
+
     }
 
 }

@@ -1,40 +1,35 @@
-    @Override
-    public Register visitVarExpr(VarExpr v) {
-        assert v.type == v.vd.type;
-        //System.out.println(" v.name: " + v.name + " v.type: " + v.type + " vd.type: " + v.vd.type);
-        Register address = addressOf(v);
-        return getValue(address, v.type);
-    }
+#include "minic-stdlib.h"
 
-    @Override
-    public Register visitArrayAccessExpr(ArrayAccessExpr aae) {
-        Register address = addressOf(aae);
-        return getValue(address, aae.type);
-    }
+void main() {
+  int n;
+  int first;
+  int second;
+  int next;
+  int c;
+  char t;
 
-    @Override
-    public Register visitFieldAccessExpr(FieldAccessExpr fae) {
-        assert fae.type != null;
-        Register address = addressOf(fae);
-        return getValue(address, fae.type);
-    }
+  // read n from the standard input
+  n = read_i();
 
-    @Override
-    public Register visitValueAtExpr(ValueAtExpr vae) {
-        assert vae.toDeref.type.isPointerType();
-        Register address = addressOf(vae);
-        return getValue(address, vae.type);
-    }
+  first = 0;
+  second = 1;
 
-    @Override
-    public Register visitSizeOfExpr(SizeOfExpr soe) {
-        Register val = regAllocater.get();
-        writer.li(val, soe.toCheck.realSize());
-        return val;
-    }
+  print_s((char*)"First ");
+  print_i(n);
+  print_s((char*)" terms of Fibonacci series are : ");
 
-    @Override
-    public Register visitTypecastExpr(TypecastExpr te) {
-        Register value  = te.fromExpr.accept(this);
-        return value;
-    }
+  c = 0;
+  while (c < n) {
+    if ( c <= 1 )
+      next = c;
+    else
+      {
+	next = first + second;
+	first = second;
+	second = next;
+      }
+    print_i(next);
+    print_s((char*)" ");
+    c = c+1;
+  }
+}
