@@ -364,6 +364,7 @@ public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {
             error("Undefined field \""+fae.field+"\" in struct type "+struType.toString());
             return BaseType.VOID;
         }
+        //System.out.println(vd.type);
         fae.type = vd.type.accept(this);
         return fae.type;
     }

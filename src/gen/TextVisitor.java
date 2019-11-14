@@ -224,7 +224,9 @@ public class TextVisitor implements ASTVisitor<Register> {
 
             writer.comment(String.format("storing arg %s offset: %d($sp)", declaredArg.varName, loadArgsOffset));
             Register result = actualArg.accept(this);
-            writer.sw(result, Register.sp, loadArgsOffset);
+            Register targetAddress = Register.sp;
+            assignValue(result, argType, targetAddress, 0);
+            //writer.sw(result, Register.sp, loadArgsOffset); //BUG!! pass struct will ignore the struct
             regAllocater.free(result); // remember to free!!
 
             int expectedOffset = declaredArg.getFrameOffset();
@@ -269,6 +271,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         int preAllocSize = 0;
         for (VarDecl local : b.varDecls){
             int size = local.type.alignedSize();
+            //System.out.println(String.format("in block: vd: %s, size: %d",local.varName, size));
             frameOffset -= size;
             preAllocSize += size;
             writer.comment(String.format("local var %s frameOffset(relative to $fp): %d", local.varName, frameOffset));
@@ -448,7 +451,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     @Override
     public Register visitAssign(Assign a) {
-        writer.comment("assign " + a.toString());
+        writer.comment("assign "+a.toString());
         Register lhs = addressOf(a.lhs);
         Register rhs = a.rhs.accept(this);
         assignValue(rhs, a.rhs.type, lhs, 0);
@@ -470,6 +473,52 @@ public class TextVisitor implements ASTVisitor<Register> {
 
 
 
+
+    @Override
+    public Register visitVarExpr(VarExpr v) {
+        assert v.type == v.vd.type;
+        //System.out.println(" v.name: " + v.name + " v.type: " + v.type + " vd.type: " + v.vd.type);
+        Register address = addressOf(v);
+        return getValue(address, v.type);
+    }
+
+    @Override
+    public Register visitArrayAccessExpr(ArrayAccessExpr aae) {
+        Register address = addressOf(aae);
+        return getValue(address, aae.type);
+    }
+
+    @Override
+    public Register visitFieldAccessExpr(FieldAccessExpr fae) {
+        assert fae.type != null;
+        Register address = addressOf(fae);
+        return getValue(address, fae.type);
+    }
+
+    @Override
+    public Register visitValueAtExpr(ValueAtExpr vae) {
+        assert vae.toDeref.type.isPointerType();
+        Register address = addressOf(vae);
+        return getValue(address, vae.type);
+    }
+
+    @Override
+    public Register visitSizeOfExpr(SizeOfExpr soe) {
+        Register val = regAllocater.get();
+        writer.li(val, soe.toCheck.realSize());
+        return val;
+    }
+
+    @Override
+    public Register visitTypecastExpr(TypecastExpr te) {
+        Register value  = te.fromExpr.accept(this);
+        return value;
+    }
+
+    private Register getValueWrapper(Expr e){
+        Register addr = addressOf(e);
+        return getValue(addr, e.type);
+    }
 
 
 
@@ -532,6 +581,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             return value;
         }else {
             // locate var using frame offset
+            //System.out.println("vd: "+decl.varName+", frameoffset: "+decl.getFrameOffset());
             writer.add(value, Register.fp, decl.getFrameOffset());
             return value;
         }
@@ -542,7 +592,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
         if (f.stru instanceof VarExpr) {
             if (((VarExpr) f.stru).vd.isGlobal()) {
-                String label = ((VarExpr) f.stru).vd.getGlobalLabel();
+                String label = ((VarExpr) f.stru).vd.getAsmStructFieldLables(f.field);
                 Register address = regAllocater.get();
                 writer.la(address, label);
                 return address;
@@ -635,46 +685,7 @@ public class TextVisitor implements ASTVisitor<Register> {
         return val;
     }
 
-    @Override
-    public Register visitVarExpr(VarExpr v) {
-        assert v.type == v.vd.type;
-        //System.out.println(" v.name: " + v.name + " v.type: " + v.type + " vd.type: " + v.vd.type);
-        Register address = addressOf(v);
-        return getValue(address, v.type);
-    }
 
-    @Override
-    public Register visitArrayAccessExpr(ArrayAccessExpr aae) {
-        Register address = addressOf(aae);
-        return getValue(address, aae.type);
-    }
-
-    @Override
-    public Register visitFieldAccessExpr(FieldAccessExpr fae) {
-        assert fae.type != null;
-        Register address = addressOf(fae);
-        return getValue(address, fae.type);
-    }
-
-    @Override
-    public Register visitValueAtExpr(ValueAtExpr vae) {
-        assert vae.toDeref.type.isPointerType();
-        Register address = addressOf(vae);
-        return getValue(address, vae.type);
-    }
-
-    @Override
-    public Register visitSizeOfExpr(SizeOfExpr soe) {
-        Register val = regAllocater.get();
-        writer.li(val, soe.toCheck.realSize());
-        return val;
-    }
-
-    @Override
-    public Register visitTypecastExpr(TypecastExpr te) {
-        Register value  = te.fromExpr.accept(this);
-        return value;
-    }
 
 
 

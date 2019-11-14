@@ -482,7 +482,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_and();
             lhs = new BinOp(lhs, Op.OR, rhs);
-            parseExp_or_term(lhs);
+            return parseExp_or_term(lhs);
         }
         return lhs;
     }
@@ -503,7 +503,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_eq();
             lhs = new BinOp(lhs, Op.AND, rhs);
-            parseExp_and_term(lhs);
+            return parseExp_and_term(lhs);
         }
         return lhs;
     }
@@ -525,7 +525,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_comp();
             lhs = new BinOp(lhs, op, rhs);
-            parseExp_eq_term(lhs);
+            return parseExp_eq_term(lhs);
         }
         return lhs;
     }
@@ -547,7 +547,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_add();
             lhs = new BinOp(lhs, op, rhs);
-            parseExp_comp_term(lhs);
+            return parseExp_comp_term(lhs);
         }
         return lhs;
     }
@@ -569,7 +569,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_mult();
             lhs = new BinOp(lhs, op, rhs);
-            parseExp_add_term(lhs);
+            return parseExp_add_term(lhs);
         }
         return lhs;
     }
@@ -592,7 +592,7 @@ public class Parser {
             nextToken();
             Expr rhs = parseExp_lv2();
             lhs = new BinOp(lhs, op, rhs);
-            parseExp_mult_term(lhs);
+            return parseExp_mult_term(lhs);
         }
         return lhs;
     }
@@ -686,13 +686,13 @@ public class Parser {
             // TODO: add test for nested field access - stru1.stru2.x...
             lhs = new FieldAccessExpr(lhs, ident);
             //expect(TokenClass.IDENTIFIER);
-            parseExp_lv1_term(lhs);
+            return parseExp_lv1_term(lhs);
         }else if (accept(TokenClass.LSBR)){// array access
             nextToken();
             Expr index = parseExp();
             expect(TokenClass.RSBR);
             lhs = new ArrayAccessExpr(lhs, index);
-            parseExp_lv1_term(lhs);
+            return parseExp_lv1_term(lhs);
         }
         return lhs;
     }
