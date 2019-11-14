@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gen/RegAllocater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/RegAllocater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gen/TextVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gen/TextVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fibonacci.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fibonacci.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ct-19-20" />
-      <option name="PROGRAM_PARAMETERS" value="-gen tests/fibonacci.c dummy.asm" />
+      <option name="PROGRAM_PARAMETERS" value="-gen tests/tictactoe.c dummy.asm" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />

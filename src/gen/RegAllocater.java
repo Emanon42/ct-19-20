@@ -33,6 +33,7 @@ public class RegAllocater {
         if (!availableRegs.contains(reg)){
             availableRegs.push(reg);
         }
+        //availableRegs.push(reg);
 
     }
 

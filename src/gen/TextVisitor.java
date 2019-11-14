@@ -225,7 +225,7 @@ public class TextVisitor implements ASTVisitor<Register> {
             writer.comment(String.format("storing arg %s offset: %d($sp)", declaredArg.varName, loadArgsOffset));
             Register result = actualArg.accept(this);
             Register targetAddress = Register.sp;
-            assignValue(result, argType, targetAddress, 0);
+            assignValue(result, argType, targetAddress, loadArgsOffset);
             //writer.sw(result, Register.sp, loadArgsOffset); //BUG!! pass struct will ignore the struct
             regAllocater.free(result); // remember to free!!
 
@@ -520,11 +520,7 @@ public class TextVisitor implements ASTVisitor<Register> {
 
     @Override
     public Register visitTypecastExpr(TypecastExpr te) {
-//        Register value  = te.fromExpr.accept(this);
-//        return value;
-        Register value;
-        value = te.fromExpr.accept(this);
-        //regAllocater.free(value);
+        Register value  = te.fromExpr.accept(this);
         return value;
     }
 
