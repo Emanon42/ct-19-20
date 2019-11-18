@@ -6,15 +6,13 @@ The project counts for 30% of your grade: 10% for writing a simple dead code eli
 
 ## 0. Setup
 
-You will use Git to clone the LLVM sources and cmake to generate the Makefiles to build LLVM on Linux. For the latest LLVM you need a minimum of cmake 3.4.3 or later. Since DICE does not have the latest LLVM we will use LLVM Release 7 which works with cmake3 on DICE.
-
-To get started, clone the LLVM sources into your home directory (or location of your choice). If you clone the entire llvm-project git repo you need about 2GBs of free disk space. If you do a shallow clone (--depth option) it will take about 500MB. We will use 'ug3-ct' as the name of the directory to clone into.
+You will use Git to clone the LLVM sources and cmake to generate the Makefiles to build LLVM on Linux. To get started, clone the LLVM sources into your home directory (or location of your choice). If you clone the entire llvm-project git repo you need about 2GBs of free disk space. If you do a shallow clone (--depth option) it will take about 500MB. We will use 'ug3-ct' as the name of the directory to clone into.
 
 ```
 cd ~
 mkdir ug3-ct
 cd ug3-ct
-git clone --depth=100 --branch release/7.x https://github.com/llvm/llvm-project
+git clone --depth=100 --branch release/9.x https://github.com/llvm/llvm-project
 ```
 
 You have been given an extra 40GB of space for this course. The Debug build of LLVM requires around 30GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
@@ -26,7 +24,7 @@ If you are using DICE, the correct version of Cmake is installed as 'cmake3'. If
 ```
 mkdir build
 cd build
-cmake3 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_PROJECTS=clang -DCMAKE_BUILD_TYPE=RelWithDebInfo ../llvm-project/llvm
+cmake3 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_PROJECTS=clang -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLVM_TEMPORARILY_ALLOW_OLD_TOOLCHAIN=true ../llvm-project/llvm
 ```
 
 After Cmake finishes creating the Makefiles the next step is to actually build LLVM. This can take anywhere from 10 minutes to 1 hour depending on your machine. The '-j' option to make specifies the number of threads to use. A good rule of thumb is to use a number that is twice the number of cores in your computer (-j4 for a dual-core machine or -j8 for a quad core machine).
