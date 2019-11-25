@@ -182,50 +182,38 @@ Use the 'opt' tool to run 'mem2reg' before your DCE pass. Give your pass a comma
 
 ## 4. Implement Iterative Liveness Analysis
 
-For the last part of your project you will replace the isInstructionTriviallyDead() method from LLVM with your own method to identify dead code. This relies on computing liveness which you learned about in [Lecture 15](http://www.inf.ed.ac.uk/teaching/courses/ct/slides-16-17/15-regalloc.pdf).
+For the final part of your project you will replace the isInstructionTriviallyDead() method from LLVM with your own method to identify dead code. This relies on computing liveness which you learned about in [Lecture 15](http://www.inf.ed.ac.uk/teaching/courses/ct/slides-16-17/15-regalloc.pdf).
 
+Refer to the [Final project PDF](https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/blob/master/desc/part4/ug3project.pdf) for more information.
 
 ## 5. Submitting Your Project
 
-As with parts 1-3, part 4 will be marked with a set of automated scripts, but we won't be running scripts every day like wiht previous tests. In order for the scripts to run correctly, your passes will have to be placed and named in a way that they expect. 
+As with parts 1-3, part 4 will be marked with a set of automated scripts, but we won't be running scripts every day like with previous tests. 
 
-### Structuring your repository for marking
+You should modify the two passes stored in the  `src/llvm` directory and push your changes to gitlab. Do not change the cmake files or source file names in the folder or the marking script will fail!!
 
-Passes should be stored in a folder `part-4/passes`. The folder should *only* contain passes, and nothing else, otherwise the scripts will fail. Your passes folder should contain two passes, named: 
-
-- `llvm-pass-simple-dce` (part 3, a Simple Dead Code Elimination Pass)
-- `llvm-pass-my-dce` (part 4, an Iteratrive Liveness Analysis pass)
-
-The sources for each pass should be in a folder named `src`, and the pass (when compiled) should be a shared object called `libMyPass.so`.
-
-In other words, the `part-4/passes` folder should be structured as follows: 
+Here is the structure of the folders in git for the LLVM project:
 
 ```
-part-4
-`-- passes
-    |-- llvm-pass-my-dce
+src
+`-- llvm
+    |-- llvm-pass-simple
     |   |-- CMakeLists.txt
     |   `-- src
     |       |-- CMakeLists.txt
     |       `-- MyPass.cpp
-    `-- llvm-pass-simple-dce
+    `-- llvm-pass-final
         |-- CMakeLists.txt
         `-- src
             |-- CMakeLists.txt
             `-- MyPass.cpp
 ```
 
-(you should get a similar output if you run `tree --charset=ascii` in your `part-4` folder)
+You will modify:
 
-It is generally good engineering practice to exclude build directories from your repository, so your passes should give a similar output to the above structure if you run `tree --charset=ascii` in your `part-4` folder.
+- `llvm-pass-simple/src/MyPass.cpp` for your simple dead code elimination pass (LLVM part 3).
+- `llvm-pass-final/src/MyPass.cpp` for your iterative liveness analysis and dead code elimination pass (LLVM part 4).
 
-### Naming your pass
+### Pass names
 
-When registering the pass with LLVM, it should be called `mypass`. Otherwise, our scripts will not be able to call it. In other words, your pass registration code (in C++) should look like (SimpleDCE used as an example): 
-
-```
-char SimpleDCE::ID = 0;
-__attribute__((unused)) static RegisterPass<SimpleDCE>
-    X("mypass", "Simple dead code elimination"); // NOLINT
-
-```
+The skeleton code in git uses `-mypass` as the the command-line option for the two pases. Do not change the name of the command-line option or the marking scripts will not be able to call your pass.

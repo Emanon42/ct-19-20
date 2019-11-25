@@ -23,7 +23,7 @@ struct MyPass : public FunctionPass {
 }
 
 char MyPass::ID = 0;
-static RegisterPass<MyPass> X("mypass", "My own pass");
+static RegisterPass<MyPass> X("mypass", "My simple dead code elimination pass");
 
 static RegisterStandardPasses Y(
     PassManagerBuilder::EP_EarlyAsPossible,
