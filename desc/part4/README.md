@@ -182,7 +182,7 @@ Use the 'opt' tool to run 'mem2reg' before your DCE pass. Give your pass a comma
 
 ## 4. Implement Iterative Liveness Analysis
 
-For the final part of your project you will replace the isInstructionTriviallyDead() method from LLVM with your own method to identify dead code. This relies on computing liveness which you learned about in [Lecture 15](http://www.inf.ed.ac.uk/teaching/courses/ct/slides-16-17/15-regalloc.pdf).
+For the final part of your project you will replace the isInstructionTriviallyDead() method from LLVM with your own method to identify dead code. This relies on computing liveness which you learned about in class. Refer back to the [lecture slides](https://www.inf.ed.ac.uk/teaching/courses/ct/19-20/slides/llvm-5-liveness.pdf) for the dataflow equations you need to implement and examples.
 
 Refer to the [Final project PDF](https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/blob/master/desc/part4/ug3project.pdf) for more information.
 
