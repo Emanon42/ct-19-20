@@ -15,7 +15,7 @@ cd ug3-ct
 git clone --depth=100 --branch release/9.x https://github.com/llvm/llvm-project
 ```
 
-You have been given an extra 40GB of space for this course. The Debug build of LLVM requires around 30GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
+You have been given an 50GB of space for this course. The Debug build of LLVM requires around 40GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
 
 Create a directory called 'build' where you will build LLVM. This directory can be located anywhere EXCEPT under your LLVM source directory. We will place it under 'ug3-ct' in this document.
 
