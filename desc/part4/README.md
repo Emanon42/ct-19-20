@@ -197,7 +197,7 @@ Use the `opt` tool to run `mem2reg` before your DCE pass. Give your pass a comma
 
 For the final part of your project you will write a second pass to remove dead code. In this new pass, replace the isInstructionTriviallyDead() method from LLVM with your own method to identify dead code. This relies on computing liveness which you learned about in class. Refer back to the [lecture slides](https://www.inf.ed.ac.uk/teaching/courses/ct/19-20/slides/llvm-5-liveness.pdf) for the dataflow equations you need to implement and examples.
 
-Refer to the [Final project PDF](https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/blob/master/desc/part4/ug3project.pdf) for more information about how to implement the pass. Modify the example code located in the git rep at `src/llvm/llvm-pass-final`.
+Refer to the [Final project PDF](https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/blob/master/desc/part4/llvmproject.pdf) for more information about how to implement the pass. Modify the example code located in the git rep at `src/llvm/llvm-pass-final`.
 
 ## 5. Submitting Your Passes
 
