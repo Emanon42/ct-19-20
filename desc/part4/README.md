@@ -15,7 +15,7 @@ cd ug3-ct
 git clone --depth=100 --branch release/9.x https://github.com/llvm/llvm-project
 ```
 
-You have been given an 50GB of space for this course. The Debug build of LLVM requires around 40GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
+You have been given an extra 50GB of space for this course. The Debug build of LLVM requires around 40GB of disk space! Be careful not to fill up your home directory. If you are using DICE use the 'RelWithDebInfo' cmake build type, which uses less space.
 
 Create a directory called 'build' where you will build LLVM. This directory can be located anywhere EXCEPT under your LLVM source directory. We will place it under 'ug3-ct' in this document.
 
@@ -70,17 +70,17 @@ Congratulations you have just built LLVM!
 
 ## 1. Writing a LLVM Pass
 
-You have LLVM and are able to compile C programs. The next step is to create a pass of your own. There is example code for an LLVM pass in the CT git repository on GitLab. If you have not done so already, clone the git repo as follows.
+You have LLVM and are able to compile C programs. The next step is to create a pass of your own. There is example code for a simple LLVM pass in the CT git repository on GitLab. If you have not done so already, clone the git repo as follows.
 
 ```
 cd ~/ug3-ct
-git clone https://git.ecdf.ed.ac.uk/cdubach/ct-19-20/
+git clone https://git.ecdf.ed.ac.uk/cdubach/ct-19-20.git
 ```
 
-Change to the directory for the example pass and take a look at the source. It does nothing except print the name of whatever function it encounters.
+Change to the directory for the simple pass and take a look at the source. It does nothing except print the name of whatever function it encounters.
 
 ```
-cd ct-19-20/src/llvm-pass
+cd ct-19-20/src/llvm/llvm-pass-simple
 cat src/MyPass.cpp
 ```
 
@@ -91,8 +91,7 @@ mkdir build
 cd build
 ```
 
-Before running Cmake and building the pass, you need to set LLVM_DIR to your LLVM build directory, i.e. ~/ug3-ct/build. Otherwise when you build the pass it will try to build with the version of LLVM that
-is already installed on DICE and fail.
+Before running Cmake and building the pass, you need to set LLVM_DIR to your LLVM build directory, i.e. ~/ug3-ct/build. Otherwise when you build the pass it will try to build with the version of LLVM that is already installed on DICE and fail.
 
 ```
 export LLVM_DIR=~/ug3-ct/build
