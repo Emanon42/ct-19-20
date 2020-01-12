@@ -66,7 +66,6 @@ struct MyPass : public FunctionPass {
           if (isa<Instruction>(preSuccOperand) || isa<Argument>(preSuccOperand)) {
             auto preSuccBB = currPhi->getIncomingBlock(i);
             livenessTable[I]->phiPreSuccMap[preSuccBB].insert(preSuccOperand);
-            //livenessTable[I]->useSet.insert(preSuccOperand);
           }
         }
       } else {
@@ -86,7 +85,6 @@ struct MyPass : public FunctionPass {
           while(isa<PHINode>(&*phiIter)){
             Instruction* phiInst = &*phiIter;
             livenessTable[phiInst]->phiOutSet.insert(phiInst); // add the local var it defines to every follow phi node
-            //livenessTable[phiInst]->outSet.insert(phiInst);
             ++phiIter;
           }
         }
@@ -127,7 +125,8 @@ struct MyPass : public FunctionPass {
           // peek next instr
           auto nextInst = instIter;
           ++nextInst;
-          // TODO: boundary check?
+          // maybe a boundary check will be good here
+          // nah
           Instruction* succInst = &*nextInst;
           successors.insert(succInst);
         }
@@ -137,7 +136,6 @@ struct MyPass : public FunctionPass {
           set<Value*> unionResult;
           // special case required for the case of successor is phi
           if(isa<PHINode>(succI) && I->isTerminator()){ // make sure it is the first phi node in the begin of block
-            //auto phiIn = (livenessTable[succI]->phiPreSuccMap)[I->getParent()];
 
             // major fix: mutiple phi node
             set<Value*> allPhiIn;
@@ -188,8 +186,6 @@ struct MyPass : public FunctionPass {
       counter++;
       
     }while(!isLivenessTableCoverage());
-
-    //errs() << "iterated " << counter << " times\n";
   } 
 
   bool isLivenessTableCoverage(){
@@ -206,7 +202,6 @@ struct MyPass : public FunctionPass {
     for (Use &U : I->operands()){
       Value *v = U.get();
       if (isa<Instruction>(v) || isa<Argument>(v)){
-        //errs() << v->getName() << "\n";
         useSet.insert(v);
       }
     }
