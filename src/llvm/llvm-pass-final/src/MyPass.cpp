@@ -1,6 +1,3 @@
-// Example of how to write an LLVM pass
-// For more information see: http://llvm.org/docs/WritingAnLLVMPass.html
-
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/IR/Instructions.h"
@@ -15,11 +12,11 @@
 
 using namespace llvm;
 using namespace std;
-// get def set: directly use the instruction
+// get def set: directly use the instruction itself
 
 struct SetCollection{
-  map<BasicBlock*, set<Value*>> phiPreSuccMap;
-  set<Value*> phiOutSet;
+  map<BasicBlock*, set<Value*>> phiPreSuccMap; // only for phi node: one successor block corresponds to a begin instr
+  set<Value*> phiOutSet; // only for adjacent phi node: out set will pass
   set<Value*> prevInSet;
   set<Value*> prevOutSet;
   set<Value*> inSet;
@@ -58,15 +55,18 @@ struct MyPass : public FunctionPass {
       livenessTable[I]->prevOutSet = set<Value*>();
 
       livenessTable[I]->defSet = getDefSet(I);
+
       if (isa<PHINode>(I)){
-        livenessTable[I]->useSet = set<Value*>();
-        //TODO: set phiPreSuccMap
+        livenessTable[I]->useSet = set<Value*>(); // use set of phi node should be empty
+        //set phiPreSuccMap
         auto currPhi = dyn_cast<PHINode>(I);
         for (auto i = 0; i < currPhi->getNumIncomingValues(); i++) {
           auto preSuccOperand = currPhi->getIncomingValue(i);
+
           if (isa<Instruction>(preSuccOperand) || isa<Argument>(preSuccOperand)) {
             auto preSuccBB = currPhi->getIncomingBlock(i);
             livenessTable[I]->phiPreSuccMap[preSuccBB].insert(preSuccOperand);
+            //livenessTable[I]->useSet.insert(preSuccOperand);
           }
         }
       } else {
@@ -74,20 +74,19 @@ struct MyPass : public FunctionPass {
       }
     }
     
+    // start forward iterating
     do{
       for (inst_iterator instIter = inst_begin(F), instEnd = inst_end(F); instIter != instEnd; ++instIter){
         
         Instruction* I = &*instIter;
 
-        //TODO: add phi mode for phi nodes
-
+        // set the special out set for phi node
         if(isa<PHINode>(I)){
           inst_iterator phiIter = instIter;
           while(isa<PHINode>(&*phiIter)){
             Instruction* phiInst = &*phiIter;
-            livenessTable[phiInst]->phiOutSet.insert(phiInst);
-            //livenessTable[phiInst]->prevInSet = livenessTable[phiInst]->inSet;
-            //livenessTable[phiInst]->prevOutSet = livenessTable[phiInst]->outSet;
+            livenessTable[phiInst]->phiOutSet.insert(phiInst); // add the local var it defines to every follow phi node
+            //livenessTable[phiInst]->outSet.insert(phiInst);
             ++phiIter;
           }
         }
@@ -95,6 +94,8 @@ struct MyPass : public FunctionPass {
         livenessTable[I]->prevInSet = livenessTable[I]->inSet;
         livenessTable[I]->prevOutSet = livenessTable[I]->outSet;
 
+        // update inset
+        // out[n] – def[n]
         set<Value*> outMinusDef;
         set_difference(
           livenessTable[I]->outSet.begin(), livenessTable[I]->outSet.end(),
@@ -102,6 +103,7 @@ struct MyPass : public FunctionPass {
           inserter(outMinusDef, outMinusDef.begin())
         );
 
+        // use[n] ∪ (out[n] – def[n])
         set<Value*> newIn;
         set_union(
           livenessTable[I]->useSet.begin(), livenessTable[I]->useSet.end(),
@@ -109,16 +111,20 @@ struct MyPass : public FunctionPass {
           inserter(newIn, newIn.begin())
         );
 
+
+        // update outset
         set<Value*> newOut;
         set<Instruction*> successors;
 
         // 2 cases: this instr is branch/return(terminator) or not
         if (I->isTerminator()){
           for(auto i = 0; i < I->getNumSuccessors(); i++){
+            // collect all successor(not next!!) block's begin instr
             auto succInst = I->getSuccessor(i)->begin();
             successors.insert(&*succInst);
           }
         }else {
+          // peek next instr
           auto nextInst = instIter;
           ++nextInst;
           // TODO: boundary check?
@@ -126,21 +132,36 @@ struct MyPass : public FunctionPass {
           successors.insert(succInst);
         }
         
+        // union them together
         for (Instruction* succI : successors){
           set<Value*> unionResult;
-          // TODO: special case required for the case of successor is phi
-          // BUG: phi node will stop propagation of in set
-          // use pen&paper derivate the working flow then figure it out
-          if(isa<PHINode>(succI) && I->isTerminator()){
-            auto phiIn = (livenessTable[succI]->phiPreSuccMap)[I->getParent()];
+          // special case required for the case of successor is phi
+          if(isa<PHINode>(succI) && I->isTerminator()){ // make sure it is the first phi node in the begin of block
+            //auto phiIn = (livenessTable[succI]->phiPreSuccMap)[I->getParent()];
+
+            set<Value*> allPhiIn;
+            BasicBlock::iterator adjPhiIter(succI);
+            while(isa<PHINode>(&*adjPhiIter)){
+              auto singlePhiIn = (livenessTable[&*adjPhiIter]->phiPreSuccMap)[I->getParent()];
+              set<Value*> allPhiInRes;
+              set_union(
+                singlePhiIn.begin(), singlePhiIn.end(), 
+                allPhiIn.begin(), allPhiIn.end(),
+                inserter(allPhiInRes, allPhiInRes.begin())
+              );
+              allPhiIn = allPhiInRes;
+              ++adjPhiIter;
+            }
+
+
             set<Value*> phiUnionRes;
 
+            // actually using phiIn and phiOut instead of regular inSet and outSet
             set_union(
-              phiIn.begin(), phiIn.end(),
+              allPhiIn.begin(), allPhiIn.end(),
               livenessTable[succI]->inSet.begin(), livenessTable[succI]->inSet.end(),
               inserter(phiUnionRes, phiUnionRes.begin())
             );
-
 
             set_union(
               newOut.begin(), newOut.end(),
@@ -148,22 +169,23 @@ struct MyPass : public FunctionPass {
               inserter(unionResult, unionResult.begin())
             );
           } else {
+            // still propagate the out/in set for non-phi node
             set_union(
-            newOut.begin(), newOut.end(),
-            livenessTable[succI]->inSet.begin(), livenessTable[succI]->inSet.end(),
-            inserter(unionResult, unionResult.begin())
-          );
+              newOut.begin(), newOut.end(),
+              livenessTable[succI]->inSet.begin(), livenessTable[succI]->inSet.end(),
+              inserter(unionResult, unionResult.begin())
+            );
           }
           newOut = unionResult;
         }
+
+        // update
         livenessTable[I]->inSet = newIn;
         livenessTable[I]->outSet = newOut;
-
-        
       }
       counter++;
       
-    }while(!isLivenessTableCoverage()); //BUG: terminate too early
+    }while(!isLivenessTableCoverage());
 
     //errs() << "iterated " << counter << " times\n";
   } 
@@ -197,10 +219,9 @@ struct MyPass : public FunctionPass {
   
 
   bool runOnFunction(Function &F) override {
+
     computeLiveness(F);
     printLiveness(F);
-
-
 
     do {
       deadlist.clear();
@@ -218,7 +239,6 @@ struct MyPass : public FunctionPass {
         if (isDead){
           deadlist.push_back(I);
         }
-
       }
 
       for(Instruction* i : deadlist){
@@ -226,84 +246,6 @@ struct MyPass : public FunctionPass {
       }
 
     }while(!deadlist.empty());
-
-
-
-
-
-    
-
-
-
-
-
-    // for (inst_iterator instIter = inst_begin(F), instEnd = inst_end(F); instIter != instEnd; ++instIter){
-    //   Instruction* I = &*instIter;
-
-    //   // if (isa<PHINode>(I)){
-    //   //   auto succPhi = dyn_cast<PHINode>(I);
-    //   //   for (auto i = 0; i < succPhi->getNumIncomingValues(); i++){
-    //   //     auto incomingVal = succPhi->getIncomingValue(i);
-    //   //     if (isa<Instruction>(incomingVal) || isa<Argument>(incomingVal)){
-    //   //       auto vb = succPhi->getIncomingBlock(i);
-    //   //       errs() << *I << "\n";
-    //   //       errs() << "pre-successor: " << *incomingVal << "\n";
-    //   //       errs() << "from block " << *vb << "\n";
-    //   //     }
-          
-    //   //   }
-    //   // }
-
-    //   if(isa<PHINode>(I)){
-    //     errs() << *(I) << "\n";
-    //   }else{
-    //     auto x = livenessTable[I];
-
-    //   errs() << "in set: {";
-    //   for (auto v : x->inSet){
-    //     v->printAsOperand(errs(), false);
-    //     errs() << ", ";
-    //   }
-    //   errs() << "}\n";
-
-    //   errs() << *(I) << "\n";
-
-    //   // errs() << "out set: {";
-    //   // for (auto v : x->outSet){
-    //   //   v->printAsOperand(errs(), false);
-    //   //   errs() << ", ";
-    //   // }
-    //   // errs() << "}\n";
-    //   }
-      
-
-      
-
-    //}
-
-
-    // for (auto const& x : livenessTable){
-    //   // if (isa<PHINode>(x.first)){
-    //   //   continue;
-    //   // }
-    //   errs() << "in set: {";
-    //   for (auto v : x.second->inSet){
-    //     v->printAsOperand(errs(), false);
-    //     errs() << ", ";
-    //   }
-    //   errs() << "}\n";
-
-    //   errs() << *(x.first) << "\n";
-
-    //   errs() << "out set: {";
-    //   for (auto v : x.second->outSet){
-    //     v->printAsOperand(errs(), false);
-    //     errs() << ", ";
-    //   }
-    //   errs() << "}\n";
-      
-    // }
-
     return true;
   }
 
@@ -313,10 +255,20 @@ struct MyPass : public FunctionPass {
         // skip phis
         if (dyn_cast<PHINode>(i))
           continue;
+
+        // if (isa<PHINode>(i)){
+        //   errs() << "phi: " << *(&*i) << "\n";
+        //   for (auto const& item : livenessTable[&*i]->phiPreSuccMap){
+        //     errs() << "bb: " << *(item.first) << "\n";
+        //     for (auto const& oper : item.second){
+        //       errs() << "oper: " << *oper << ", ";
+        //     }
+        //     errs() << "\n";
+        //   }
+        // }
         
         errs() << "{";
         
-        // UNCOMMENT AND ADAPT FOR YOUR "IN" SET
         auto operatorSet = livenessTable[&*i]->inSet;
         for (auto oper = operatorSet.begin(); oper != operatorSet.end(); oper++) {
           auto op = *oper;
@@ -326,7 +278,8 @@ struct MyPass : public FunctionPass {
         }
         
         errs() << "}\n";
-      }
+        //errs() << *i << "\n";
+       }
     }
     errs() << "{}\n";
 
@@ -337,8 +290,3 @@ struct MyPass : public FunctionPass {
 
 char MyPass::ID = 0;
 static RegisterPass<MyPass> X("mypass", "My liveness analysis and dead code elimination pass");
-
-// static RegisterStandardPasses Y(
-//     PassManagerBuilder::EP_EarlyAsPossible,
-//     [](const PassManagerBuilder &Builder,
-//        legacy::PassManagerBase &PM) { PM.add(new MyPass()); });

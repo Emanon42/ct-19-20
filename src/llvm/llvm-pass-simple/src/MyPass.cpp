@@ -1,6 +1,3 @@
-// Example of how to write an LLVM pass
-// For more information see: http://llvm.org/docs/WritingAnLLVMPass.html
-
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/IR/Instructions.h"
@@ -30,9 +27,8 @@ struct MyPass : public FunctionPass {
   MyPass() : FunctionPass(ID) {}
 
   bool runOnFunction(Function &F) override {
-
     do{
-
+      // remember to clear the worklist every loop
       Worklist.clear();
 
       for (Instruction &i : instructions(F)){
@@ -47,10 +43,6 @@ struct MyPass : public FunctionPass {
         i->eraseFromParent();
       }
     } while (!Worklist.empty()); // loop until there is no more instr to erase
-    
-    
-    
-
     return true;
   }
 };
@@ -58,9 +50,3 @@ struct MyPass : public FunctionPass {
 
 char MyPass::ID = 0;
 static RegisterPass<MyPass> X("mypass", "My simple dead code elimination pass");
-
-// static RegisterStandardPasses Y(
-//     PassManagerBuilder::EP_EarlyAsPossible,
-//     [](const PassManagerBuilder &Builder,
-//        legacy::PassManagerBase &PM) { PM.add(new MyPass()); });
-
