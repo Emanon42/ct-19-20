@@ -139,8 +139,10 @@ struct MyPass : public FunctionPass {
           if(isa<PHINode>(succI) && I->isTerminator()){ // make sure it is the first phi node in the begin of block
             //auto phiIn = (livenessTable[succI]->phiPreSuccMap)[I->getParent()];
 
+            // major fix: mutiple phi node
             set<Value*> allPhiIn;
             BasicBlock::iterator adjPhiIter(succI);
+            // need to consider all possible corresponding edge in all phi nodes INSTEAD OF ONLY THE FIRST!!!
             while(isa<PHINode>(&*adjPhiIter)){
               auto singlePhiIn = (livenessTable[&*adjPhiIter]->phiPreSuccMap)[I->getParent()];
               set<Value*> allPhiInRes;
@@ -153,23 +155,23 @@ struct MyPass : public FunctionPass {
               ++adjPhiIter;
             }
 
-
             set<Value*> phiUnionRes;
 
-            // actually using phiIn and phiOut instead of regular inSet and outSet
+            // put corresponding allPhiIn and regular inSet(for propagation) together as "real in set"
             set_union(
               allPhiIn.begin(), allPhiIn.end(),
               livenessTable[succI]->inSet.begin(), livenessTable[succI]->inSet.end(),
               inserter(phiUnionRes, phiUnionRes.begin())
             );
 
+            // union all inSet together
             set_union(
               newOut.begin(), newOut.end(),
               phiUnionRes.begin(), phiUnionRes.end(),
               inserter(unionResult, unionResult.begin())
             );
           } else {
-            // still propagate the out/in set for non-phi node
+            // union all inSet together
             set_union(
               newOut.begin(), newOut.end(),
               livenessTable[succI]->inSet.begin(), livenessTable[succI]->inSet.end(),
@@ -255,17 +257,6 @@ struct MyPass : public FunctionPass {
         // skip phis
         if (dyn_cast<PHINode>(i))
           continue;
-
-        // if (isa<PHINode>(i)){
-        //   errs() << "phi: " << *(&*i) << "\n";
-        //   for (auto const& item : livenessTable[&*i]->phiPreSuccMap){
-        //     errs() << "bb: " << *(item.first) << "\n";
-        //     for (auto const& oper : item.second){
-        //       errs() << "oper: " << *oper << ", ";
-        //     }
-        //     errs() << "\n";
-        //   }
-        // }
         
         errs() << "{";
         
@@ -278,7 +269,6 @@ struct MyPass : public FunctionPass {
         }
         
         errs() << "}\n";
-        //errs() << *i << "\n";
        }
     }
     errs() << "{}\n";
