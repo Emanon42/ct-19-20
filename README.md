@@ -2,7 +2,7 @@
 
 # About #  
 This project achieved 98% in total (A1).  
-For basic coverage test result, see **[waterbuck](http://www.inf.ed.ac.uk/teaching/courses/ct/19-20/scoreboard/waterbuck_results.html)**
+For basic coverage test result, see **[waterbuck](http://www.inf.ed.ac.uk/teaching/courses/ct/19-20/scoreboard/waterbuck_results.html)**  
 It is a fully functional compiler from scratch without any external library.  
 It compiles subset of ANSI C to MIPS assembly.  
 Source language definition see **[EBNF](https://github.com/Emanon42/ct-19-20/blob/master/grammar/ebnf.txt)**  
