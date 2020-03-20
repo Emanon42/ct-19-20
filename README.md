@@ -1,7 +1,20 @@
-# Description of the course work is likely to be upatded! #
+# Compiling Techniques 19-20 #
 
-Please note that the description of the course work might be updated from time to time to clarify things or fix mistakes.
-
+# About #  
+This project achieved 98% in total (A1).  
+For basic coverage test result, see **[waterbuck](http://www.inf.ed.ac.uk/teaching/courses/ct/19-20/scoreboard/waterbuck_results.html)**  
+It is a fully functional compiler from scratch without any external library.  
+It compiles subset of ANSI C to MIPS assembly.  
+Source language definition see **[EBNF](https://github.com/Emanon42/ct-19-20/blob/master/grammar/ebnf.txt)**  
+  
+# How to use #  
+```
+ant build  
+java -cp bin Main -gen <C CODE FILE> dummy.asm
+java -jar Mars4_5.jar sm nc me dummy.asm
+```
+---  
+# Original Course Work Descriptions #
 # Deadlines #
 
 1. [Part 1 (parser)](desc/part1/), Thursday 10 October 2019  at 11am, weight = 20%
